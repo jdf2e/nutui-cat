@@ -70,7 +70,7 @@ export default createDemo({
       topInfo:{
         center:'预估到手价'
       },
-      centerPrice:'￥99.00',
+      centerPrice:'99.00',
       bottomInfo:{
         left:'<i class="line">￥99.00</i>',
       },
@@ -79,7 +79,7 @@ export default createDemo({
         left:'<i class="line">￥99.00</i>',
         right:'即将恢复'
       },
-      centerPrice1:'￥999.00',
+      centerPrice1:'999.00',
       bottomInfo1:{
         center:'N 天最低价'
       },
@@ -87,7 +87,7 @@ export default createDemo({
       topInfo2:{
         center:'N 天最低价'
       },
-      centerPrice2:'￥999.00',
+      centerPrice2:'999.00',
       bottomInfo2:{
         left:'￥99.00',
         right:'即将恢复'

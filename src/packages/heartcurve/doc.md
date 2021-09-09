@@ -38,7 +38,7 @@ export default {
             topInfo:{
                 center:'预估到手价'
             },
-            centerPrice:'￥99.00',
+            centerPrice:'99.00',
             bottomInfo:{
                 left:'<i class="line">￥99.00</i>',
             }
@@ -63,7 +63,7 @@ export default {
                 left:'<i class="line">￥99.00</i>',
                 right:'即将恢复'
             },
-            centerPrice:'￥999.00',
+            centerPrice:'999.00',
             bottomInfo:{
                 center:'N 天最低价'
             },
@@ -84,7 +84,7 @@ export default {
             topInfo:{
                 center:'N 天最低价'
             },
-            centerPrice:'￥999.00',
+            centerPrice:'999.00',
             bottomInfo:{
                 left:'￥99.00',
                 right:'即将恢复'
