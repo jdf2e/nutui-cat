@@ -53,11 +53,31 @@
                     width: 100%;
                     max-width: 160px;
                     height: 36px;
+                    
                     background: url('https://img13.360buyimg.com/imagetools/jfs/t1/184184/36/20718/13878/61237b64E2944e54a/7cebfaba65302460.png') no-repeat center center;
                     background-size: 100% 100%;
                     line-height: 28px;
                     color: #fff;
 
+                    .bight-price{
+                        line-height: 18px;
+                        color: #fff;
+                        font-weight: bold;
+
+                        .nutcat-price--big{
+                            font-size: 18px;
+                        }
+                        .nutcat-price--small{
+                            font-size: 14px;
+                        }
+                        .nutcat-price--symbol{
+                            margin-right: 0;
+                            font-size: 14px;
+                        }
+                        .nutcat-price--point{
+                            font-size: 12px;
+                        }
+                    }
 
                     &.bight-price-broken-box{
                         max-width: 152px;
@@ -151,6 +171,10 @@
                         max-width: 175px;
                         background: url('https://img12.360buyimg.com/imagetools/jfs/t1/186239/11/20545/9651/61248957Eced482f0/46247343a8856ec0.png') no-repeat center center;
                         background-size: 100% 100%;
+
+                        .bight-price{
+                            line-height: inherit;
+                        }
 
                         &.bight-price-broken-box{
                             max-width: 152px;
