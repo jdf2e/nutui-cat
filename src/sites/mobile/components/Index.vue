@@ -134,6 +134,7 @@ export default class Doc extends Vue {
       > ul {
         li {
           display: flex;
+          align-items: center;
           padding: 0 24px;
           // width: 100%;
           height: 45px;
