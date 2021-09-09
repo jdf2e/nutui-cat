@@ -1,13 +1,13 @@
 <template>
   <div class="demo">
     <h2>京贴 + PLUS</h2>
-    <div class="demo-coupon demo1">
+    <div class="demo-coupon">
       <nutcat-row :gutter="1">
         <nutcat-col :span="16">
           <nutcat-text row="1" type="jtCoupon">
             头号京贴·跨店满减·可叠加
           </nutcat-text>
-          <div class="nutcat-coupon-bd">
+          <div class="nutcat-coupon-bd demo1">
             <nutcat-jtCoupon  v-for="(item, index) in (data.list || '').slice(0, 2)" :key="index"
               :item="item"
               type='normal'
@@ -22,7 +22,7 @@
           <nutcat-tag type="plus-couponHd"></nutcat-tag>
             开通/续费PLUS得
           </nutcat-text>
-          <div class="nutcat-coupon-bd">
+          <div class="nutcat-coupon-bd demo2">
             <nutcat-jtCoupon  v-for="(item, index) in (data.list || '').slice(0, 1)" :key="index"
               :item="item"
               type='normal'
@@ -78,17 +78,24 @@ export default createDemo({
 
 <style lang="scss" scoped>
 #app {
+  height: 100%;
   .demo {
+    min-height: 100%;
+    padding-bottom: 20px;
   }
 }
 .demo1 {
-  overflow-x: auto;
-  .nutcat-JtCoupon {
+  .nutcat-jtCoupon {
+    width: 50%;
     margin-left: 6px;
     &:first-child {
       margin-left: 0;
     }
   }
-  
+}
+.demo2 {
+  .nutcat-jtCoupon {
+    width: 100%;
+  }
 }
 </style>
