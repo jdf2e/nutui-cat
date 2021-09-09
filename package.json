@@ -1,0 +1,133 @@
+{
+  "name": "@nutui/nutui-cat",
+  "version": "0.1.4",
+  "description": "基于 NutUI 2.0 的大促业务组件库",
+  "main": "dist/nutui-cat.umd.js",
+  "style": "dist/nutui-cat.css",
+  "keywords": [
+    "nutui",
+    "nutui-cat",
+    "vue",
+    "vue2",
+    "webpack",
+    "vue component",
+    "jdc",
+    "jdcfe"
+  ],
+  "author": "jdcfe",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
+    "build:site": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib src/packages/config.js",
+    "lint": "vue-cli-service lint",
+    "upload": "vue-cli-service build && node ./jd/upload.js",
+    "add": "node jd/createComponentMode.js",
+    "publish": "npm publish"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,vue,scss}": "prettier --write"
+  },
+  "dependencies": {
+    "@nutui/babel-plugin-separate-import": "^1.2.2",
+    "@nutui/nutui": "^2.3.4",
+    "@tweenjs/tween.js": "^18.6.4",
+    "@vue/compiler-sfc": "^3.0.11",
+    "axios": "^0.21.1",
+    "clipboard": "^2.0.8",
+    "core-js": "^3.6.5",
+    "filemanager-webpack-plugin": "^3.0.0",
+    "markdown-it": "^12.0.6",
+    "markdown-it-container": "^3.0.0",
+    "moment": "^2.29.1",
+    "postcss-pxtorem": "^5.1.1",
+    "swiper": "5.4.5",
+    "terser-webpack-plugin": "^4.2.3",
+    "vue": "^2.6.11",
+    "vue-aplayer": "^1.6.1",
+    "vue-class-component": "^7.2.3",
+    "vue-danmaku": "^1.1.1",
+    "vue-lazyload": "^1.3.3",
+    "vue-property-decorator": "^8.4.2",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@jd/upload-oss-tools": "^1.1.10",
+    "@types/copy-webpack-plugin": "^5.0.0",
+    "@types/html-webpack-plugin": "^3.2.5",
+    "@types/mini-css-extract-plugin": "^0.9.0",
+    "@types/optimize-css-assets-webpack-plugin": "^5.0.3",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "copy-webpack-plugin": "^5.1.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "fs-extra": "^10.0.0",
+    "gsap": "^3.7.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^7.0.1",
+    "markdown-it-chain": "^1.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^5.0.0",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "sass-loader": "^10.2.0",
+    "typescript": "~3.9.3",
+    "vconsole": "^3.4.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3",
+    "webpackbar": "^5.0.0-3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "@vue/typescript/recommended",
+      "@vue/prettier",
+      "@vue/prettier/@typescript-eslint"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "vue/no-unused-components": "off",
+      "no-debugger": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

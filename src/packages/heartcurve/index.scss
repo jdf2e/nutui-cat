@@ -1,0 +1,186 @@
+.nutcat-heartcurve-page {
+    .nutcat-heart {
+        padding: 5px 12px 0px;
+        background: #fff;
+        color: #999999;
+        .bight-img-box {
+            width: 100%;
+            max-width: 160px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+
+           
+
+            .bight-top-box{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 3px;
+                font-size: 10px;
+
+                .bight-top-item{
+                    &.center{ 
+                        flex: 1;
+                        color: #E8220E;
+                    }
+                }
+
+
+                &.bight-top-broken-box{
+                    .bight-top-item{
+                        position: relative;
+                        &.center{ 
+                            position: absolute;
+                            top: -5px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    
+                }
+                
+            }
+
+            .bight-content {
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .bight-price-box {
+                    width: 100%;
+                    max-width: 160px;
+                    height: 36px;
+                    background: url('https://img13.360buyimg.com/imagetools/jfs/t1/184184/36/20718/13878/61237b64E2944e54a/7cebfaba65302460.png') no-repeat center center;
+                    background-size: 100% 100%;
+                    line-height: 28px;
+                    color: #fff;
+
+
+                    &.bight-price-broken-box{
+                        max-width: 152px;
+                        height: 23px;
+                        background: url('https://img13.360buyimg.com/imagetools/jfs/t1/40975/15/16674/3851/60eb1c98E9c94d95d/c24d03cbe8a787b5.png') no-repeat center center;
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+
+            .bight-bottom-box {
+                width: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 10px;
+                
+
+                .bight-bottom-item{
+                    position: relative;
+                    bottom: 12px;
+                    &.center{
+                        flex: 1;
+                        bottom: 0px;
+                        margin-top: 3px;
+                    }
+                }
+
+
+                &.bight-bottom-broken-box{
+
+                    .bight-bottom-item{
+                        bottom: 20px;
+                    }
+                }
+            }
+
+            // 小
+            &.nutcat-heart-small{
+                max-width: 102px;
+
+                .bight-top-box{
+                    .bight-top-broken-box{
+                        .bight-top-item{
+                            &.center{ 
+                                top: 0px;
+                            }
+                        }
+                        
+                    }
+                }
+
+                .bight-content{
+                    .bight-price-box{
+                        width: 100%;
+                        max-width: 102px;
+                        height: 36px;
+                        background: url('https://img10.360buyimg.com/imagetools/jfs/t1/181327/36/20558/11012/61237b64E35e8c4d6/97bcc3caf7862df4.png') no-repeat center center;
+                        background-size: 100% 100%;
+
+                        &.bight-price-broken-box{
+                            max-width: 104px;
+                            height: 16px;
+                            background: url('https://img10.360buyimg.com/imagetools/jfs/t1/192903/31/19788/3309/61246497Ef3799828/029e99a1c41f8a58.png') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+                    }
+
+                    .bight-bottom-broken-box{
+                        
+                        .bight-bottom-item{
+                            bottom: 10px;
+                        }
+                    }
+                 
+                }
+
+                &.nutcat-heart-broken{
+                    max-width: 104px;
+                }
+            }
+
+            // 大
+            &.nutcat-heart-big{
+                max-width: 175px;
+
+                .bight-content{
+                    .bight-price-box {
+                        width: 100%;
+                        max-width: 175px;
+                        background: url('https://img12.360buyimg.com/imagetools/jfs/t1/186239/11/20545/9651/61248957Eced482f0/46247343a8856ec0.png') no-repeat center center;
+                        background-size: 100% 100%;
+
+                        &.bight-price-broken-box{
+                            max-width: 152px;
+                            height: 23px;
+                            background: url('https://img13.360buyimg.com/imagetools/jfs/t1/40975/15/16674/3851/60eb1c98E9c94d95d/c24d03cbe8a787b5.png') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+                    }
+
+                    .bight-bottom-item{
+                        bottom: 13px;
+
+                        &.center{
+                            bottom: 0px;
+                        }
+                    }
+
+                    .bight-bottom-broken-box{
+                        .bight-bottom-item{
+                            bottom: 20px;
+                        }
+                    }
+                }
+
+                &.nutcat-heart-broken{
+                    max-width: 152px;
+                }
+            }
+
+        }
+    }
+
+}

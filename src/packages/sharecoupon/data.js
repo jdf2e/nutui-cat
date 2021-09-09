@@ -1,0 +1,163 @@
+export default {
+    "biPv": "",
+    "degrade": false,
+    "groupId": "05407947",
+    "groupName": "优惠券",
+    "stageId": "14961503",
+    "stageName": "",
+    "deliveryType": "506",
+    "styleId": 82,
+    "list": [{
+      "pictureUrl": "",
+      "link": "1051340",
+      "biClk": "1#90ae7bd9e450f3fc0bb77ca57f24fcf5a50aaf4d-0-629141#27376103",
+      "mcInfo": "05122300-13789290-S-1051340#0-6---70--#2-did-27376103#421-27376103#mainActivity",
+      "extension": {
+        "subSku": [{
+          "broker_info": "eyJwIjoiNjE5MjI5IiwicG9pbnRfaWQiOiIiLCJzb3VyY2UiOiIwIiwiY3NfdXNlciI6IjIiLCJwYWxhbnRpcl9leHBpZHMiOiJSfE1JWFRBR19SUnwiLCJleHBpZCI6IjEwMCIsInJlcXNpZyI6ImNlNzEwZDFjMDI1YzdhMjE5OGJjNDg0Nzg3Njk2ZGZkMjU2ZDc3YzcifQ==",
+          "img": "jfs/t1/113459/35/17982/103219/5f6338c6Ec5691153/7e8cf299c6318afe.jpg",
+          "mp": "0.00",
+          "shId": "1000334325",
+          "jp": "208.00",
+          "bn": "梅见",
+          "feaItemSig": 1453701411,
+          "title": "梅见青梅酒12度 梅酒果酒330ml*6整箱装",
+          "c1": "12259",
+          "c2": "12260",
+          "c3": "9435",
+          "vspu": "600054058",
+          "w": 0.0,
+          "name": "梅见青梅酒12度 梅酒果酒330ml*6整箱装",
+          "spu": 100007094048,
+          "sku": 100013267874,
+          "wt": "0.5657464976621096"
+        }],
+        "expireType": "2021-01-22 23:59:59",
+        "prizeType": 1,
+        "venderId": 10333601,
+        "sourceLink": "https://interact-share.jd.com/?inviteId=B8CEDA406E0AE6E274BFAA50D1CD0DA7",
+        "shopName": "遨游旗舰店",
+        "discount": 50,
+        "activityId": 1051340,
+        "quota": 10000,
+        "pictureLink": "/popshop/jfs/t1/92895/32/14686/42618/5e68ef58E33cd9dd7/a4740d09a676af29.jpg",
+        "validateDay": 3,
+        "startTime": "2020-12-27 00:00:00",
+        "sharePersonCount": 3,
+        "endTime": "2021-01-22 23:59:59",
+        "id": 1041113
+      },
+      "picHeight": 0,
+      "picWidth": 0,
+      "next": {},
+      "bi": {
+        "ord": null,
+        "brokerInfo": "eyJwIjoiNjI5MTQxIiwicG9pbnRfaWQiOiIiLCJzb3VyY2UiOiIwIiwidGFnIjoiNzg3IiwiY3NfdXNlciI6IjIiLCJwYWxhbnRpcl9leHBpZHMiOiJSfE1JWFRBR19SUnwiLCJleHBpZCI6IjAiLCJyZXFzaWciOiI5MGFlN2JkOWU0NTBmM2ZjMGJiNzdjYTU3ZjI0ZmNmNWE1MGFhZjRkIn0=",
+        "testId": 1,
+        "alid": "2",
+        "udi": "N",
+        "did": "27376103",
+        "alclk": "90ae7bd9e450f3fc0bb77ca57f24fcf5a50aaf4d-0-629141",
+        "skuid": null
+      },
+      "srv": {
+        "Babel_dev_adv_21NHNV_ShareCoupon": "{\"broker_info\":\"eyJwIjoiNjI5MTQxIiwicG9pbnRfaWQiOiIiLCJzb3VyY2UiOiIwIiwidGFnIjoiNzg3IiwiY3NfdXNlciI6IjIiLCJwYWxhbnRpcl9leHBpZHMiOiJSfE1JWFRBR19SUnwiLCJleHBpZCI6IjAiLCJyZXFzaWciOiI5MGFlN2JkOWU0NTBmM2ZjMGJiNzdjYTU3ZjI0ZmNmNWE1MGFhZjRkIn0=\",\"ord\":\"0\",\"fnm\":\"优惠券\",\"fno\":\"30\",\"bi\":\"1#90ae7bd9e450f3fc0bb77ca57f24fcf5a50aaf4d-0-629141#27376103\",\"mid\":\"13534\",\"agid\":\"05122300\",\"babelChannel\":\"ttt1\",\"mci\":\"05122300-13789290-S-1051340#0-6---70--#2-did-27376103#421-27376103#mainActivity\",\"adid\":\"-100\",\"aid\":\"00848344\"}"
+      }
+    }, {
+      "pictureUrl": "",
+      "link": "1079502",
+      "biClk": "1#90ae7bd9e450f3fc0bb77ca57f24fcf5a50aaf4d-0-629141#27376103",
+      "mcInfo": "05122300-13789290-S-1079502#0-6---70--#2-did-27376103#421-27376103#mainActivity",
+      "extension": {
+        "subSku": [{
+          "broker_info": "eyJwIjoiNjE5MjI5IiwicG9pbnRfaWQiOiIiLCJzb3VyY2UiOiIwIiwiY3NfdXNlciI6IjIiLCJwYWxhbnRpcl9leHBpZHMiOiJSfE1JWFRBR19SUnwiLCJleHBpZCI6IjEwMCIsInJlcXNpZyI6ImNlNzEwZDFjMDI1YzdhMjE5OGJjNDg0Nzg3Njk2ZGZkMjU2ZDc3YzcifQ==",
+          "img": "jfs/t1/137621/21/15770/49049/5fbe0520E043b4ce5/f8a1e0e877908389.jpg",
+          "mp": "0.00",
+          "shId": "1000004123",
+          "jp": "1599.00",
+          "bn": "小米（MI）",
+          "feaItemSig": 2007224904,
+          "title": "Redmi Note 9 Pro 5G 一亿像素 骁龙750G 33W快充 120Hz刷新率 碧海星辰 6GB+128GB 游戏智能手机 小米 红米",
+          "c1": "9987",
+          "c2": "653",
+          "c3": "655",
+          "vspu": "500023839",
+          "w": 0.0,
+          "name": "Redmi Note 9 Pro 5G 一亿像素 骁龙750G 33W快充 120Hz刷新率 碧海星辰 6GB+128GB 游戏智能手机 小米 红米",
+          "spu": 100009586257,
+          "sku": 100016773618,
+          "wt": "0.6445057392120361"
+        }],
+        "expireType": "2021-01-31 23:59:59",
+        "prizeType": 1,
+        "venderId": 758455,
+        "sourceLink": "https://interact-share.jd.com/?inviteId=E561565DA37717C3608D2FBBC12B7565",
+        "shopName": "中天晨拓数码专营店",
+        "discount": 50,
+        "activityId": 1079502,
+        "quota": 1000,
+        "pictureLink": "/cms/jfs/t1/22507/12/4120/37513/5c2daa48E9d6fc7a3/b51af9d228bdab55.jpg",
+        "validateDay": 5,
+        "startTime": "2021-01-08 18:00:00",
+        "sharePersonCount": 3,
+        "endTime": "2021-01-31 23:59:59",
+        "id": 1065553
+      },
+      "picHeight": 0,
+      "picWidth": 0,
+      "next": {},
+      "bi": {
+        "ord": null,
+        "brokerInfo": "eyJwIjoiNjI5MTQxIiwicG9pbnRfaWQiOiIiLCJzb3VyY2UiOiIwIiwidGFnIjoiNzg3IiwiY3NfdXNlciI6IjIiLCJwYWxhbnRpcl9leHBpZHMiOiJSfE1JWFRBR19SUnwiLCJleHBpZCI6IjAiLCJyZXFzaWciOiI5MGFlN2JkOWU0NTBmM2ZjMGJiNzdjYTU3ZjI0ZmNmNWE1MGFhZjRkIn0=",
+        "testId": 1,
+        "alid": "2",
+        "udi": "N",
+        "did": "27376103",
+        "alclk": "90ae7bd9e450f3fc0bb77ca57f24fcf5a50aaf4d-0-629141",
+        "skuid": null
+      },
+      "srv": {
+        "Babel_dev_adv_21NHNV_ShareCoupon": "{\"broker_info\":\"eyJwIjoiNjI5MTQxIiwicG9pbnRfaWQiOiIiLCJzb3VyY2UiOiIwIiwidGFnIjoiNzg3IiwiY3NfdXNlciI6IjIiLCJwYWxhbnRpcl9leHBpZHMiOiJSfE1JWFRBR19SUnwiLCJleHBpZCI6IjAiLCJyZXFzaWciOiI5MGFlN2JkOWU0NTBmM2ZjMGJiNzdjYTU3ZjI0ZmNmNWE1MGFhZjRkIn0=\",\"ord\":\"1\",\"fnm\":\"优惠券\",\"fno\":\"30\",\"bi\":\"1#90ae7bd9e450f3fc0bb77ca57f24fcf5a50aaf4d-0-629141#27376103\",\"mid\":\"13534\",\"agid\":\"05122300\",\"babelChannel\":\"ttt1\",\"mci\":\"05122300-13789290-S-1079502#0-6---70--#2-did-27376103#421-27376103#mainActivity\",\"adid\":\"-100\",\"aid\":\"00848344\"}"
+      }
+    }, {
+      "pictureUrl": "",
+      "link": "1067266",
+      "biClk": "1#90ae7bd9e450f3fc0bb77ca57f24fcf5a50aaf4d-0-629141#27376103",
+      "mcInfo": "05122300-13789290-S-1067266#0-6---70--#2-did-27376103#421-27376103#mainActivity",
+      "extension": {
+        "expireType": "2021-01-31 23:59:59",
+        "prizeType": 1,
+        "venderId": 10496897,
+        "sourceLink": "https://interact-share.jd.com/?inviteId=9F546FA76BED99E0DFA7FB1DD2EF195D",
+        "shopName": "不二亲食品专营店",
+        "discount": 50,
+        "activityId": 1067266,
+        "quota": 100,
+        "pictureLink": "/popshop/jfs/t1/146323/16/11443/12954/5f8ff5f1E22d3f3e9/789011ec32bab3c2.jpg",
+        "validateDay": 30,
+        "startTime": "2021-01-04 08:25:00",
+        "sharePersonCount": 3,
+        "endTime": "2021-01-31 23:59:59",
+        "id": 1054703
+      },
+      "picHeight": 0,
+      "picWidth": 0,
+      "next": {},
+      "bi": {
+        "ord": null,
+        "brokerInfo": "eyJwIjoiNjI5MTQxIiwicG9pbnRfaWQiOiIiLCJzb3VyY2UiOiIwIiwidGFnIjoiNzg3IiwiY3NfdXNlciI6IjIiLCJwYWxhbnRpcl9leHBpZHMiOiJSfE1JWFRBR19SUnwiLCJleHBpZCI6IjAiLCJyZXFzaWciOiI5MGFlN2JkOWU0NTBmM2ZjMGJiNzdjYTU3ZjI0ZmNmNWE1MGFhZjRkIn0=",
+        "testId": 1,
+        "alid": "2",
+        "udi": "N",
+        "did": "27376103",
+        "alclk": "90ae7bd9e450f3fc0bb77ca57f24fcf5a50aaf4d-0-629141",
+        "skuid": null
+      },
+      "srv": {
+        "Babel_dev_adv_21NHNV_ShareCoupon": "{\"broker_info\":\"eyJwIjoiNjI5MTQxIiwicG9pbnRfaWQiOiIiLCJzb3VyY2UiOiIwIiwidGFnIjoiNzg3IiwiY3NfdXNlciI6IjIiLCJwYWxhbnRpcl9leHBpZHMiOiJSfE1JWFRBR19SUnwiLCJleHBpZCI6IjAiLCJyZXFzaWciOiI5MGFlN2JkOWU0NTBmM2ZjMGJiNzdjYTU3ZjI0ZmNmNWE1MGFhZjRkIn0=\",\"ord\":\"2\",\"fnm\":\"优惠券\",\"fno\":\"30\",\"bi\":\"1#90ae7bd9e450f3fc0bb77ca57f24fcf5a50aaf4d-0-629141#27376103\",\"mid\":\"13534\",\"agid\":\"05122300\",\"babelChannel\":\"ttt1\",\"mci\":\"05122300-13789290-S-1067266#0-6---70--#2-did-27376103#421-27376103#mainActivity\",\"adid\":\"-100\",\"aid\":\"00848344\"}"
+      }
+    }],
+    "promoTotalNum": 0,
+    "stageET": "",
+    "stageMaterialType": "6"
+  };

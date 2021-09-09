@@ -1,0 +1,34 @@
+.nutcat-button {
+  display: flex;
+  align-items: center;
+  // vertical-align: top;
+  height: 30px;
+  padding: 0 15px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+  background: transparent;
+  // background: linear-gradient(135deg, rgba(242,20,12,1) 0%,rgba(232,34,14,1) 69.83950099714881%,rgba(242,77,12,1) 100%);
+  // vertical-align: middle;
+  &-content {
+    display: inline-block;
+  }
+  &-red {
+    line-height: 14px;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(242,20,12,1) 0%,rgba(232,34,14,1) 69.83950099714881%,rgba(242,77,12,1) 100%);
+  }
+  &-red-line {
+    line-height: 14px;
+    color: #E8220E;
+    border: 1px solid #E8220E;
+    // background: linear-gradient(135deg, rgba(242,20,12,1) 0%,rgba(232,34,14,1) 69.83950099714881%,rgba(242,77,12,1) 100%);
+  }
+  .before-icon {
+    margin-right: 4px;
+  }
+  .after-icon {
+    margin-left: 4px;
+  }
+}

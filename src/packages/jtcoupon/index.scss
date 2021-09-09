@@ -1,0 +1,75 @@
+@import '@/styles/common.scss';
+
+.nutcat-jtCoupon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 111px;
+  // height: 85px;
+  padding: 2px 6px 6px;
+  color: #2e2d2d;
+  line-height: 1;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #fff;
+  overflow: hidden;
+  &-info {
+    position: relative;
+    margin-bottom: 4px;
+  }
+  .sub-quota {
+    width: 100%;
+    line-height: 1.2;
+    color: $red;
+    font-size: 14px;
+  }
+  .sub-limitStr {
+    width: 100%;
+    font-size: 10px;
+    color: #8C8C8C;
+    line-height: 1.2;
+    font-size: 10px;
+  }
+  .sub-btn {
+    height: 18px;
+    line-height: 19px;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(232,34,14,1);
+    background: rgba(253,237,236,1);
+    border: 1px solid rgba(232,34,14,1);
+    border-radius: 9px;
+  }
+}
+.nutcat-coupon-bd {
+  display: flex;
+  .nutcat-jtCoupon {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+.nutcat-jtCoupon-use {
+  .sub-btn {
+    color: #fff;
+    background: linear-gradient(to right, #f2140c, #f24d0c);
+    border: none;
+  }
+}
+.nutcat-jtCoupon-ban {
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
+  }
+  .sub-btn {
+    color: #fff;
+    background: #999;
+    border-color: #999;
+  }
+}

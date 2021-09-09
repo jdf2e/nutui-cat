@@ -1,0 +1,137 @@
+@import '@/styles/common.scss';
+
+.nutcat-shareCoupon {
+  width: 100%;
+  height: 171px;
+  position: relative;
+  flex: 0 0 auto;
+  // height: 85px;
+  // line-height: 1;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #fff;
+  overflow: hidden;
+  &-info {
+    position: relative;
+    margin-bottom: 4px;
+    position: absolute;
+    top: 77px;
+    left: 50%;
+    width: 70px;
+    height: 41px;
+    padding: 4px 0px 5px;
+    margin-left: -35px;
+    font-weight: bold;
+    font-size: 10px;
+    color: #fff;
+    background: url('./images/bg-quota.png') no-repeat center top/100%;
+    box-sizing: border-box;
+    z-index:2;
+    overflow: hidden;
+    p {
+      margin-top: 4px;
+    }
+  }
+  &-cont {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 66px;
+    padding: 19px 3px 1px;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 1;
+  }
+  .sub-img {
+    display: inline-block;
+    width: 100%;
+    height: 105px;
+    padding: 6px;
+    border-radius: 4px;
+  }
+  .nutcat-text.sub-price {
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.1;
+    .rmb {
+      margin-right: 2px;
+      font-style: normal;
+      font-size: 10px;
+    }
+  }
+  .nutcat-text.sub-limitStr {
+    width: 100%;
+    font-size: 10px;
+    line-height: 1.1;
+    font-size: 10px;
+  }
+  .sub-name {
+    font-size: 12px;
+    color: rgba(46,45,45,1);
+    margin-bottom: 4px;
+  }
+  
+  .sub-btn {
+    height: 18px;
+    margin-left: 17px;
+    margin-right: 17px;
+    line-height: 19px;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(232,34,14,1);
+    background: rgba(253,237,236,1);
+    border: 1px solid rgba(232,34,14,1);
+    border-radius: 9px;
+  }
+}
+.nutcat-jtCoupon-use {
+  .sub-btn {
+    color: #fff;
+    background: linear-gradient(to right, #f2140c, #f24d0c);
+    border: none;
+  }
+}
+.nutcat-jtCoupon-ban {
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
+  }
+  .sub-btn {
+    color: #fff;
+    background: #999;
+    border-color: #999;
+  }
+}
+
+.share-coupon-box {
+  // overflow: hidden;
+  .coupon-item {
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    
+    
+  }
+  .sub-btn {
+    width: 164px;
+    height: 36px;
+    line-height: 38px;
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(232,34,14,1);
+    background: rgba(253,237,236,1);
+    border: 1px solid rgba(232,34,14,1);
+    border-radius: 18px;
+  }
+}

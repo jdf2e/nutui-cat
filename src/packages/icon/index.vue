@@ -1,0 +1,65 @@
+
+<template>
+    <i 
+      :class="classes" 
+      :style="styles"
+    >
+      <template v-if="src">
+        <nutcat-image :src="src"></nutcat-image>
+      </template>
+    </i>
+</template>
+
+<script lang="ts">
+import { createComponent } from '@/utils/create';
+const { componentName, create } = createComponent('icon');
+
+export default create({
+  props: {
+    type: {
+      type: String,
+      default: ''
+    },
+    color: {
+      type: String,
+      default: ''
+    },
+    size: {
+      type: String,
+      default: ''
+    },
+    src: {
+      type: String,
+      default: ''
+    }
+  },
+  data() {
+		return {
+    };
+	},
+  components: {},
+  mounted() {
+  },
+  computed: {
+    classes() {
+      return {
+        [componentName]: true,
+        [`${componentName}-${(this as any).type}`]: true,
+      }
+    },
+    styles() {
+      return {
+        'color': (this as any).color,
+        'font-size': (this as any).size,
+        'background-image': (this as any).src
+      }
+    }
+  },
+  methods: {
+  }
+});
+</script>
+
+<style lang="scss" scoped>
+@import 'index.scss';
+</style>

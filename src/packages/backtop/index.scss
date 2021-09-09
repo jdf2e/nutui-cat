@@ -1,0 +1,21 @@
+@import '@/styles/common.scss';
+$prefix: nutcat-backtop;
+
+.#{$prefix} {
+  &.show {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid rgba(242,242,242,1);
+    box-shadow:  0 4px 5px 0 rgba(0,0,0,0.05);
+  }
+  .nut-backtop-main {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+}

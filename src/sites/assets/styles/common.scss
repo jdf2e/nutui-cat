@@ -1,0 +1,52 @@
+/**
+    css 全局变量
+*/
+
+// input placeholder样式
+@mixin input-placeholder($fontSize: 12px, $color: #999) {
+  &::-webkit-input-placeholder {
+    font-size: $fontSize;
+    color: $color;
+    font-weight: normal;
+  }
+  &:-moz-placeholder {
+    font-size: $fontSize;
+    color: $color;
+    font-weight: normal;
+  }
+  &::-moz-placeholder {
+    font-size: $fontSize;
+    color: $color;
+    font-weight: normal;
+  }
+  &:-ms-input-placeholder {
+    font-size: $fontSize;
+    color: $color;
+    font-weight: normal;
+  }
+}
+
+// 单行超长省略号
+@mixin oneline-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 多行超长省略号
+@mixin moreline-ellipsis($line: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.ellips {
+  @include oneline-ellipsis();
+}
+
+@font-face {
+  font-family: 'JDZhengHei';
+  src: url('~@/styles/font/JDZhengHei.ttf');
+}

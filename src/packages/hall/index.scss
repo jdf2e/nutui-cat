@@ -1,0 +1,118 @@
+@import '@/styles/common.scss';
+
+.nutcat-hall {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+  color: #2e2d2d;
+  line-height: 1;
+  background-color: #fff;
+  background-size: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  .sub-name {
+    justify-content: center;
+    // margin-bottom: 4px;
+    line-height: 1.2;
+    font-size: 12px;
+    color: #2e2d2d;
+  }
+  .sub-desc {
+    justify-content: center;
+    line-height: 1.2;
+    font-size: 14px;
+    color: $red;
+  }
+  .nutcat-icon-arrow-go {
+    font-size: 34px;
+    height: 15px;
+    line-height: 1;
+    color: #fff;
+  }
+  .nutcat-tag-red-gradient {
+    height: 14px;
+    line-height: 15px;
+    font-size: 10px;
+  }
+  &-1, &-2 {
+    display: flex;
+  }
+  &-1 {
+    padding: 3px 12px;
+    .img-box {
+      height: 40px;
+    }
+  }
+  &-2 {
+    padding: 12px;
+  }
+  &-3 {
+    .img-box {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &-normal-3,
+  &-normal-4 {
+    width: 100%;
+    padding: 9px;
+    background: #fff;
+    .img-box {
+      width: 44px;
+      height: 44px;
+      margin-right: 18px;
+    }
+    .hall-content {
+      width: calc(100% - 58px - 10px);
+      padding-top: 4px;
+      text-align: left;
+    }
+    .sub-name {
+      margin-bottom: 2px;
+    }
+  }
+  &-normal-5,
+  &-normal-6 {
+    width: 100%;
+    padding: 9px;
+    background: #fff;
+    .img-box {
+      width: 70px;
+      // height: 35px;
+      margin: 0 auto 4px;
+    }
+    .sub-name {
+      line-height: 1.1;
+    }
+    .sub-desc {
+      margin-top: 1px;
+      line-height: 1.1;
+    }
+  }
+  
+  &-left-1 {
+    .hall-left {
+      padding: 12px;
+      text-align: left;
+      .sub-name {
+        margin-bottom: 4px;
+        // line-height: 1;
+        font-size: 18px;
+        color: #fff;
+      }
+      .sub-desc {
+        // margin-top: 3px;
+        margin-bottom: 12px;
+        font-size: 14px;
+
+        // line-height: 1;
+        color: #fff;
+      }
+    }
+    .hall-right {
+      width: calc(100% - 108px);
+      overflow-x: auto;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.nutcat-starbrand-page {
+  .star-list {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 6px;
+    .swiper-wrapper {
+      display: flex;
+      align-items: flex-end;
+    }
+    .swiper-slide {
+      width: 96px;
+      height: 96px;
+      margin-right: 6px;
+    }
+    .star-item {
+      width: 96px;
+      height: 96px;
+      img {
+        max-width: 96px;
+        max-height: 96px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}

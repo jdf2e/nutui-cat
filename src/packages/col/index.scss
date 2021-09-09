@@ -1,0 +1,42 @@
+@use 'sass:math';
+
+.nutcat-col {
+  float: left;
+  box-sizing: border-box;
+  word-break: break-all;
+  flex: 0 0 auto;
+  &-gutter {
+    &:last-child {
+      padding-right: 0 !important;
+    }
+    &:first-child {
+      padding-left: 0 !important;
+    }
+  }
+  &:last-child {
+    padding-right: 0 !important;
+  }
+  &:first-child {
+    padding-left: 0 !important;
+  }
+}
+
+// @for $i from 1 through 24 {
+//   .nutcat-col-offset-#{$i} {
+//     margin-left: math.div(100, 24) * $i * 1%;
+//   }
+
+//   .nutcat-col-#{$i} {
+//     width: math.div(100, 24) * $i * 1%;
+//   }
+// }
+
+@for $i from 1 through 24 {
+  .nutcat-col-offset-#{$i} {
+    margin-left: 100/24 * $i * 1%;
+  }
+
+  .nutcat-col-#{$i} {
+    width: 100/24 * $i * 1%;
+  }
+}

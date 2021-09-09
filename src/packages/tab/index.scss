@@ -1,0 +1,126 @@
+.nutcat-tab-page {
+    height: 100%;
+    font-size: 14px;
+
+    .nutcat-nav-box{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        &.scroll{
+            width: 100%;
+            overflow-x: auto;
+
+            >div{
+                flex-shrink: 0;
+                width: 78px;
+            }
+        }
+
+        >div{
+            position: relative;
+            width: 100%;
+            &.splitline:not(:last-child)::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                height: 20px;
+                width: 1px;
+                margin: auto;
+                background: #ccc;
+            }
+
+            &.active{
+                color: #E8220E;
+                font-weight: bold;
+            }
+
+            &.active-underline::before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                height: 2px;
+                width: 100%;
+                background: #E8220E;
+            }
+        }
+
+        &.nutcat-base-nav{
+            >div{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    
+        &.nutcat-simple-nav{
+            align-items: center;
+            >div{
+                text-align: center;
+                &.splitline:not(:last-child)::after{
+                    height: 20px;
+                    margin: inherit;
+                }
+            }
+        }
+
+        &.nutcat-complex-nav{
+            
+            >div{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                &.active{
+                    border-radius: 5px;
+                    color: #fff;
+                    font-weight: bold;
+                    background: #E8220E;
+                }
+
+                .complex-subtitle{
+                    font-size: 10px;
+                }
+            }
+        }
+
+
+        &.nutcat-image-nav{
+            >div{
+                display: flex;
+                flex-shrink: 0;
+                align-items: center;
+                width: 98px;
+                height: 38px;
+                margin-right: 8px;
+                background-image: url('https://img14.360buyimg.com/imagetools/jfs/t1/190202/14/19048/23694/611e554bEdb59ffb8/b9ca81af50a305c1.png');
+                background-size: 100% 100%;
+                .nutcat-item-image{
+                    display: flex;
+                    margin-left: 7px;
+                    margin-right: 10px;
+                    height: 15px;
+                    margin-top: -5px;
+                }
+                .nutcat-image-tab-text{
+                    width: 65px;
+                    font-size: 12px;
+                    color: #fff;
+                    margin-top: -5px;
+                }
+
+                &.active{
+                    position: relative;
+                    background-image: url('https://img11.360buyimg.com/imagetools/jfs/t1/187872/4/19096/26072/611e5545E4235b63c/f5ae897e47f0080b.png');
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
+    
+}

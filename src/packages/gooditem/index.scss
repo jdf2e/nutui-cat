@@ -1,0 +1,84 @@
+.goods-wrapper {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  background: url("https://img11.360buyimg.com/imagetools/jfs/t1/178415/8/10857/69699/60d2f4c4Ef7f7e812/f5f8b613bc06f4c0.png") no-repeat;
+  background-size: 100% 100%;
+  .goods-item {
+    position: relative;
+    flex: 1;
+    .goods-box {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
+    .goods-img {
+      width: 100%;
+      height: 100%;
+    }
+    .goods-tips {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 2px 4px;
+      font-family: PingFangSC;
+      font-size: 10px;
+      color: rgba(255,255,255,1);
+      background: rgba(0,0,0,1);
+    }
+    .goods-desc {
+      width: 100px;
+      margin: 5px auto;
+      font-family: PingFangSC;
+      font-size: 12px;
+      color: rgba(46,45,45,1);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .price-show {
+      width: 100px;
+      height: 35px;
+      margin: 0 auto;
+    }
+    .price {
+      height: 18px;
+      display: flex;
+      align-items: center;
+      .nutcat-price {
+        span {
+          font-size: 12px !important;
+          color: #000000 !important;
+          font-weight: bold;
+          &.nutcat-price--big {
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+    .h-price {
+      margin-top: 2px;
+      height: 12px;
+      display: flex;
+      align-items: center;
+      .nutcat-price {
+        span {
+          font-size: 12px !important;
+          color: #606060 !important;
+          text-decoration: line-through;
+        }
+      }
+    }
+    .goods-add-cart {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      width: 15px;
+      height: 15px;
+      background: url("https://img10.360buyimg.com/imagetools/jfs/t1/175434/34/16504/3437/60d2eb30E2d724bd1/d7369abd5fba33ef.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}

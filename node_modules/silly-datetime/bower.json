@@ -1,0 +1,22 @@
+{
+  "name": "silly-datetime",
+  "main": "dest/index.umd.js",
+  "version": "0.1.1",
+  "homepage": "https://github.com/csbun/silly-datetime",
+  "authors": [
+    "Hans Chan <chenhc@ucweb.com>"
+  ],
+  "description": "simple datetime formater",
+  "keywords": [
+    "datetime",
+    "format"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

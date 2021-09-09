@@ -1,0 +1,282 @@
+@import '@/styles/common.scss';
+/**
+ * 默认样式
+ */
+$prefix: nutcat-navleft;
+$navheight: 44px;
+$fontSize: 14px;
+$mainColor: $white;
+$color: $title-color;
+$activeColor: $red-2;
+$expendColor: $title-color;
+$expendTitleColor: #8c8c8c;
+$expandActiveColor: $red-2;
+$expendBgColor: #e5e5e5;
+
+//  $navheight: 1002px;
+$navheightLeft: 78vh;
+$fontSizeLeft: 30px;
+$mainColorLeft: transparent;
+$colorLeft: #fff;
+$activeColorLeft: #fff;
+
+.#{$prefix} {
+  color: red;
+  // display: inline-block;
+  // height: 18px;
+  // line-height: 19px;
+  // font-weight: bold;
+  // color: #fff;
+  // font-size: 12px;
+  // overflow: hidden;
+}
+
+%arrow {
+  background: $red;
+  border-radius: 6px;
+  position: absolute;
+  transition: transform 0.4s;
+  content: '';
+}
+.sticky-nav-container {
+  position: relative;
+  z-index: 1000;
+  height: $navheight;
+  // margin-bottom: 18px;
+  .sticky-nav-fixed {
+    width: 100%;
+    position: fixed;
+    // transition: transform .3s ease-out;
+  }
+  &.hide-up {
+    .sticky-nav-fixed {
+      transform: translateY(-100%);
+    }
+  }
+}
+.hide-stickynav {
+  visibility: hidden;
+}
+.sticky-nav {
+  height: $navheight;
+  line-height: $navheight;
+  background: $mainColor;
+  .scroll-view {
+    overflow-x: scroll;
+    white-space: nowrap;
+    min-width: 100%;
+    //scroll-behavior: smooth;
+  }
+  .sticky-nav-ul {
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+  }
+  .sticky-nav-item {
+    position: relative;
+    // display: flex;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-grow: 1;
+    flex: 0 0 auto;
+    color: $color;
+    padding: 0;
+    // padding-left: 0;
+    margin: 0 16px;
+    font-size: $fontSize;
+    text-align: center;
+    &.active {
+      color: $activeColor;
+      font-weight: bold;
+    }
+    &:last-child {
+      padding-right: 20px;
+    }
+  }
+}
+
+.stickyNav-expand {
+  background: $mainColor;
+  height: $navheight;
+  border-left: 1px solid rgba(132, 132, 132, 0.14);
+  position: absolute;
+  width: 38px;
+  right: 0;
+  top: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sticky-nav-arrow {
+  $width: 20px;
+  width: $width;
+  height: 15px;
+  display: block;
+  position: relative;
+  &:before,
+  &:after {
+    width: $width/2;
+    height: 2px;
+    @extend %arrow;
+  }
+  &:before {
+    transform: translateY(10px) rotate(34deg);
+    transform-origin: 100% 0;
+    right: 45%;
+  }
+  &:after {
+    transform: translateY(10px) rotate(-34deg);
+    transform-origin: 0 0;
+    left: 45%;
+  }
+  &.expand {
+    &:before,
+    &:after {
+      background: $title-color;
+    }
+    &:before {
+      transform: translateY(3px) rotate(-34deg);
+      transform-origin: 100% 100%;
+    }
+    &:after {
+      transform: translateY(3px) rotate(34deg);
+      transform-origin: 0 100%;
+    }
+  }
+}
+
+.stickyNav-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: none;
+  z-index: 999;
+}
+
+.sticky-nav-expand-topbar {
+  height: $navheight;
+  line-height: $navheight;
+  text-indent: 10px;
+  font-size: $fontSize;
+  background: $mainColor;
+  color: $expendTitleColor;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.sticky-nav-expand-panel {
+  background: $expendBgColor;
+  padding: 6px 5px;
+  left: 0;
+  top: $navheight;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  .sticky-nav-ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sticky-nav-item {
+    position: relative;
+    flex-grow: 0;
+    color: $expendColor;
+    font-size: $fontSize;
+    width: 90px;
+    margin: 9px 0;
+    // margin-right: 10px;
+    padding-left: 16px;
+    align-items: flex-start;
+    text-indent: 6px;
+    .nutcat-icon-lbs {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -7px;
+    }
+    &.active {
+      font-weight: 500;
+      color: $expandActiveColor;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.#{$prefix}-left {
+  // color: #8c8c8c;
+  .sticky-nav-container {
+    position: absolute;
+    height: $navheightLeft;
+  }
+  .sticky-nav-ul {
+    display: inline;
+  }
+  .sticky-nav-item {
+    position: relative;
+    // display: flex;
+    //   display: inline-block;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   align-items: center;
+    text-decoration: none;
+    //   flex-grow: 1;
+    //   flex: 0 0 auto;
+    color: $color;
+    padding: 0;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: $fontSize;
+    text-align: center;
+    &.active {
+      color: $activeColor;
+      font-weight: bold;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        display: block;
+        width: 18px;
+        height: 25px;
+        transform: translateY(-50%);
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAZCAYAAAA8CX6UAAABi0lEQVQ4jZXUv0tVcRjH8ZdH3RoVhOQO7UEkpENk0eL9C4LKGivoDzCQaHAoqL1Gl1rdjO6QIQ4GkeDU4BK45NLqDdLhPkfOvT3fm/cDX87h+Xye9/f8eM4ZO7oyJ9Ei7uI2WujiJ7bxHl8GG8YGQC28w1JGb+gjHgUcVA1zDrvngIjMbvT0gVrYxMw5ILVmoqfVBL3F9AiQWtPRawILaBeCX2NXkbmWZNpYqLBcgDzDPF7EmsdKIbtc4XpifMLLpP4qvEHdqHAxMT4Udi55lypcSIzfQ0CZN17hIDHScQ9dTWoHlfyeH2M2qc/iSVLvVFhPjCls6U3weKx21KaS/Hr9rX3GzSQAf+I4WfC3cKue7OeFUA0oQc56a9A2NoaES9qI3r6vfwXHI0CONSa9CfqBtRFAa9GDf39sk/iGy/+B7OvNWv0i+q5IGA/0fq0ldfGwCclAsIfVIaBVfB8sZiB4g05S7+B11lAC/cV9HDZqh7iHk1FA8At39J5JN86PSuGJISDYwdPGeVGnOhxMGUmreiEAAAAASUVORK5CYII=)
+          no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  .sticky-nav-expand-topbar {
+    text-indent: 20px;
+    color: $color;
+  }
+  .sticky-nav-expand-panel {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 10px;
+    .sticky-nav-ul {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .sticky-nav-item {
+      margin: 20px 0;
+      width: 220px;
+      padding: 0;
+      margin-right: 20px;
+      text-indent: 12px;
+    }
+  }
+}

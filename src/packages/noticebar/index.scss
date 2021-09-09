@@ -1,0 +1,30 @@
+.nutcat-noticebar-page {
+
+    .race-lamp-card{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        
+        border-radius: 4px;
+        box-sizing: border-box;
+        overflow: hidden;
+        
+        .horseLamp_list {
+            display: block;
+            flex: 1;
+            .horseLamp_list_item{
+                display: flex;
+                align-items: center;
+                height: 40px;
+                font-size: 16px;
+                
+            }
+        }
+
+        .go{
+            align-self: center;
+        }
+
+    }
+}

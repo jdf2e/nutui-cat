@@ -1,0 +1,73 @@
+.nutcat-productadvance-page {
+    .triangle{
+        width: 100%;
+        height: 100px;
+        
+
+        .circle{
+            margin-top: 10px;
+            position: relative;
+            width: 82px;
+            height: 28px;
+            background: linear-gradient(117.64deg, rgba(255,14,135,1) 0%,rgba(255,30,30,1) 60.673117982238864%,rgba(255,100,11,1) 100%);
+           
+            border-radius: 16px;
+
+
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: -4px;
+                left: 50%;
+                margin-left: -6px;
+                width: 0;
+                height: 0;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 4px solid rgba(255,30,30,1);
+            }
+        }
+
+        .circle2{
+            margin-top: 10px;
+            position: relative;
+            width: 82px;
+            height: 28px;
+            background: linear-gradient(117.64deg, rgba(255,14,135,1) 0%,rgba(255,30,30,1) 60.673117982238864%,rgba(255,100,11,1) 100%);
+            border: 1px solid rgb(30, 229, 255);
+            border-radius: 16px;
+            
+            &::before{
+                position: absolute;
+                content: '';
+                bottom: -4px;
+                left: 50%;
+                margin-left: -8px;
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 4px solid rgb(30, 229, 255);
+                border-bottom-color: transparent;
+            }
+
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: -3px;
+                left: 50%;
+                margin-left: -6px;
+                width: 0;
+                height: 0;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 4px solid rgba(255,30,30,1);
+            }
+        }
+        
+
+        
+    }
+
+
+}

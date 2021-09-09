@@ -1,0 +1,205 @@
+@import '@/styles/common.scss';
+
+.nutcat-coupon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  color: #2e2d2d;
+  line-height: 1;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  &-cont {
+    padding: 6px;
+    background: #fff;
+  }
+  &-info {
+    position: relative;
+    height: 23px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .sub-endTime {
+    padding: 6px;
+    height: 23px;
+    font-size: 12px;
+    font-weight: 600;
+    // color: #FFF453;
+    // background: #845AF2;
+  }
+  .sub-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 39px
+  }
+  .sub-price {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 60px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    color: $red;
+    // font-size: 60px;
+    line-height: 1.2 !important;
+    letter-spacing: -1px;
+    .nutcat-text-content {
+      vertical-align: bottom;
+    }
+    .rmb {
+      font-size: 12px;
+      margin-right: -4px;
+    }
+  }
+  .sub-quota {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-bottom: 1px;
+    padding-left: 46px;
+    color: $red;
+    font-size: 10px;
+    text-align: left;
+    // width: 60px;
+  }
+  .sub-limitStr {
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 100%;
+    padding-left: 46px;
+    text-align: left;
+    font-size: 10px;
+    color: $red;
+    line-height: 1.2;
+    font-size: 10px;
+    // width: 99px;
+  }
+  .sub-tag.nutcat-tag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 14px;
+    line-height: 15px;
+    padding: 0 3px;
+    font-size: 10px;
+  }
+  .sub-tag.nutcat-tag-plus {
+    padding: 0;
+  }
+  .sub-btn {
+    height: 18px;
+    line-height: 19px;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(232,34,14,1);
+    background: rgba(253,237,236,1);
+    border: 1px solid rgba(232,34,14,1);
+    border-radius: 9px;
+  }
+}
+
+
+.nutcat-coupon-image {
+  width: 111px;
+  height: 85px;
+  .nutcat-coupon-info {
+    height: 52px;
+    padding: 0;
+    margin-top: 0;
+  } 
+  
+  .sub-price {
+    left: 45px;
+    top: 3px;
+    // margin-left: 2px;
+  }
+  .sub-quota {
+    top: 24px;
+  }
+  .sub-limitStr {
+    top: 38px;
+    left: 0;
+    margin-top: 2px;
+    padding-left: 0;
+    color: #8C8C8C;
+  }
+}
+.nutcat-coupon-use {
+  .sub-btn {
+    color: #fff;
+    background: linear-gradient(to right, #f2140c, #f24d0c);
+    border: none;
+  }
+}
+.nutcat-coupon-ban {
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
+  }
+  .sub-btn {
+    color: #fff;
+    background: #999;
+    border-color: #999;
+  }
+}
+
+.nutcat-coupon-1 {
+  // width: 345px;
+  height: 49px;
+  background-image: url('//storage.360buyimg.com/imgtools/3a77b62857-51724b20-fbfb-11eb-bf08-d585041b7c80.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  .nutcat-coupon-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 6px 14px;
+    background-color: transparent;
+  }
+  .nutcat-coupon-info {
+    width: 220px;
+    height: auto;
+    margin-top: 0px;
+  }
+  .sub-price {
+    position: relative;
+    width: auto;
+    font-size: 35px;
+    .rmb {
+      font-size: 18px;
+    }
+  }
+  .sub-quota {
+    margin-top: 7px;
+    padding-left: 82px;
+    font-size: 12px;
+  }
+  .sub-limitStr {
+    // position: relative;
+    top: 21px;
+    padding-left: 82px;
+    font-size: 12px;
+    color: #4C4C4C;
+  }
+  .sub-btn {
+    width: 77px;
+    margin-left: 14px;
+  }
+  
+}

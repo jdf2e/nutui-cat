@@ -1,0 +1,69 @@
+.nutcat-hallcapsule-page {
+    background-color: #820C00;
+    padding: 9px 0 3px 9px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    font: {
+        size: 14px;
+        weight: 500;
+    }
+
+    .hall-capsule-tit {
+        display: flex;
+        align-items: center;
+        margin: {
+            left: 8.5px;
+            right: 8.5px;
+        }
+    }
+
+    .hall-capsule-list {
+        font-size: 12px;
+        color: #E8220E;
+        background-color: #fff;
+        border-radius: 13.5px;
+        width: 78px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: center;
+        margin: {
+            right: 9px;
+            bottom: 6px;
+        }
+        padding: {
+            top: 7.5px;
+            bottom: 7.5px;
+        }
+    }
+
+    .hall-capsule-refresh {
+        border-radius: 13.5px;
+        color: #fff;
+        border: 1px solid currentColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 78px;
+        height: 32px;
+        font-size: 12px;
+        padding: {
+            top: 7.5px;
+            bottom: 7.5px;
+        }
+
+        i {
+            margin-right: 3px;
+        }
+    }
+
+    &.single-line {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        .hall-capsule-list {
+            flex-shrink: 0;
+            width: 75px;
+        }
+    }
+}

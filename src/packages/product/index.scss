@@ -1,0 +1,429 @@
+@import '@/styles/common.scss';
+$prefix: nutcat-product;
+
+.#{$prefix} {
+  position: relative;
+  flex: 0 0 auto;
+  padding: 9px;
+  // color: $title-color;
+  line-height: 1;
+  background-color: $white;
+  box-sizing: border-box;
+  overflow: hidden;
+  // .mb0 {
+  //   margin-bottom: 0;
+  // }
+  .img-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+  }
+  .sub-name {
+    justify-content: center;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: $title-color;
+    /deep/ .nutcat-tag {
+      margin-right: 2px;
+      vertical-align: -1px;
+    }
+  }
+  .sub-desc {
+    justify-content: center;
+    font-size: 14px;
+    color: $red;
+  }
+  .tag-box {
+    font-size: 0;
+  }
+  .tag-box-bottom {
+    margin-top: 3px;
+    font-size: 0;
+  }
+  .sub-tag {
+    max-width: 98%;
+    height: 14px;
+    line-height: 15px;
+    margin-right: 3px;
+    // margin-bottom: 6px;
+    font-size: 10px;
+    @include oneline-ellipsis();
+  }
+  .product-bottom {
+    overflow: hidden;
+    .icon-right {
+      position: absolute;
+      bottom: 2px;
+      right: 0;
+      font-size: 32px;
+      // float: right;
+      color: #f0250f;
+    }
+  }
+  /deep/ .nutcat-price {
+    color: $red;
+    .nutcat-price--big {
+      font-size: 16px;
+    }
+    .nutcat-price--small {
+      font-size: 10px;
+    }
+  }
+  .price-box {
+    // margin-bottom: 1px;
+    .price-tag-pre {
+      margin-right: 3px;
+    }
+    .price-tag-after {
+      margin-left: 3px;
+    }
+    .price-pre{
+      color: $red;
+    }
+  }
+  .line-price-box {
+    margin-bottom: 2px;
+    color: $desc-color;
+    font-size: 10px;
+  }
+  /deep/ .line-price {
+    color: $desc-color;
+    text-decoration: line-through;
+    .nutcat-price--symbol,
+    .nutcat-price--big,
+    .nutcat-price--small {
+      font-size: 10px;
+    }
+  }
+  .nutcat-icon-qiang {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    font-size: 36px;
+  }
+  .price-lowest {
+    font-size: 10px;
+    color: $linePrice-color;
+  }
+  .icon-lowest {
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    margin-right: 2px;
+    vertical-align: 1px;
+    background: url('//img13.360buyimg.com/imagetools/jfs/t1/182419/1/13784/565/60eb0b82E7f02a653/6b441683b57ee06d.png')
+      no-repeat center 100%/100%;
+  }
+  .fold-img {
+    width: 153px;
+    height: 23px;
+  }
+  .qg-box {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 96px;
+    height: 59px;
+    padding: 11px 14px 10px;
+    text-align: center;
+    color: #8c8c8c;
+    background: url('https://img14.360buyimg.com/imagetools/jfs/t1/184771/14/13759/9678/60eb0ab7E219c88fd/ce6dda0afa4c32bc.png')
+      no-repeat center 100%/100%;
+    .sub-title {
+      margin-bottom: 4px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: normal;
+      color: $white;
+    }
+    .progress-box {
+      text-align: left;
+    }
+    .progress-bar {
+      position: relative;
+      display: inline-block;
+      width: 49px;
+      height: 4px;
+      margin-right: 2px;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 2px;
+    }
+    .sub-percent {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      height: 4px;
+      background-color: $white;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+    .sub-num {
+      width: 14px;
+      height: 6px;
+      font-size: 7px;
+      font-weight: normal;
+      color: $white;
+    }
+  }
+  // 心跳曲线模块
+  .bight-img-box {
+    position: relative;
+    text-align: center;
+    .bight-lineprice-wrap {
+      position: relative;
+      padding-top: 2px;
+      overflow: hidden;
+      .line-price {
+        float: left;
+        color: $linePrice-color;
+      }
+      .bight-word {
+        float: right;
+        color: $linePrice-color;
+        font-size: 10px;
+      }
+    }
+    .bight-price-box {
+      width: 81px;
+      height: 24px;
+      line-height: 25px;
+      margin-top: 1px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /deep/ .bight-price {
+      font-size: 12px;
+      color: $white;
+      .nutcat-price--big {
+        font-size: 18px;
+      }
+      .nutcat-price--small {
+        font-size: 12px;
+      }
+    }
+    .bight-title {
+      font-size: 10px;
+      font-weight: 500;
+      color: $linePrice-color;
+    }
+  }
+}
+
+.#{$prefix}-1 {
+  // width: 100%;
+  // height: 132px;
+  padding: 12px;
+  margin-top: 1px;
+  .img-box {
+    float: left;
+    width: 108px;
+    height: 108px;
+    margin-bottom: 0;
+    font-size: 0;
+    border-radius: 5px;
+  }
+  .product-right {
+    float: right;
+    width: calc(100% - 108px - 12px);
+  }
+  .product-content {
+    height: 68px;
+  }
+  .sub-name {
+    margin-bottom: 6px;
+    text-align: left;
+    // height: 36px;
+    // line-height: 18px;
+    font-size: 14px;
+  }
+  .sub-desc {
+    text-align: left;
+    font-size: 12px;
+    color: $desc-color;
+  }
+  .product-bottom {
+    font-size: 0;
+    text-align: left;
+  }
+  .price-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 1px;
+    font-weight: 500;
+    font-size: 10px;
+    color: $red;
+    .price-tag-pre {
+      height: 12px;
+      line-height: 13px;
+      font-size: 10px;
+    }
+  }
+  .line-price-box {
+    color: #8c8c8c;
+    font-size: 10px;
+  }
+  .price {
+    margin-left: 1px;
+    margin-right: 6px;
+  }
+  /deep/ .price {
+    .nutcat-price--big {
+      font-size: 20px;
+    }
+    .nutcat-price--small {
+      font-size: 14px;
+    }
+  }
+}
+.#{$prefix}-2 {
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  .img-box {
+    width: 153px;
+    height: 153px;
+    margin-bottom: 6px;
+  }
+  .sub-name {
+    margin-bottom: 9px;
+    // height: 30px;
+    line-height: 15px;
+  }
+  .tag-box {
+    margin-bottom: 6px;
+  }
+  .sub-desc {
+    line-height: 1.2;
+    text-align: left;
+    font-size: 12px;
+    color: $desc-color;
+  }
+  .price-box {
+    margin-bottom: 1px;
+  }
+  /deep/ .nutcat-price {
+    .nutcat-price--big {
+      font-size: 18px;
+    }
+    .nutcat-price--small {
+      font-size: 12px;
+    }
+  }
+  /deep/ .line-price {
+    .nutcat-price--symbol,
+    .nutcat-price--big,
+    .nutcat-price--small {
+      font-size: 12px;
+    }
+  }
+}
+.#{$prefix}-3 {
+  padding: 9px 6px;
+  .img-box {
+    width: 100px;
+    height: 100px;
+  }
+  .tag-box {
+    margin-bottom: 4px;
+  }
+  .price-box {
+    margin-bottom: 1px;
+  }
+  // .mb0 {
+  //   margin-bottom: 0;
+  // }
+}
+
+.#{$prefix}-normal-free {
+  .sub-tag {
+    margin-bottom: 6px;
+  }
+}
+
+// 抢购模块
+.qg-bottom-box {
+  width: 153px;
+  height: 35px;
+  padding: 3px 4px;
+  font-size: 0;
+  background: url('//img14.360buyimg.com/imagetools/jfs/t1/184452/32/13950/4861/60ec04aaE7d926409/f7d68b61bd4b1172.png')
+    no-repeat center 100%/100%;
+  // background-size: 174px 37px;
+  overflow: hidden;
+  .price-wrap {
+    width: 90%;
+    float: left;
+  }
+  .price-box {
+    margin-bottom: 4px;
+    font-size: 10px;
+    color: $red;
+  }
+  .lineprice-wrap {
+    // margin-top: -2px;
+    .line-price {
+      // margin-top: -3px;
+      font-size: 10px;
+    }
+    .nutcat-text {
+      // line-height: 22px;
+      font-size: 9px;
+      color: #E08A3E;
+    }
+  }
+  /deep/ .line-price {
+    color: #e08a3e;
+    .nutcat-price--symbol,
+    .nutcat-price--big,
+    .nutcat-price--small {
+      font-size: 10px;
+    }
+  }
+}
+
+
+// 底部操作按钮
+.#{$prefix}-bottom-operate{
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 24px;
+  font-size: 12px;
+  font-weight: bold;
+
+  span{
+    margin-right: 4px;
+    line-height: 13px;
+  }
+}
+
+// 滑动
+.nutcat-row-scroll-x {
+  .#{$prefix}-1 {
+    .img-box {
+      float: left;
+      width: 78px;
+      height: 78px;
+    }
+    .product-right {
+      width: calc(100% - 78px - 12px);
+    }
+    .product-content {
+      height: 38px;
+    }
+  }
+  .#{$prefix}-3 {
+    .img-box {
+      width: 90px;
+      height: 90px;
+    }
+    // .price-box {
+    //   margin-bottom: 1px;
+    // }
+  }
+}
