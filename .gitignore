@@ -1,9 +1,11 @@
-.DS_Store
+
 /dist/
 dist
+build
 /erp_cache.json
 deploy_versions/
 node_modules
 node_modules/
+/node_modules
 yarn.lock
 package-lock.json
