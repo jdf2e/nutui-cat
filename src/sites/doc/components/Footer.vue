@@ -32,45 +32,13 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
-import  Cookie  from '@/utils/cookie';
-import { BaseApiService } from '@/service/BaseApiService';
-const request = require("request");
-const LOGIN_URI = "http://ssa.jd.com/sso/login";
-// const LOGIN = "http://ssa.jd.com/sso/ticket/verifyTicket";
-const UPLOAD_URI = "http://babel.jd.com/service/upload";
-let baseService: BaseApiService = new BaseApiService();
 
 
 @Component
 export default class Footer extends Vue {
   @Prop({ type: Boolean, default: false }) readonly width!: any;
-  ip: any = '';
 
   mounted() {
-    this.ip = sessionStorage.getItem('ip')
-    console.log('ip', this.ip)
-    // this.IsLAN();
-    console.log('this.IsLAN()', this.IsLAN())
-    Cookie.getCookie('erp1.jd.com')
-    console.log('cookie', Cookie.getCookie('sso.jd.com'))
-    // baseService.getLogin()
-  }
-  //判断是否内网IP
-  IsLAN() {
-    // return new Promise((resolve) => {
-      // request.post(
-      //   LOGIN,
-      //   {
-      //     ticket: Cookie.getCookie('sso.jd.com'), // 从cookie中读取的sso.jd.com值
-      //     url: window.location.href,
-      //     ip: this.ip
-      //   },
-      //   (err, res) => {
-      //     if (!err) {
-      //     }
-      //   },
-      // );
-    // });
   }
 };
 </script>

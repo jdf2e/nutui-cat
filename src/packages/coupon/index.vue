@@ -84,13 +84,11 @@
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-import { BaseApiService } from '@/service/BaseApiService';
 import connectData  from '@/utils/connect';
 import { Toast } from '@nutui/nutui';
 import moment from 'moment'
 const { componentName, create } = createComponent('coupon');
 const _toast: any = Toast;
-let baseService: BaseApiService = new BaseApiService();
 
 export default create({
   props: {

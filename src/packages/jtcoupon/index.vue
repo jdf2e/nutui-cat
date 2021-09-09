@@ -156,57 +156,6 @@ export default create({
         roleId = (this as any).item.extension.roleId;
         console.log('11');
         (this as any).$emit('click-report', (this as any).state);
-        console.log('22');
-        (this as any).baseService.newBabelAwardCollection(key, roleId).then((response: any) => {
-          if (!response) {
-            return;
-          }
-          // 若 subcode=A1, 按钮显示去使用；
-          // 若 subcode=A14、A15，按钮显示已抢光；
-          // 若 subcode=A12、A13，按钮显示去使用；
-          // 若 code=601，网关返回tips“很抱歉，没抢到~~”，前端透传；
-          // else，显示“网络异常，请检查后尝试”；
-          const { code, subCode, subCodeMsg } = response;
-          console.log('response', response);
-          //领取成功
-          var isSuccess = ["A1", "A12", "A13", "B13", "C1210"].includes(subCode)
-          //抢光
-          var robbed = [ "A14", "A15", "B9", "B10", "B11", "B12", "B14", "B15", "C1206", "C1211", "1401"].includes(subCode)
-          if (code == "3") {
-            (this as any).$reportClick('Babel_dev_adv_youhuiquan', (this as any).$get('item.srv.Babel_dev_adv_youhuiquan'), {
-              abtest: (this as any).stateHeaderIndex,
-              useFlag: '0'
-            })
-            (this as any).$jump.toLogin();
-            return;
-          }
-          if (code == "601") {
-            _toast.text("很抱歉，没抢到~~", {
-              icon:"https://img14.360buyimg.com/imagetools/jfs/t1/161944/30/3200/1865/6004f88bE9bd95e5b/83c78eecb1c62ad3.png"
-            });
-            return
-          }
-          //领取成功
-          if (isSuccess) {
-            (this as any).state = 1;
-            _toast.text("抢券成功，快去购买吧~", {
-              icon:"https://img10.360buyimg.com/imagetools/jfs/t1/155257/3/15216/2252/6004f885E4e248abf/8162d39f1d82472e.png"
-            });
-            return;
-          } else if (robbed) {
-            (this as any).state = 2;
-          }
-
-          _toast.text(subCodeMsg || "活动太火爆，请稍后再试~", {
-            icon:"https://img14.360buyimg.com/imagetools/jfs/t1/161944/30/3200/1865/6004f88bE9bd95e5b/83c78eecb1c62ad3.png"
-          });
-        })
-        .catch(e => {
-          // console.log(e);
-          _toast.text("网络链接失败，请稍后再试~", {
-            icon:"https://img14.360buyimg.com/imagetools/jfs/t1/161944/30/3200/1865/6004f88bE9bd95e5b/83c78eecb1c62ad3.png"
-          });
-        });
       } else if ((this as any).state == 1) {
         // 去使用
         if((this as any).timeout){
