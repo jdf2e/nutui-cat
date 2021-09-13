@@ -17,7 +17,7 @@
             </router-link>
           </li>
           <li class="nav-item" :class="{ active: hdData[1].name == routerPath }" @click="toClick">
-             <a href="http://storage.jd.local/jdc-activity/Nutui-Cat/1.0.0/demo.html#/">
+             <a href="https://nutui.jd.com/cat/demo.html#/">
               {{hdData[1].cName}}
             </a>
           </li>
