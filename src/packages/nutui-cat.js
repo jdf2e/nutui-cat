@@ -56,12 +56,13 @@ const components = {};
 
 const install = function(Vue) {
   packages.forEach((item) => {
-    if (item.install) {
-      Vue.use(item);
-    }
-    else if (item.name) {
-      Vue.component(item.name, item);
-    }
+    // if (item.install) {
+    //   Vue.use(item);
+    // }
+    // else if (item.name) {
+    //   Vue.component(item.name, item);
+    // }
+    Vue.component(item.name, item);
   });
 }
 // 检测到Vue才执行，毕竟我们是基于Vue的

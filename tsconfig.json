@@ -37,7 +37,7 @@
     "tests/**/*.ts",
     "tests/**/*.tsx",
     "src/config.js"
-  ],
+, "src/packages/nutui-cat.js"  ],
   "exclude": [
     "node_modules"
   ]

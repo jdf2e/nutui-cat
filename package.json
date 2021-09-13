@@ -31,7 +31,7 @@
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build:site": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib src/packages/config.js",
+    "lib": "vue-cli-service build --target lib src/packages/nutui-cat.js",
     "lint": "vue-cli-service lint",
     "upload": "vue-cli-service build && node ./jd/upload.js",
     "add": "node jd/createComponentMode.js",
