@@ -150,13 +150,13 @@ export default class Doc extends Vue {
             line-height: 16px;
           }
           .arrow-top {
-            margin-top: 15px;
-            margin-right: -15px;
+            // margin-top: 15px;
+            // margin-right: -15px;
             transform: rotate(90deg);
           }
           .arrow-bottom {
-            margin-right: 17px;
-            margin-top: 15px;
+            // margin-right: 17px;
+            // margin-top: 15px;
             transform: rotate(-90deg);
           }
           a, span {

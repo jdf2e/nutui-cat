@@ -130,13 +130,13 @@ export default class DocNav extends Vue {
 
 <style lang="scss">
 .arrow-top {
-  margin-top: 15px;
-  margin-right: -15px;
+  margin-top: 17px;
+  // margin-right: -15px;
   transform: rotate(90deg);
 }
 .arrow-bottom {
-  margin-right: 80px;
-  margin-top: 15px;
+  // margin-right: 80px;
+  margin-top: 17px;
   transform: rotate(-90deg);
 }
 ._hall,
