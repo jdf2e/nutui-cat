@@ -86,8 +86,8 @@ export default createDemo({
 }
 .demo1 {
   .nutcat-jtCoupon {
-    width: 50%;
-    margin-left: 6px;
+    width: 118px;
+    margin-left: 2px;
     &:first-child {
       margin-left: 0;
     }
