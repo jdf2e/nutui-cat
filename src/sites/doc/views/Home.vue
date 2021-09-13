@@ -41,7 +41,8 @@ export default class Home extends Vue {
   position: relative;
   display: flex;
   flex-direction: column;
-  // height: 100%;
+  min-width: 1300px;
+  min-height: 100%;
   align-items: center;
   padding-top: 6%;
   font-family: JDLangZhengTi;
