@@ -2,8 +2,8 @@
   <div style="height:100%;">
     <Header />
     <div class="home">
-      <div class="home-tit">NutUI 大促场景组件</div>
-      <div class="home-desc">基于 NutUI 的大促场景组件库</div>
+      <div class="home-tit">Cat</div>
+      <div class="home-desc">NutUI 大促场景组件库</div>
       <div class="start-use-and-git-hub">
         <div class="start-use" @click="$router.push({path:'/intro'})">开始使用</div>
         <a class="git-hub" target="_blank" href="//github.com/jdf2e/nutui-cat.git">GitHub</a>
