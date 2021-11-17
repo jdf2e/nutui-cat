@@ -1,8 +1,8 @@
 {
   "name": "@nutui/nutui-cat",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "基于 NutUI 2.0 的大促业务组件库",
-  "main": "dist/nutui-cat.umd.js",
+  "main": "dist/nutui-cat.common.js",
   "style": "dist/nutui-cat.css",
   "keywords": [
     "nutui",
@@ -31,7 +31,7 @@
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build:site": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib src/packages/nutui-cat.js",
+    "lib": "vue-cli-service build --target lib --name nutui-cat --dest lib src/packages/nutui-cat.js",
     "lint": "vue-cli-service lint",
     "upload": "vue-cli-service build && node ./jd/upload.js",
     "add": "node jd/createComponentMode.js",
