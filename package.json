@@ -1,6 +1,7 @@
 {
   "name": "@nutui/nutui-cat",
   "version": "0.1.8",
+  "private": false,
   "description": "基于 NutUI 2.0 的大促业务组件库",
   "main": "dist/nutui-cat.common.js",
   "style": "dist/nutui-cat.css",
@@ -22,6 +23,7 @@
   },
   "files": [
     "dist",
+    "packages",
     "README.md",
     "package.json",
     "LICENSE",
@@ -31,7 +33,7 @@
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build:site": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name nutui-cat --dest lib src/packages/nutui-cat.js",
+    "lib": "vue-cli-service build --target lib --name index --dest dist src/packages/nutui-cat.js",
     "lint": "vue-cli-service lint",
     "upload": "vue-cli-service build && node ./jd/upload.js",
     "add": "node jd/createComponentMode.js",
@@ -85,6 +87,7 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.2",
+    "babel-plugin-component": "^1.1.1",
     "copy-webpack-plugin": "^5.1.1",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.3",
