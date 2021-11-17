@@ -1,6 +1,6 @@
 {
   "name": "@nutui/nutui-cat",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": false,
   "description": "基于 NutUI 2.0 的大促业务组件库",
   "main": "dist/nutui-cat.common.js",

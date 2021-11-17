@@ -89,6 +89,11 @@ export default class Exapmles extends Vue {
       desc: '2021年京东超市中秋节活动会场，活动会场个性化开发需求，根据品类目标用户画像精准分析，结合品类业务策略，设计全新的视觉及页面框架，精准营销，深耕品类用户，提高品类的销售转化。',
       codeImg: 'https://img11.360buyimg.com/imagetools/jfs/t1/205618/36/5384/2108/6137243cE83ee698c/f54ba54e695c80a3.png',
       url: 'https://h5.m.jd.com/babelDiy/Zeus/TXDQvgrFsw6fhXPMyGCdPoE3rFh/index.html',
+    }, {
+      title: '2021年11.11榜单会场',
+      desc: '2021年11.11榜单活动会场，以“榜单”为氛围对会场进行包装，开发热卖王、趋势榜、店内榜三个楼层组件为用户提供统一内容种草入口，解决“买什么”的难题，从而达到带货促转的目的。',
+      codeImg: 'https://img14.360buyimg.com/imagetools/jfs/t1/211491/40/9787/2093/6194f3e7E8893bf05/7744ec6b2eb303d6.png',
+      url: 'https://prodev.m.jd.com/mall/active/2VdpvULXZYWXRyXFrntUKDeksSih/index.html',
     }
   ];
 
