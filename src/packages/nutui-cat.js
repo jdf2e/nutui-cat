@@ -37,45 +37,43 @@ import Noticebar from './noticebar/index.vue';
 import Tab from './tab/index.vue';
 import Tag from './tag/index.vue';
 import Tasklist from './tasklist/index.vue';
-import Text from './text/index.vue';
+// import Text from './text/index.vue';
+import Text from './text';
 import Video from './video/index.vue';
 
 // 所有组件列表
-const packages = [Button, Arcrolling, Backtop, Barrage, Bottom, Cart, Col, Countdown, Coupon, 
+const components = [Button, Arcrolling, Backtop, Barrage, Bottom, Cart, Col, Countdown, Coupon, 
     Followswipe, Gooditem, Hall, Hallcapsule, Icon, Image, Idlegoods, Jtcoupon, Layout, Live, Loading, Lovebeans, 
     Nav, Navleft, Price, Product, Productadvance, Productlimit, Progress, Rank, Row, Sharecoupon, Shop, Showmore, 
-    Starbrand, Noticebar, Tab, Tag, Tasklist, Text, Video]
+    Starbrand, Noticebar, Tab, Tag, Tasklist, Text, Video];
 
-const components = {};
+console.log({ components });
 
 // 定义install方法，接收Vue作为参数
-// const install = function(Vue) {
-//   // 遍历注册所有组件
-//   components.map(component => Vue.use(component))
-// }
-
 const install = function(Vue) {
-  packages.forEach((item) => {
-    // if (item.install) {
-    //   Vue.use(item);
-    // }
-    // else if (item.name) {
-    //   Vue.component(item.name, item);
-    // }
-    Vue.component(item.name, item);
+  if (install.installed) return;
+  console.log("installed ----- all");
+  // 遍历注册全局组件
+  components.map((component) => {
+    Vue.component(component.name, component);
   });
 }
 // 检测到Vue才执行，毕竟我们是基于Vue的
+// 判断是否是直接引入文件
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
-export {Button, Arcrolling, Backtop, Barrage, Bottom, Cart, Col, Countdown, Coupon, 
+export {
+  install, // 导出的对象必须具备一个 install 方法
+  Button, Arcrolling, Backtop, Barrage, Bottom, Cart, Col, Countdown, Coupon, 
   Followswipe, Gooditem, Hall, Hallcapsule, Icon, Image, Idlegoods, Jtcoupon, Layout, Live, Loading, Lovebeans, 
   Nav, Navleft, Price, Product, Productadvance, Productlimit, Progress, Rank, Row, Sharecoupon, Shop, Showmore, 
   Starbrand, Noticebar, Tab, Tag, Tasklist, Text, Video};
+
 export default {
-  // version,
   install,
+  Text,
   // 所有组件，必须具有install，才能使用Vue.use()
   // ...components
 }
+// export default install
