@@ -81,6 +81,7 @@ export default class DocHeader extends Vue {
     text-align: left;
     padding: 0 50px;
     font-size: 20px;
+    z-index: 9;
   }
 }
 .header {

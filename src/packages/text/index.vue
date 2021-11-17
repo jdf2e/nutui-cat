@@ -18,10 +18,6 @@ export default create({
       type: [String, Number],
       default: ''
     },
-    type: {
-      type: [String, Number],
-      default: ''
-    },
     color: {
       type: String,
       default: ''
@@ -37,8 +33,7 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${(this as any).type}`]: (this as any).type
+        [componentName]: true
       };
     },
     classesText() {
