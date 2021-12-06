@@ -1,6 +1,5 @@
 import { HttpClient } from './HttpClient';
 // import { getUUID } from '@jmfe/jm-common';
-// import cookie from '@jmfe/jm-cookie';
 import { Toast } from '@nutui/nutui';
 
 export class ApiService {

@@ -70,7 +70,6 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
-// import { currentRoute } from '@/sites/assets/util/ref';
 import NutUI from '@nutui/nutui';
 NutUI.install(Vue);
 import { nav, docs } from '@/config';

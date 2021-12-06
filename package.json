@@ -1,6 +1,6 @@
 {
-  "name": "@nutui/nutui-cat",
-  "version": "0.1.9",
+  "name": "nutlu",
+  "version": "0.0.16",
   "private": false,
   "description": "基于 NutUI 2.0 的大促业务组件库",
   "main": "dist/nutui-cat.common.js",
@@ -24,6 +24,7 @@
   "files": [
     "dist",
     "packages",
+    "lib",
     "README.md",
     "package.json",
     "LICENSE",
@@ -32,8 +33,9 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
-    "build:site": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name index --dest dist src/packages/nutui-cat.js",
+    "build:site": "vue-cli-service build --target lib --name nutui-cat --dest dist config-site.js",
+    "lib": "vue-cli-service build --target lib --name nutui-cat --dest dist src/packages/nutui-cat.js",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "upload": "vue-cli-service build && node ./jd/upload.js",
     "add": "node jd/createComponentMode.js",
@@ -49,7 +51,6 @@
     "*.{ts,js,vue,scss}": "prettier --write"
   },
   "dependencies": {
-    "@nutui/babel-plugin-separate-import": "^1.2.2",
     "@nutui/nutui": "^2.3.4",
     "@tweenjs/tween.js": "^18.6.4",
     "@vue/compiler-sfc": "^3.0.11",

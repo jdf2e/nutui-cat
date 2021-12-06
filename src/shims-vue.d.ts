@@ -1,5 +1,4 @@
 declare module 'swiper/js/swiper.min.js';
-declare module '@/util/jump.js';
 declare module 'vue-danmaku';
 // declare module 'vue-aplayer'
 // declare module '*.vue' {

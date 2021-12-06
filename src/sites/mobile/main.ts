@@ -6,11 +6,10 @@ import NutUI_CAT from '@/nutui-cat';
 import '@/sites/assets/styles/reset.scss';
 import NutUI from '@nutui/nutui';
 import '@nutui/nutui/dist/nutui.css';
-import date from '@/utils/date';
-// import {connectData} from '@/utils/connect';
+import Utils from '@/utils/index';
 import '@/packages/utils/touchEmulator';
 
-Vue.prototype.$get = date.get;
+Vue.prototype.$get = Utils.get;
 // Vue.prototype.$connect = connectData;
 
 Vue.use(NutUI_CAT)

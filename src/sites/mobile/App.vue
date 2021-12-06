@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import { isMobile } from '@/sites/assets/util';
 export default {
   name: 'demo',
   data() {
@@ -21,7 +20,6 @@ export default {
   },
   watch: {
     $route(newValue, oldValue) {
-      const { hash } = window.top.location;
       // console.log(newValue);
 
       this.title = newValue && newValue.name && newValue.name.charAt(0).toUpperCase() + newValue.name.slice(1);
@@ -33,7 +31,6 @@ export default {
     }
   },
   mounted() {
-    const { hash } = window.top.location;
 
     this.title = this.$route && this.$route.name && this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1);
     // if (!isMobile && this.$route.hash != hash) {

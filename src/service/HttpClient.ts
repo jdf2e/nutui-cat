@@ -9,11 +9,10 @@ const config = {
   baseUrl: '',
   buildTime: process.env.buildTime,
   isPrd: true, // 是否为线上
-  activityId: '01015792',
-  activityCode: 'TXDQvgrFsw6fhXPMyGCdPoE3rFh',
-  pageId: '2859471',
+  activityId: '',
+  activityCode: '',
+  pageId: '',
   applyKey: 'big_brand',
-  // getBabelChannel: getBabelChannel(),
   // 地理位置信息查询
   lbsAppid: 'f9a951c00d03d949cfb483873a69fe88',
   /** 经纬度 */

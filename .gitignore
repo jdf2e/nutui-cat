@@ -2,6 +2,7 @@
 /dist/
 dist
 build
+lib
 /erp_cache.json
 deploy_versions/
 node_modules

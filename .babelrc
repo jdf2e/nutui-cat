@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    [
+      "component",
+      {
+        "libraryName": "@nutui/nutui-cat",
+        "libDir": "components"
+      }
+    ]
+  ]
+}

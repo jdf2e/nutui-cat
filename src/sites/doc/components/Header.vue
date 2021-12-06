@@ -42,7 +42,6 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
-// import { RefData } from '@/sites/assets/util/ref';
 import { header } from '@/config';
 import Search from './Search.vue';
 @Component({
