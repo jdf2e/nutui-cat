@@ -48,15 +48,15 @@ const components = [Button, Arcrolling, Backtop, Barrage, Bottom, Cart, Col, Cou
 
     // const components = [Button, Arcrolling, Backtop, Barrage, Bottom, Cart, Col, Countdown, Coupon, Nav, Navleft];
 
-console.log({ components });
+// console.log({ components });
 
 // 定义install方法，接收Vue作为参数
 const install = function(Vue) {
   if (install.installed) return;
-  console.log("installed ----- all");
+  // console.log("installed ----- all");
   // 遍历注册全局组件
   components.map((component) => {
-    console.log("icomponent.name", component.name);
+    // console.log("icomponent.name", component.name);
     Vue.component(component.name, component);
   });
 }

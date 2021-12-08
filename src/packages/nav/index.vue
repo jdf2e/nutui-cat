@@ -353,7 +353,7 @@ export default create({
       this.stickyNav.offsetHeight +
       this.stickyOptions.stickyTop;
 
-    console.log('mounted', this.stickyOptions.stickyTop)
+    // console.log('mounted', this.stickyOptions.stickyTop)
 
     window.addEventListener('scroll', throttle(this.scrollHandle, 100), true);
     // 监听左侧导航滑动
