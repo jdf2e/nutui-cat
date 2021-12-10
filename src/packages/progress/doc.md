@@ -20,7 +20,7 @@ app.use(Progress);
 ### 基础用法
 
 ```html
-<nutcat-progress :percentage='40' :phases='phases'></nutcat-progress>
+<NutProgress :percentage='40' :phases='phases'></NutProgress>
 ```
 ```javascript
 data() {
@@ -41,7 +41,7 @@ data() {
 ### 动态用法
 
 ```html
-<nutcat-progress :percentage='50' :phases='phases' animation></nutcat-progress>
+<NutProgress :percentage='50' :phases='phases' animation></NutProgress>
 ```
 ```javascript
 data() {

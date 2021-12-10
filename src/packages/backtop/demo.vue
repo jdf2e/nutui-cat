@@ -13,9 +13,9 @@
       <div class="nav-floor">9F</div>
       <div class="nav-floor">10F</div>
     </div>
-    <nutcat-backtop @click="handleClick" el-id="page1">
+    <NutBacktop @click="handleClick" el-id="page1">
       <nut-icon size="19px" class="nut-backtop-main" name="top"></nut-icon>
-    </nutcat-backtop>
+    </NutBacktop>
   </div>
 </template>
   

@@ -1,15 +1,15 @@
 <template>
   <div :class="classes" :style="styles" @click="toShop(data)">
-    <nutcat-image class="img-box" :src="data.cImage"></nutcat-image>
+    <NutImage class="img-box" :src="data.cImage"></NutImage>
       <template v-if="data.cLogo">
-        <nutcat-image class="logo-box" :src="data.cLogo"></nutcat-image>
+        <NutImage class="logo-box" :src="data.cLogo"></NutImage>
       </template>
       <div class="shop-content">
         <template v-if="data.cName">
-          <nutcat-text class="sub-name" row="1">{{data.cName}}</nutcat-text>
+          <NutText class="sub-name" row="1">{{data.cName}}</NutText>
         </template>
         <template v-if="data.cDesc">
-          <nutcat-text class="sub-desc" row="1">{{data.cDesc}}</nutcat-text>
+          <NutText class="sub-desc" row="1">{{data.cDesc}}</NutText>
         </template>
       </div>
     <slot></slot>

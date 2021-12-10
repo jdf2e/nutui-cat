@@ -1,22 +1,22 @@
 <template>
   <div :class="classes" :style="styles" @click="toLink(data)">
-    <nutcat-image
+    <NutImage
       class="img-box"
       :src="data.cImage"
       :width="imgWidth"
       :height="imgHeight"
     >
-    </nutcat-image>
+    </NutImage>
     <div class="hall-content">
       <template v-if="data.cName">
-        <nutcat-text class="sub-name" :color="nameColor" :row="data.nameRow">{{
+        <NutText class="sub-name" :color="nameColor" :row="data.nameRow">{{
           data.cName
-        }}</nutcat-text>
+        }}</NutText>
       </template>
       <template v-if="data.cDesc">
-        <nutcat-text class="sub-desc" :color="descColor" :row="data.descRow">{{
+        <NutText class="sub-desc" :color="descColor" :row="data.descRow">{{
           data.cDesc
-        }}</nutcat-text>
+        }}</NutText>
       </template>
     </div>
   </div>

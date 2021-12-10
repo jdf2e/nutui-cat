@@ -10,9 +10,9 @@
 一行三个会场布局，`col` 传3，`imgWidth` 和 `imgHeight` 设置图片的宽和高。会场的会场名称、图片通过 `data` 的属性传的。
 
 ```html
-<nutcat-row type="flex" gutter="3">
+<NutRow type="flex" gutter="3">
   <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params]"
       imgWidth="57"
       imgHeight="57"
@@ -20,9 +20,9 @@
       col="3"
       type="normal-7"
     >
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript

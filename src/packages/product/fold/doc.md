@@ -10,9 +10,9 @@
 
 
 ```html
-<nutcat-row>
+<NutRow>
   <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
-    <nutcat-product
+    <NutProduct
       :data="[item, params]"
       nameRow="1"
       linePricePre="日常价"
@@ -20,15 +20,15 @@
       type="fold"
     >
       <template slot="priceSlot">
-        <nutcat-tag class="price-tag-pre" type="red" radius="2px"
-          >秒杀</nutcat-tag
+        <NutTag class="price-tag-pre" type="red" radius="2px"
+          >秒杀</NutTag
         >
         限时优惠价
-        <nutcat-price price="1649" class="price" />
+        <NutPrice price="1649" class="price" />
       </template>
-    </nutcat-product>
+    </NutProduct>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 ```javascript
 data() {

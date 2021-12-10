@@ -41,14 +41,14 @@ app.use(Video);
 
 
 ```html
-<nutcat-video 
+<NutVideo 
   rowType="flex"
   gutter="3"
   :data="data" 
   col="2"
   type='feed-1'
 >
-</nutcat-video>
+</NutVideo>
 ```
 
 ```javascript

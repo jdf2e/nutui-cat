@@ -10,9 +10,9 @@
 一行多个店铺布局，`col` 传对应的列数，店铺的店铺名称、图片通过 `data` 的属性传的。
 
 ```html
-<nutcat-row scrollX type="flex" gutter="1">
+<NutRow scrollX type="flex" gutter="1">
   <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
-    <nutcat-shop
+    <NutShop
       :data="[item, {
           cLogo: false,
           cImage: ['pictureUrl']
@@ -20,9 +20,9 @@
       col="3" 
       type="normal-6" 
     >
-    </nutcat-shop>
+    </NutShop>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript

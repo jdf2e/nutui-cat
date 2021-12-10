@@ -1,8 +1,8 @@
-import Starbrand from './index.vue';
+import NutShowmore from './index.vue';
 import './index.scss';
 
-Starbrand.install = function(Vue) {
-  Vue.component('nutcat-starbrand', Starbrand);
+NutShowmore.install = function(Vue) {
+  Vue.component('NutShowmore', NutShowmore);
 };
 
-export default Starbrand;
+export default NutShowmore;

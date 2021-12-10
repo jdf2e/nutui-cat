@@ -12,7 +12,7 @@
 
 ```html
 <div class="demo-product">
-  <nutcat-product
+  <NutProduct
     rowType="flex"
     gutter="3"
     :data="[data1, params]"
@@ -22,12 +22,12 @@
     type="normal-6"
   >
     <template slot="preName">
-      <nutcat-tag type="618">618</nutcat-tag>
+      <NutTag type="618">618</NutTag>
     </template>
     <template slot="tag">
-      <nutcat-tag class="sub-tag" type="red-pink">闪购进行时</nutcat-tag>
+      <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
     </template>
-  </nutcat-product>
+  </NutProduct>
 </div>
 ```
 ```javascript

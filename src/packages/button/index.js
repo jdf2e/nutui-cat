@@ -1,8 +1,8 @@
-import Button from './index.vue';
+import NutButton from './index.vue';
 import './index.scss';
 
-Button.install = function(Vue) {
-  Vue.component('nutcat-button', Button);
+NutButton.install = function(Vue) {
+  Vue.component('NutButton', NutButton);
 };
 
-export default Button;
+export default NutButton;

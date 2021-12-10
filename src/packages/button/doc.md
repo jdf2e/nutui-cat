@@ -21,7 +21,7 @@ app.use(Button);
 按钮支持 `red`、`red-line` 等类型。
 
 ```html
-<nutcat-button type="red-line">标签</nutcat-button>
+<NutButton type="red-line">标签</NutButton>
 ```
 
 ### 样式风格
@@ -29,9 +29,9 @@ app.use(Button);
 `tag`的`radius`属性用来设置标签的圆角；`beforeIcon`、`afterIcon`可插入`icon`
 
 ```html
-<nutcat-button radius borderColor="#E8220E" color="#E8220E">满199减100</nutcat-button>
-<nutcat-button radius bgColor="#E8220E">商品名称</nutcat-button>
-<nutcat-button radius bgColor="#E8220E" afterIcon="arrow-normal">商品名称</nutcat-button>
+<NutButton radius borderColor="#E8220E" color="#E8220E">满199减100</NutButton>
+<NutButton radius bgColor="#E8220E">商品名称</NutButton>
+<NutButton radius bgColor="#E8220E" afterIcon="arrow-normal">商品名称</NutButton>
 ```
 
 ### 自定义颜色
@@ -42,9 +42,9 @@ app.use(Button);
 `borderColor`属性用来设置标签的边框颜色；
 
 ```html
-<nutcat-button radius bgColor="rgb(114, 50, 221)">商品名称</nutcat-button>
-<nutcat-button radius bgColor="rgb(255, 225, 225)" color="rgb(173, 0, 0)">商品名称</nutcat-button>
-<nutcat-button radius borderColor="rgb(114, 50, 221)" color="rgb(114, 50, 221)">商品名称</nutcat-button>
+<NutButton radius bgColor="rgb(114, 50, 221)">商品名称</NutButton>
+<NutButton radius bgColor="rgb(255, 225, 225)" color="rgb(173, 0, 0)">商品名称</NutButton>
+<NutButton radius borderColor="rgb(114, 50, 221)" color="rgb(114, 50, 221)">商品名称</NutButton>
 ```
 
 ## API

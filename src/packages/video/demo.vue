@@ -3,14 +3,14 @@
     <h2>类型：feed-1</h2>
     <p class="type">一行二个视频布局，上边是视频区域信息，下面包含商品和达人内容。适用于 feed 流。</p>
     <div class="demo-video demo1">
-      <nutcat-video 
+      <NutVideo 
         rowType="flex"
         gutter="3"
         :data="data" 
         col="2"
         type='feed-1'
       >
-      </nutcat-video>
+      </NutVideo>
     </div>
   </div>
 </template>

@@ -3,60 +3,60 @@
     <h2>类型：normal-5</h2>
     <p class="type">适用场景：一行多个店铺布局，上下结构，上边图片，下边文字区域。支持一行二个、一行三个、一行三个半、一行四个等。</p>
     <div class="demo-shop">
-      <nutcat-row type="flex" gutter="3">
+      <NutRow type="flex" gutter="3">
         <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
-          <nutcat-shop
+          <NutShop
             :data="[item, params]" 
             col="3" 
             type="normal-5" 
           >
-          </nutcat-shop>
+          </NutShop>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <div class="demo-shop">
-      <nutcat-row type="flex" gutter="3">
+      <NutRow type="flex" gutter="3">
         <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
-          <nutcat-shop
+          <NutShop
             :data="[item, params]" 
             col="3" 
             type="normal-5" 
           >
-          </nutcat-shop>
+          </NutShop>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <p class="type">通过 `slot` 增加自定义内容，例如领券按钮。</p>
     <div class="demo-shop">
-      <nutcat-row type="flex" gutter="3">
+      <NutRow type="flex" gutter="3">
         <nutcat-col :span="12" v-for="(item, index) in data3" :key="index">
-          <nutcat-shop
+          <NutShop
             :data="[item, params]" 
             col="2" 
             type="normal-5" 
           >
             <div class="btn-follow">+关注 领30元券</div>
-          </nutcat-shop>
+          </NutShop>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <div class="demo-shop">
-      <nutcat-row type="flex" gutter="3">
+      <NutRow type="flex" gutter="3">
         <nutcat-col :span="8" v-for="(item, index) in data4" :key="index">
-          <nutcat-shop
+          <NutShop
             :data="[item, params]" 
             col="3" 
             type="normal-5" 
           >
             <div class="btn-follow">+关注 领30元券</div>
-          </nutcat-shop>
+          </NutShop>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <!-- <div class="demo-shop demo-s3">
-      <nutcat-row scrollX type="flex" gutter="1">
+      <NutRow scrollX type="flex" gutter="1">
         <nutcat-col :span="8" v-for="(item, index) in data5" :key="index">
-          <nutcat-shop
+          <NutShop
             :data="[item, {
                 cLogo: false,
                 cImage: ['pictureUrl']
@@ -64,10 +64,10 @@
             col="3" 
             type="normal-6" 
           >
-            <nutcat-tag type="live-on">直播中</nutcat-tag>
-          </nutcat-shop>
+            <NutTag type="live-on">直播中</NutTag>
+          </NutShop>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div> -->
   </div>
 </template>

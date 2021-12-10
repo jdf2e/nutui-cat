@@ -3,9 +3,9 @@
     <h2>类型：normal-8</h2>
     <p class="type">适用场景：一行多个会场布局，上面是文字下面是图片。文字内容区域增加了 `bgTopColor`、`bgTopUrl` 设置背景颜色和图片，支持一行三个、一行三个半、一行四个等。</p>
     <div class="demo-hall">
-      <nutcat-row type="flex" gutter="1">
+      <NutRow type="flex" gutter="1">
         <nutcat-col :span="6" v-for="(item, index) in data" :key="index">
-          <nutcat-hall
+          <NutHall
             :data="[item, params]"
             imgWidth="65"
             imgHeight="65"
@@ -14,9 +14,9 @@
             col="4"
             type="normal-8"
           >
-          </nutcat-hall>
+          </NutHall>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>

@@ -4,7 +4,7 @@
       <div :class="classesCont">
         <div :class="classesInfo">
           <template v-if="data.cImage">
-            <nutcat-image class="sub-img" :src="data.extension.c_img"></nutcat-image>
+            <NutImage class="sub-img" :src="data.extension.c_img"></NutImage>
           </template>
           <!-- 价格 -->
           <template v-if="typeof + data.extension.c_tit == 'number' && !isNaN(+data.extension.c_tit)">
@@ -15,10 +15,10 @@
           </template>
           <!-- 文字 -->
           <template v-else>
-            <nutcat-text class="sub-price" row="1">{{data.extension.c_tit}}</nutcat-text>
+            <NutText class="sub-price" row="1">{{data.extension.c_tit}}</NutText>
           </template>
-          <nutcat-text class="sub-quota" row="1">{{data.extension.c_line1}}</nutcat-text>
-          <nutcat-text class="sub-limitStr" row="1">{{data.extension.c_line2}}</nutcat-text>
+          <NutText class="sub-quota" row="1">{{data.extension.c_line1}}</NutText>
+          <NutText class="sub-limitStr" row="1">{{data.extension.c_line2}}</NutText>
         </div>
         <div class="sub-btn">
           <div v-if="state == 0">立即领取</div>
@@ -28,10 +28,10 @@
       </div>
       <!-- </template> -->
       <template v-if="data.cLabel">
-        <nutcat-tag class="sub-tag" :type="data.cLabel == 'plus' ? data.cLabel : 'red'"
+        <NutTag class="sub-tag" :type="data.cLabel == 'plus' ? data.cLabel : 'red'"
         >
           {{data.cLabel == 'plus' ? '' : data.cLabel}}
-        </nutcat-tag>
+        </NutTag>
       </template>
       <template v-if="endTime">
         <div class="sub-endTime">
@@ -43,7 +43,7 @@
       <div :class="classesCont">
         <div :class="classesInfo">
           <template v-if="data.cImage">
-            <nutcat-image class="sub-img" :src="data.extension.c_img"></nutcat-image>
+            <NutImage class="sub-img" :src="data.extension.c_img"></NutImage>
           </template>
           <!-- 价格 -->
           <template v-if="typeof + data.extension.c_tit == 'number' && !isNaN(+data.extension.c_tit)">
@@ -54,10 +54,10 @@
           </template>
           <!-- 文字 -->
           <template v-else>
-            <nutcat-text class="sub-price" row="1">{{data.extension.c_tit}}</nutcat-text>
+            <NutText class="sub-price" row="1">{{data.extension.c_tit}}</NutText>
           </template>
-          <nutcat-text class="sub-quota" row="1">{{data.extension.c_line1}}</nutcat-text>
-          <nutcat-text class="sub-limitStr" row="1">{{data.extension.c_line2}}</nutcat-text>
+          <NutText class="sub-quota" row="1">{{data.extension.c_line1}}</NutText>
+          <NutText class="sub-limitStr" row="1">{{data.extension.c_line2}}</NutText>
         </div>
         <div class="sub-btn">
           <div v-if="state == 0">立即领取</div>
@@ -67,10 +67,10 @@
       </div>
       <!-- </template> -->
       <template v-if="data.cLabel">
-        <nutcat-tag class="sub-tag" :type="data.cLabel == 'plus' ? data.cLabel : 'red'"
+        <NutTag class="sub-tag" :type="data.cLabel == 'plus' ? data.cLabel : 'red'"
         >
           {{data.cLabel == 'plus' ? '' : data.cLabel}}
-        </nutcat-tag>
+        </NutTag>
       </template>
       <template v-if="endTime">
         <div class="sub-endTime">

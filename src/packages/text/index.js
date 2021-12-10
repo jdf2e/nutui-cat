@@ -1,8 +1,10 @@
-import Text from './index.vue';
+import NutText from './index.vue';
 import './index.scss';
 
-Text.install = function(Vue) {
-  Vue.component(Text.name, Text);
+console.log('NutText11111',NutText)
+
+NutText.install = function(Vue) {
+  Vue.component('NutText', NutText);
 };
 
-export default Text;
+export default NutText;

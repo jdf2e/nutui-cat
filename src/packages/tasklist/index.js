@@ -1,8 +1,8 @@
-import Tasklist from './index.vue';
+import NutTasklist from './index.vue';
 import './index.scss';
 
-Tasklist.install = function(Vue) {
-  Vue.component('nutcat-tasklist', Tasklist);
+NutTasklist.install = function(Vue) {
+  Vue.component('NutTasklist', NutTasklist);
 };
 
-export default Tasklist;
+export default NutTasklist;

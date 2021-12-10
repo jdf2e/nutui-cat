@@ -8,9 +8,9 @@
       <div class="ellips">{{ data.desc }}</div>
     </div>
     <div class="normal-item-label">
-      <nutcat-text class="normal-item-title" row="1">
+      <NutText class="normal-item-title" row="1">
         {{ data.title }}
-      </nutcat-text>
+      </NutText>
     </div>
   </div>
 </template>

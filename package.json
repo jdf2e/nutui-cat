@@ -1,6 +1,6 @@
 {
   "name": "nutlu",
-  "version": "0.0.45",
+  "version": "0.0.49",
   "private": false,
   "description": "基于 NutUI 2.0 的大促业务组件库",
   "main": "dist/nutui-cat.common.js",

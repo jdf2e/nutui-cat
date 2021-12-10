@@ -11,23 +11,23 @@
 
 
 ```html
-<nutcat-product :data="[data1, params]" col="1" type="normal-2" nameRow="1" linePricePre="日常价">
+<NutProduct :data="[data1, params]" col="1" type="normal-2" nameRow="1" linePricePre="日常价">
   <template slot="priceSlot">
-    <nutcat-tag class="price-tag-pre" type="red" radius="2px"
-      >秒杀</nutcat-tag
+    <NutTag class="price-tag-pre" type="red" radius="2px"
+      >秒杀</NutTag
     >
     预估到手价
-    <nutcat-price price="1649" class="price" />
+    <NutPrice price="1649" class="price" />
   </template>
   <template slot="tag">
-    <nutcat-tag class="sub-tag" type="red-light"
-      >利益点利益点利益点</nutcat-tag
+    <NutTag class="sub-tag" type="red-light"
+      >利益点利益点利益点</NutTag
     >
-    <nutcat-tag class="sub-tag" type="red-light"
-      >利益点利益点利益点</nutcat-tag
+    <NutTag class="sub-tag" type="red-light"
+      >利益点利益点利益点</NutTag
     >
   </template>
-</nutcat-product>
+</NutProduct>
 ```
 ```javascript
 data() {

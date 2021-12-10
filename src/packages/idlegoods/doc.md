@@ -19,12 +19,12 @@ app.use(idlegoods);
 ### 基础用法
 
 ```html
-    <nutcat-idlegoods
+    <NutIdlegoods
       :goods="data"
       @addCart="addCart"
       @goodDetails="goodDetails"
     >
-    </nutcat-idlegoods>
+    </NutIdlegoods>
 ```
 ```javascript
 data() {

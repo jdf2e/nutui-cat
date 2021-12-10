@@ -10,9 +10,9 @@
 
 
 ```html
-<nutcat-row>
+<NutRow>
   <nutcat-col :span="24" v-for="(item, index) in data1" :key="index">
-    <nutcat-product
+    <NutProduct
       :data="[item, params]"
       pricePre="狂欢价"
       nameRow="1"
@@ -21,17 +21,17 @@
       type="heart"
     >
       <template slot="preName">
-        <nutcat-tag type="618">618</nutcat-tag>
+        <NutTag type="618">618</NutTag>
       </template>
       <template slot="tag">
-        <nutcat-tag class="sub-tag" type="red-pink">利益点利益点</nutcat-tag>
+        <NutTag class="sub-tag" type="red-pink">利益点利益点</NutTag>
       </template>
-    </nutcat-product>
+    </NutProduct>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row type="flex" gutter="3">
+</NutRow>
+<NutRow type="flex" gutter="3">
   <nutcat-col :span="12" v-for="(item, index) in data2" :key="index">
-    <nutcat-product
+    <NutProduct
       :data="[item, params]"
       heartName="N天最低价"
       nameRow="2"
@@ -39,17 +39,17 @@
       type="heart"
     >
       <template slot="preName">
-        <nutcat-tag type="618">618</nutcat-tag>
+        <NutTag type="618">618</NutTag>
       </template>
       <template slot="tag">
-        <nutcat-tag class="sub-tag" type="red-pink">闪购进行时</nutcat-tag>
+        <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
       </template>
-    </nutcat-product>
+    </NutProduct>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row type="flex" gutter="3">
+</NutRow>
+<NutRow type="flex" gutter="3">
   <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
-    <nutcat-product
+    <NutProduct
       :data="[item, params]"
       heartName="N天最低价"
       nameRow="2"
@@ -57,14 +57,14 @@
       type="heart"
     >
       <template slot="preName">
-        <nutcat-tag type="618">618</nutcat-tag>
+        <NutTag type="618">618</NutTag>
       </template>
       <template slot="tag">
-        <nutcat-tag class="sub-tag" type="red-pink">闪购进行时</nutcat-tag>
+        <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
       </template>
-    </nutcat-product>
+    </NutProduct>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 ```javascript
 data() {

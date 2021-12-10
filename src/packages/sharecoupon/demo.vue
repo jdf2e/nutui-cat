@@ -2,17 +2,17 @@
   <div class="demo">
     <h2>分享领券</h2>
     <div class="demo-coupon demo1">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="8" v-for="(item, index) in data.list" :key="index">
-          <nutcat-shareCoupon
+          <NutSharecoupon
             :item="item"
             type='share'
             col="3"
             @click-report="handelClick"
           >
-          </nutcat-shareCoupon>
+          </NutSharecoupon>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>

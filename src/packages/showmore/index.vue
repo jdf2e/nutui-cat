@@ -1,11 +1,11 @@
 <template>
   <div :class="classes" :style="styleWH" @click="handleClick()">
     <span class="showmore-text">{{ text }}</span>
-    <nutcat-icon
+    <NutIcon
       :style="{ fontSize: size }"
       :color="iconColor"
       :type="iconName"
-    ></nutcat-icon>
+    ></NutIcon>
   </div>
 </template>
 <script lang="ts">

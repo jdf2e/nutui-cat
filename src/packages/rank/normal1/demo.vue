@@ -3,9 +3,9 @@
     <h2>类型：normal-1</h2>
     <p class="type">适用场景：一行一个榜单布局，左边文字区域，右边区域是商品区域。</p>
     <div class="demo-rank">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24" v-for="(item, index) in data1" :key="index">
-          <nutcat-rank
+          <NutRank
             :data="[item, params1]" 
             :productData="[item.productData, params2]" 
             col="1" 
@@ -14,24 +14,24 @@
           >
             <ul class="nutcat-rank-list" v-if="item.productData.length > 0">
               <div class="nutcat-rank-item" v-for="(productItem, productIndex) in (item.productData || '')" :key="productIndex">
-                <nutcat-image 
+                <NutImage 
                   class="img-box"
                   :src="productItem.image"
                 >
-                </nutcat-image>
+                </NutImage>
                 <template v-if="tag">
-                  <nutcat-tag :type="tag" :class="`top${productIndex + 1}`">{{productIndex + 1}}</nutcat-tag>
+                  <NutTag :type="tag" :class="`top${productIndex + 1}`">{{productIndex + 1}}</NutTag>
                 </template>
               </div>
             </ul>
-          </nutcat-rank>
+          </NutRank>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <div class="demo-rank">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24" v-for="(item, index) in data2" :key="index">
-          <nutcat-rank
+          <NutRank
             :data="[item, params1]" 
             :productData="[item.productData, params2]" 
             col="1" 
@@ -41,34 +41,34 @@
           >
             <ul class="nutcat-rank-list" v-if="item.productData.length > 0">
               <div class="nutcat-rank-item" v-for="(productItem, productIndex) in (item.productData || '')" :key="productIndex">
-                <nutcat-image 
+                <NutImage 
                   class="img-box"
                   :src="productItem.image"
                 >
-                </nutcat-image>
+                </NutImage>
                 <template v-if="tag">
-                  <nutcat-tag :type="tag" :class="`top${productIndex + 1}`">{{productIndex + 1}}</nutcat-tag>
+                  <NutTag :type="tag" :class="`top${productIndex + 1}`">{{productIndex + 1}}</NutTag>
                 </template>
               </div>
             </ul>
-          </nutcat-rank>
+          </NutRank>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <p class="type">`productData` 为空，右边的商品区域则隐藏，通过 `slot` 增加进入的 `icon`。</p>
     <div class="demo-rank demo1-2">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24" v-for="(item, index) in data1" :key="index">
-          <nutcat-rank
+          <NutRank
             :data="[item, params2]" 
             col="1" 
             type="normal-1" 
             bgColor="#820C00"
           >
-            <nutcat-icon type="arrow-full"></nutcat-icon>
-          </nutcat-rank>
+            <NutIcon type="arrow-full"></NutIcon>
+          </NutRank>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div> 
 </template>

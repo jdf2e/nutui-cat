@@ -3,18 +3,18 @@
     <h2>类型：normal-3</h2>
     <p class="type">适用场景：一行二个会场布局，图片和内容区域左右布局。标题和利益点均为一行。</p>
     <div class="demo-hall">
-      <nutcat-row type="flex" gutter="2">
+      <NutRow type="flex" gutter="2">
         <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-          <nutcat-hall
+          <NutHall
             :data="[item, params]"
             imgWidth="44"
             imgHeight="44"
             col="2"
             type="normal-3"
           >
-          </nutcat-hall>
+          </NutHall>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>

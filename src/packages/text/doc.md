@@ -21,30 +21,30 @@ app.use(Text);
 `row`，代表行数，超过则出现省略号。
 
 ```html
-<nutcat-text row="1">商品名称商品名称商品名称商品名称商品名称商品名称</nutcat-text>
+<NutText row="1">商品名称商品名称商品名称商品名称商品名称商品名称</NutText>
 
 ```
 ```html
-<nutcat-text row="2">商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</nutcat-text>
+<NutText row="2">商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</NutText>
 
 ```
 
 还可以在文本里加`icon`
 ```html
-<nutcat-text row="2">
-  <nutcat-tag type="618">618</nutcat-tag>
+<NutText row="2">
+  <NutTag type="618">618</NutTag>
   商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称
-</nutcat-text>
+</NutText>
 ```
 
 ### 特殊类型
 
 还有`jtCoupon`、`plusCoupon`等类型，用于优惠券头部。
 ```html
-<nutcat-text row="2">
-  <nutcat-tag type="618">618</nutcat-tag>
+<NutText row="2">
+  <NutTag type="618">618</NutTag>
   商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称
-</nutcat-text>
+</NutText>
 ```
 
 

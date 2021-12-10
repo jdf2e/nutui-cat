@@ -19,31 +19,31 @@ app.use(Image);
 ### 基础用法
 
 ```html
-<nutcat-image 
+<NutImage 
   src="//img10.360buyimg.com/imagetools/jfs/t1/180975/16/12965/81810/60e3c271E6846510d/b957175211011d62.png">
-</nutcat-image>
+</NutImage>
 ```
 
 `width`、`height` 可以设置图片的尺寸，如果加上`cut`返回的图片会被裁剪成设置的宽和高；
 `lazy`可以设置图片懒加载。
 
 ```html
-<nutcat-image
+<NutImage
   src="//img14.360buyimg.com/imagetools/jfs/t1/136318/2/17914/253972/5fbcb355E73dd171e/7afebc86dec494e4.png"
   width="180"
   height="180"
   cut
-></nutcat-image>
+></NutImage>
 ```
 
 `radius` 可以设置图片的圆角，`lazy`可以设置图片懒加载。
 
 ```html
-<nutcat-image
+<NutImage
   src="//img14.360buyimg.com/imagetools/jfs/t1/136318/2/17914/253972/5fbcb355E73dd171e/7afebc86dec494e4.png"
   radius="16"
   lazy
-></nutcat-image>
+></NutImage>
 ```
 
 ## API

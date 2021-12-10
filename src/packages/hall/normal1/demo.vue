@@ -3,9 +3,9 @@
     <h2>类型：normal-1</h2>
     <p class="type">适用场景：一行一个会场布局，由文字+进入标签+图片组成。文字超一行出现省略号。</p>
     <div class="demo-hall">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
-          <nutcat-hall
+          <NutHall
             :data="[item, params]"
             tag="arrow-go"
             imgWidth="90"
@@ -14,9 +14,9 @@
             col="1"
             type="normal-1"
           >
-          </nutcat-hall>
+          </NutHall>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>

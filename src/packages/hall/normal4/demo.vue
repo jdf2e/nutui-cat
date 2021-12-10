@@ -3,22 +3,22 @@
     <h2>类型：normal-4</h2>
     <p class="type">适用场景：一行二个会场布局，图片和内容区域左右布局。右边内容区域3行以上。</p>
     <div class="demo-hall">
-      <nutcat-row type="flex" gutter="1">
+      <NutRow type="flex" gutter="1">
         <nutcat-col :span="12" v-for="(item, index) in data1" :key="index">
-          <nutcat-hall
+          <NutHall
             :data="[item, params]"
             descRow="2"
             col="2"
             type="normal-4"
           >
-          </nutcat-hall>
+          </NutHall>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <div class="demo-hall">
-      <nutcat-row type="flex" gutter="3">
+      <NutRow type="flex" gutter="3">
         <nutcat-col :span="12" v-for="(item, index) in data2" :key="index">
-          <nutcat-hall
+          <NutHall
             :data="[item, params]"
             tag="arrow-go"
             nameColor="#fff"
@@ -27,9 +27,9 @@
             col="2"
             type="normal-4"
           >
-          </nutcat-hall>
+          </NutHall>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>

@@ -1,25 +1,25 @@
 <template>
   <div :class="classes" :style="styles" @click="toShop(data)">
     <div class="shop-content">
-      <nutcat-image class="logo-box" :src="data.cLogo"></nutcat-image>
+      <NutImage class="logo-box" :src="data.cLogo"></NutImage>
       <template v-if="data.cName">
-        <nutcat-text class="sub-name" row="1">{{data.cName}}</nutcat-text>
+        <NutText class="sub-name" row="1">{{data.cName}}</NutText>
       </template>
       <template v-if="data.cDesc">
-        <nutcat-text class="sub-desc">{{data.cDesc}}</nutcat-text>
+        <NutText class="sub-desc">{{data.cDesc}}</NutText>
       </template>
       <template v-if="tag">
-        <nutcat-icon class="sub-tag" :type="tag"></nutcat-icon>
+        <NutIcon class="sub-tag" :type="tag"></NutIcon>
       </template>
     </div>
-    <nutcat-image class="img-box" :src="data.cImage">
+    <NutImage class="img-box" :src="data.cImage">
       <div class="price-wrap">
         <div class="price-box">
           预估到手价
-          <nutcat-price :price="data.price" :thousands="true" class="price" />
+          <NutPrice :price="data.price" :thousands="true" class="price" />
         </div>
       </div>
-    </nutcat-image>
+    </NutImage>
     <slot></slot>
   </div>
 </template>

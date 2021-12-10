@@ -1,25 +1,25 @@
 <template>
   <div :class="classes" :style="styles" @click="toLink(data)">
-    <nutcat-image
+    <NutImage
       class="img-box"
       :src="data.cImage"
       :width="imgWidth"
       :height="imgHeight"
     >
-    </nutcat-image>
+    </NutImage>
     <div class="hall-content">
       <template v-if="data.cName">
-        <nutcat-text class="sub-name" :color="nameColor" :row="nameRow">{{
+        <NutText class="sub-name" :color="nameColor" :row="nameRow">{{
           data.cName
-        }}</nutcat-text>
+        }}</NutText>
       </template>
       <template v-if="data.cDesc">
-        <nutcat-text class="sub-desc" :color="descColor" :row="descRow">{{
+        <NutText class="sub-desc" :color="descColor" :row="descRow">{{
           data.cDesc
-        }}</nutcat-text>
+        }}</NutText>
       </template>
       <template v-if="tag">
-        <nutcat-icon class="sub-tag" :type="tag"></nutcat-icon>
+        <NutIcon class="sub-tag" :type="tag"></NutIcon>
       </template>
     </div>
   </div>

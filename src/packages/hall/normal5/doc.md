@@ -10,61 +10,61 @@
 一行三个会场布局，`col` 传2，`tag` 传的是 `tag` 的`type`属性；会场的会场名称、图片通过 `data` 的属性传的。
 
 ```html
-<nutcat-row type="flex" gutter="2">
+<NutRow type="flex" gutter="2">
   <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params1]"
       imgHeight="76"
       col="3"
       type="normal-5"
     >
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```html
-<nutcat-row type="flex" gutter="2">
+<NutRow type="flex" gutter="2">
   <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params2]"
       imgHeight="76"
       col="3"
       type="normal-5"
     >
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```html
-<nutcat-row type="flex" gutter="2">
+<NutRow type="flex" gutter="2">
   <nutcat-col :span="8" v-for="(item, index) in data3" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params1]"
       imgWidth="71"
       imgHeight="71"
       col="4"
       type="normal-5"
     >
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```html
-<nutcat-row type="flex" gutter="2">
+<NutRow type="flex" gutter="2">
   <nutcat-col :span="8" v-for="(item, index) in data4" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params2]"
       imgWidth="71"
       imgHeight="71"
       col="4"
       type="normal-5"
     >
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript

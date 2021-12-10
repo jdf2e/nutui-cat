@@ -9,17 +9,17 @@
 下面是 **feed-1** 类型，一行两个榜单布局，榜单的名称、图片、价格通过 `data` 的属性传的。
 
 ```html
-<nutcat-row type="flex" gutter="3"> 
+<NutRow type="flex" gutter="3"> 
   <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-    <nutcat-rank
+    <NutRank
       :data="[item, params]" 
       tag="arrow-go"
       col="2" 
       type="feed-1" 
     >
-    </nutcat-rank>
+    </NutRank>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 ```javascript
 data() {

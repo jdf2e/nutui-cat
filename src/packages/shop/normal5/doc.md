@@ -11,53 +11,53 @@
 
 
 ```html
-<nutcat-row type="flex" gutter="3">
+<NutRow type="flex" gutter="3">
   <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
-    <nutcat-shop
+    <NutShop
       :data="[item, params]" 
       col="3" 
       type="normal-5" 
     >
-    </nutcat-shop>
+    </NutShop>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row type="flex" gutter="3">
+</NutRow>
+<NutRow type="flex" gutter="3">
   <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
-    <nutcat-shop
+    <NutShop
       :data="[item, params]" 
       col="3" 
       type="normal-5" 
     >
-    </nutcat-shop>
+    </NutShop>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 通过 `slot` 增加自定义内容，例如领券按钮。
 
 ```html
-<nutcat-row type="flex" gutter="3">
+<NutRow type="flex" gutter="3">
   <nutcat-col :span="12" v-for="(item, index) in data3" :key="index">
-    <nutcat-shop
+    <NutShop
       :data="[item, params]" 
       col="2" 
       type="normal-5" 
     >
       <div class="btn-follow">+关注 领30元券</div>
-    </nutcat-shop>
+    </NutShop>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row type="flex" gutter="3">
+</NutRow>
+<NutRow type="flex" gutter="3">
   <nutcat-col :span="8" v-for="(item, index) in data4" :key="index">
-    <nutcat-shop
+    <NutShop
       :data="[item, params]" 
       col="3" 
       type="normal-5" 
     >
       <div class="btn-follow">+关注 领30元券</div>
-    </nutcat-shop>
+    </NutShop>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 

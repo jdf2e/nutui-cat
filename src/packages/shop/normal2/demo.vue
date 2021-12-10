@@ -3,16 +3,16 @@
     <h2>类型：normal-2</h2>
     <p class="type">适用场景：一行一个店铺布局，由品牌logo+名称+运营语+利益点+进入标签组成。适合长利益点。</p>
     <div class="demo-shop">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
-          <nutcat-shop
+          <NutShop
             :data="[item, params]" 
             col="1" 
             type="normal-2" 
             descRow="1"
             bgColor="#820C00"
           >
-            <nutcat-tag
+            <NutTag
               slot="tag"
               class="tag-go"
               radius="30px"
@@ -21,23 +21,23 @@
               afterIcon="arrow-full"
             >
               进入
-            </nutcat-tag>
+            </NutTag>
             <div class="tag-box">
-              <nutcat-tag type="red-light">
+              <NutTag type="red-light">
                 <span slot="preSlot">满减</span>
                 满1000减300券
-              </nutcat-tag>
-              <nutcat-tag type="red-light">
+              </NutTag>
+              <NutTag type="red-light">
                 <span slot="preSlot">折</span>
                 全场3折起
-              </nutcat-tag>
-              <nutcat-tag type="red-light">
+              </NutTag>
+              <NutTag type="red-light">
                 其他利益点
-              </nutcat-tag>
+              </NutTag>
             </div>
-          </nutcat-shop>
+          </NutShop>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>

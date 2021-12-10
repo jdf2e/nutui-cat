@@ -1,15 +1,15 @@
 <template>
   <div class="demo">
     <h2>基础用法</h2>
-    <nutcat-showmore></nutcat-showmore>
+    <NutShowmore></NutShowmore>
     <h2>自定义背景颜色</h2>
-    <nutcat-showmore background="#d87125"></nutcat-showmore>
+    <NutShowmore background="#d87125"></NutShowmore>
     <h2>自定义选择icon以及颜色</h2>
-    <nutcat-showmore iconName="coupon" iconColor="black"></nutcat-showmore>
+    <NutShowmore iconName="coupon" iconColor="black"></NutShowmore>
     <h2>自定义文字</h2>
-    <nutcat-showmore text="自定义文字" @moreClick="changeclick"></nutcat-showmore>
+    <NutShowmore text="自定义文字" @moreClick="changeclick"></NutShowmore>
       <h2>添加点击事件</h2>
-    <nutcat-showmore @moreClick="changeclick"></nutcat-showmore>
+    <NutShowmore @moreClick="changeclick"></NutShowmore>
   </div>
 </template>
 
@@ -30,7 +30,7 @@ export default createDemo({
 </script>
 
 <style lang="scss" scoped>
-/deep/.nutcat-showmore-page {
+/deep/.NutShowmore-page {
   .showmore-text {
     color: white;
   }

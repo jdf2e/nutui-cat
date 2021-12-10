@@ -1,12 +1,12 @@
 <template>
   <div :class="classes" :style="styles" @click="handleClick()">
-    <nutcat-image class="sub-image" :src="item.extension.u_img"></nutcat-image>
+    <NutImage class="sub-image" :src="item.extension.u_img"></NutImage>
     <div :class="classesInfo">
-      <nutcat-text class="sub-price" row="1"><i class="rmb">&yen;</i>{{item.extension.u_tit}}</nutcat-text>
-      <nutcat-text class="sub-limitStr" row="1">{{item.extension.u_line1}}</nutcat-text>
+      <NutText class="sub-price" row="1"><i class="rmb">&yen;</i>{{item.extension.u_tit}}</NutText>
+      <NutText class="sub-limitStr" row="1">{{item.extension.u_line1}}</NutText>
     </div> 
     <div :class="classesCont">
-      <nutcat-text class="sub-name" row="1">{{item.extension.shopName}}</nutcat-text>
+      <NutText class="sub-name" row="1">{{item.extension.shopName}}</NutText>
       <div class="sub-btn">
         <div>分享领券</div>
       </div>

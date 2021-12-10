@@ -1,11 +1,11 @@
 <template>
   <div :class="classes" :style="styles" @click="toRank(data)">
-    <nutcat-image class="img-box" :src="data.cImage"></nutcat-image>
+    <NutImage class="img-box" :src="data.cImage"></NutImage>
     <template v-if="data.cName">
-      <nutcat-text class="sub-name" :row="nameRow">{{data.cName}}</nutcat-text>
+      <NutText class="sub-name" :row="nameRow">{{data.cName}}</NutText>
     </template>
     <template v-if="data.cDesc">
-      <nutcat-text class="sub-desc" :row="descRow">{{data.cDesc}}</nutcat-text>
+      <NutText class="sub-desc" :row="descRow">{{data.cDesc}}</NutText>
     </template>
     <slot></slot>
   </div>

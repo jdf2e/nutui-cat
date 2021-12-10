@@ -19,7 +19,7 @@ app.use(starbrand);
 ### 基础用法
 
 ```html
-<nutcat-starbrand :brand-list="list" @callback="handleClick"></nutcat-starbrand>
+<NutShowmore :brand-list="list" @callback="handleClick"></NutShowmore>
 ```
 ```javascript
 data() {

@@ -1,8 +1,8 @@
-import Coupon from './index.vue';
+import NutCoupon from './index.vue';
 import './index.scss';
 
-Coupon.install = function(Vue) {
-  Vue.component('nutcat-coupon', Coupon);
+NutCoupon.install = function(Vue) {
+  Vue.component('NutCoupon', NutCoupon);
 };
 
-export default Coupon;
+export default NutCoupon;

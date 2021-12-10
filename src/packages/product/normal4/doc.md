@@ -9,23 +9,23 @@
 下面是 **normal-4** 类型，一行多个商品布局，商品的名称、图片、价格通过 `data` 的属性传递。
 
 ```html
-<nutcat-row type="flex" gutter="2">
+<NutRow type="flex" gutter="2">
   <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
-    <nutcat-product
+    <NutProduct
       :data="[item, params]"
       col="3"
       type="normal-4"
     >
       <template slot="tag">
-        <nutcat-tag class="sub-tag" type="red-light">噱头标签</nutcat-tag>
+        <NutTag class="sub-tag" type="red-light">噱头标签</NutTag>
       </template>
-      <nutcat-tag class="sub-tag tl" type="red-gradient">
-        <nutcat-icon class="sub-icon" type="crown"></nutcat-icon>
+      <NutTag class="sub-tag tl" type="red-gradient">
+        <NutIcon class="sub-icon" type="crown"></NutIcon>
         数码销量TOP1
-      </nutcat-tag>
-    </nutcat-product>
+      </NutTag>
+    </NutProduct>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 ```javascript
 data() {

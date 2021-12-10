@@ -1,8 +1,8 @@
-import Price from './index.vue';
+import NutPrice from './index.vue';
 import './index.scss';
 
-Price.install = function(Vue) {
-  Vue.component('nutcat-price', Price);
+NutPrice.install = function(Vue) {
+  Vue.component('NutPrice', NutPrice);
 };
 
-export default Price;
+export default NutPrice;

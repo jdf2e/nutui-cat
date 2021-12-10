@@ -13,13 +13,13 @@
       </div>
       <div class="price-show">
         <div class="price">
-          <nutcat-price
+          <NutPrice
             :price="item[filed.pPrice]"
             :thousands="true"
           />
         </div>
         <div class="h-price" v-if="item.linePrice">
-          <nutcat-price
+          <NutPrice
             :price="item[filed.linePrice]"
             :thousands="true"
           />

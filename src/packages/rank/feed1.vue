@@ -2,16 +2,16 @@
   <div :class="classes" :style="styles" @click="toRank(data)">
    <div class="rank-content">
       <template v-if="data.cName">
-        <nutcat-text class="sub-name" row="1">{{data.cName}}</nutcat-text>
+        <NutText class="sub-name" row="1">{{data.cName}}</NutText>
       </template>
       <template v-if="data.cDesc">
-        <nutcat-text class="sub-desc" row="1">{{data.cDesc}}</nutcat-text>
+        <NutText class="sub-desc" row="1">{{data.cDesc}}</NutText>
       </template>
       <template v-if="tag">
-        <nutcat-icon class="sub-tag" :type="tag"></nutcat-icon>
+        <NutIcon class="sub-tag" :type="tag"></NutIcon>
       </template>
     </div>
-    <nutcat-image :src="data.cImage"></nutcat-image>
+    <NutImage :src="data.cImage"></NutImage>
     <slot></slot>
   </div>
 </template>

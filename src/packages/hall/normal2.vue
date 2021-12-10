@@ -3,24 +3,24 @@
     <template v-if="col == '1'">
       <div class="hall-content">
         <template v-if="data.cName">
-          <nutcat-text class="sub-name" :color="nameColor" row="1">{{ data.cName }}</nutcat-text>
+          <NutText class="sub-name" :color="nameColor" row="1">{{ data.cName }}</NutText>
         </template>
         <template v-if="data.cDesc">
-          <nutcat-text class="sub-desc" :color="descColor" :row="descRow">
+          <NutText class="sub-desc" :color="descColor" :row="descRow">
             {{ data.cDesc }}
             <template v-if="tag">
-              <nutcat-icon class="sub-tag" :type="tag"></nutcat-icon>
+              <NutIcon class="sub-tag" :type="tag"></NutIcon>
             </template>
-          </nutcat-text>
+          </NutText>
         </template>
       </div>
-      <nutcat-image v-if="data.cImage"
+      <NutImage v-if="data.cImage"
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
     </template>
   </div>
 </template>

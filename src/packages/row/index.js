@@ -1,8 +1,8 @@
-import Row from './index.vue';
+import NutRow from './index.vue';
 import './index.scss';
 
-Row.install = function(Vue) {
-  Vue.component('nutcat-row', Row);
+NutRow.install = function(Vue) {
+  Vue.component('NutRow', NutRow);
 };
 
-export default Row;
+export default NutRow;

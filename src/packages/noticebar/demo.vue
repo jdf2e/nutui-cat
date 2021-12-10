@@ -2,12 +2,12 @@
   <div class="demo">
     <h2>基础用法</h2>
     <div class="interstroll-list">
-      <nutcat-noticebar direction="vertical" :list="horseLamp1" :speed='10' :standTime='1000' :showIcon='true' @go='go' color='#14100D' background='transparent'></nutcat-noticebar>
+      <NutNoticebar direction="vertical" :list="horseLamp1" :speed='10' :standTime='1000' :showIcon='true' @go='go' color='#14100D' background='transparent'></NutNoticebar>
     </div>
 
     <h2>复杂滚动动画</h2>
     <div class="interstroll-list">
-      <nutcat-noticebar direction="vertical" :list="horseLamp2" :speed='10' :standTime='2000' :complexAm='true' color='#14100D' background='transparent'></nutcat-noticebar>
+      <NutNoticebar direction="vertical" :list="horseLamp2" :speed='10' :standTime='2000' :complexAm='true' color='#14100D' background='transparent'></NutNoticebar>
     </div>
 
     <h2>自定义滚动内容</h2>
@@ -21,7 +21,7 @@
     <div class="interstroll-list">
       <nut-noticebar direction="vertical" :list="horseLamp1" :speed='10' :standTime='1000' :showIcon='true' color='#14100D' background='transparent'>
         <template v-slot:rightIcon>
-          <nutcat-icon style="font-size: 20px;" color="#F02B2B" type="qiang"></nutcat-icon>
+          <NutIcon style="font-size: 20px;" color="#F02B2B" type="qiang"></NutIcon>
         </template>
       </nut-noticebar>
     </div>

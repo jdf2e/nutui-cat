@@ -18,26 +18,26 @@ app.use(ShowMore);
 
 ### 基础用法
 ``` javascript
-<nutcat-showmore></nutcat-showmore>
+<NutShowmore></NutShowmore>
 ```
 
 ### 自定义背景颜色
 ```javascript
-<nutcat-showmore background="#d87125"></nutcat-showmore>
+<NutShowmore background="#d87125"></NutShowmore>
 ```
 
 ### 自定义选择icon以及颜色
 ``` javascript
-<nutcat-showmore iconName="coupon" iconColor="black"></nutcat-showmore>
+<NutShowmore iconName="coupon" iconColor="black"></NutShowmore>
 ```
 
 ### 自定义文字
 ```javascript
-<nutcat-showmore text="自定义文字" @moreClick="changeclick"></nutcat-showmore>
+<NutShowmore text="自定义文字" @moreClick="changeclick"></NutShowmore>
 ```
 ### 添加点击事件
 ```javascript
-<nutcat-showmore @moreClick="changeclick"></nutcat-showmore>
+<NutShowmore @moreClick="changeclick"></NutShowmore>
 ```
 
 ## API

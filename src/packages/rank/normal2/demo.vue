@@ -3,9 +3,9 @@
     <h2>类型：normal-2</h2>
     <p class="type">适用场景：一行二个榜单布局，左右结构，左边文字，右边图片区域。</p>
     <div class="demo-rank demo2-1">
-      <nutcat-row type="flex" gutter="3">
+      <NutRow type="flex" gutter="3">
         <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-          <nutcat-rank
+          <NutRank
             :data="[item, params1]" 
             :productData="[item.productData, params2]" 
             descRow="2"
@@ -15,19 +15,19 @@
           >
             <ul class="nutcat-rank-list" v-if="item.productData.length > 0">
               <div class="nutcat-rank-item" v-for="(productItem, productIndex) in (item.productData || '')" :key="productIndex">
-                <nutcat-image 
+                <NutImage 
                   class="imgs-box"
                   :src="productItem.image"
                 >
-                </nutcat-image>
+                </NutImage>
                 <template v-if="tag">
-                  <nutcat-tag :type="tag" :class="`top${productIndex + 1}`">{{productIndex + 1}}</nutcat-tag>
+                  <NutTag :type="tag" :class="`top${productIndex + 1}`">{{productIndex + 1}}</NutTag>
                 </template>
               </div>
             </ul>
-          </nutcat-rank>
+          </NutRank>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div> 
 </template>

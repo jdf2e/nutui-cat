@@ -21,7 +21,7 @@ app.use(Icon);
 `Icon` 的 `type` 属性支持传入图标名称或图片链接。
 
 ```html
-<nutcat-icon type="heart"></nutcat-icon>
+<NutIcon type="heart"></NutIcon>
 ```
 
 ### 自定义尺寸
@@ -29,8 +29,8 @@ app.use(Icon);
 `Icon` 的 `size` 属性用来设置图标的尺寸大小，默认单位为 `px`。
 
 ```html
-<nutcat-icon type="heart" size="24px"></nutcat-icon>
-<nutcat-icon type="heart" size="32px"></nutcat-icon>
+<NutIcon type="heart" size="24px"></NutIcon>
+<NutIcon type="heart" size="32px"></NutIcon>
 ```
 
 ### 自定义颜色
@@ -38,7 +38,7 @@ app.use(Icon);
 `Icon` 的 `color` 属性用来设置图标的颜色。
 
 ```html
-<nutcat-icon type="heart" color="#fa2c19"></nutcat-icon>
+<NutIcon type="heart" color="#fa2c19"></NutIcon>
 ```
 
 ## API

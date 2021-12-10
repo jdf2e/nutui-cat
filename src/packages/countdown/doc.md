@@ -33,7 +33,7 @@ data() {
 ### 自定义展示
 
 ```html
-<nutcat-countdown :endTime="endTime" v-model="resetTime" >
+<NutCountdown :endTime="endTime" v-model="resetTime" >
     <div class="countdown-part-box">
         <div class="part-item-symbol"> resetTime.d 天</div>
         <div class="part-item h">resetTime.h </div>
@@ -42,7 +42,7 @@ data() {
         <span class="part-item-symbol">:</span>
         <div class="part-item s">resetTime.s</div>
     </div>
-</nutcat-countdown>
+</NutCountdown>
 ```
 
 ```css

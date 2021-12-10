@@ -1,24 +1,24 @@
 <template>
   <div :class="classes" :style="styles" @click="toSku(data)">
     <template v-if="col == '1'">
-      <nutcat-image
+      <NutImage
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
       <div class="product-right" :style="styleRight">
         <div class="product-content">
           <template v-if="data.cName">
-            <nutcat-text class="sub-name" :row="nameRow"
-              ><slot name="preName"></slot>{{ data.cName }}</nutcat-text
+            <NutText class="sub-name" :row="nameRow"
+              ><slot name="preName"></slot>{{ data.cName }}</NutText
             >
           </template>
           <template v-if="data.cDesc">
-            <nutcat-text class="sub-desc" :row="descRow">{{
+            <NutText class="sub-desc" :row="descRow">{{
               data.cDesc
-            }}</nutcat-text>
+            }}</NutText>
           </template>
           <div v-if="$slots.tag" class="tag-box">
             <slot name="tag"></slot>
@@ -32,7 +32,7 @@
 
             <div class="line-price-box" v-if="data.linePrice">
               {{ linePricePre }}
-              <nutcat-price class="line-price" :price="data.linePrice"></nutcat-price>
+              <NutPrice class="line-price" :price="data.linePrice"></NutPrice>
             </div>
           </div>
           <div class="price-lowest"

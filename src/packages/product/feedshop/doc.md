@@ -10,9 +10,9 @@
 
 
 ```html
-<nutcat-row type="flex" gutter="3">
+<NutRow type="flex" gutter="3">
   <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-    <nutcat-product
+    <NutProduct
       :data="[item, params]"
       tag="满199减10"
       linePricePre="日常价"
@@ -20,21 +20,21 @@
       type="feed-shop"
     >
       <template slot="preName">
-        <nutcat-tag type="618">618</nutcat-tag>
+        <NutTag type="618">618</NutTag>
       </template>
       <template slot="priceAfter">
-        <nutcat-tag class="price-tag-after" type="plus-price"></nutcat-tag>
+        <NutTag class="price-tag-after" type="plus-price"></NutTag>
       </template>
       <template slot="shop">
-        <nutcat-text class="shop-name">店铺名称</nutcat-text>
-        <nutcat-text class="shop-desc"
-          >接受预定，明日23:00开始营业</nutcat-text
+        <NutText class="shop-name">店铺名称</NutText>
+        <NutText class="shop-desc"
+          >接受预定，明日23:00开始营业</NutText
         >
       </template>
-      <nutcat-tag class="tl9" type="lbs">1.3km</nutcat-tag>
-    </nutcat-product>
+      <NutTag class="tl9" type="lbs">1.3km</NutTag>
+    </NutProduct>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 ```javascript
 data() {

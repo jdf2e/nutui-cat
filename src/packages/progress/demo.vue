@@ -2,12 +2,12 @@
   <div class="demo">
     <h2>基础用法</h2>
     <div class="progress-demo">
-      <nutcat-progress :percentage='40' :phases='phases'></nutcat-progress>
+      <NutProgress :percentage='40' :phases='phases'></NutProgress>
     </div>
 
     <h2>动态用法</h2>
     <div class="progress-demo">
-      <nutcat-progress :percentage='50' :phases='phases' animation></nutcat-progress>
+      <NutProgress :percentage='50' :phases='phases' animation></NutProgress>
     </div>
     
   </div>

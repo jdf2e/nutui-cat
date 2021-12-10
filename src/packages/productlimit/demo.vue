@@ -1,7 +1,7 @@
 <template>
   <div class="demo">
     <h2>秒杀</h2>
-    <nutcat-tab
+    <NutTab
       style="height: 45px"
       customClass="tabItem"
       activeClass="tabActive"
@@ -10,7 +10,7 @@
       :showLine="false"
       type="complex"
       @click="(data,i)=>{activeIndex=i}"
-    ></nutcat-tab>
+    ></NutTab>
 
     <div class="demo-countdown">
       距离本场结束：
@@ -25,9 +25,9 @@
       </nut-countdown>
     </div>
 
-    <nutcat-row>
+    <NutRow>
       <nutcat-col :span="8" v-for="(item, index) in data6" :key="index">
-        <nutcat-product
+        <NutProduct
           :data="[
             item,
             { cName: ['name'], cImage: ['image'], cPrice: ['cPrice'] },
@@ -37,18 +37,18 @@
           col="3"
           type="normal-5"
         >
-          <nutcat-tag class="top-tag tl" type="red-gradient"
-            >满199减100</nutcat-tag
+          <NutTag class="top-tag tl" type="red-gradient"
+            >满199减100</NutTag
           >
-        </nutcat-product>
+        </NutProduct>
       </nutcat-col>
-    </nutcat-row>
+    </NutRow>
 
     <h2>直降</h2>
 
-    <nutcat-row>
+    <NutRow>
       <nutcat-col :span="8" v-for="(item, index) in data6" :key="index">
-        <nutcat-product
+        <NutProduct
           rowType="flex"
           :data="[item, { cName: ['name'], cImage: ['image'],cPrice:['price'] }]"
           iconType=""
@@ -59,10 +59,10 @@
           :bottomOperate="bottomOperate"
           linePricePre="日常价"
         >
-          <nutcat-tag class="top-tag tl" type="rank-hot">满199减100</nutcat-tag>
-        </nutcat-product>
+          <NutTag class="top-tag tl" type="rank-hot">满199减100</NutTag>
+        </NutProduct>
       </nutcat-col>
-    </nutcat-row>
+    </NutRow>
   </div>
 </template>
 
@@ -135,7 +135,7 @@ export default createDemo({
         desc: "马上抢",
         position:'right',
         renderIcon: (h) => {
-          return h('nutcat-icon',{
+          return h('NutIcon',{
             props:{
               type:"arrow-full",
               color:"#ffffff"

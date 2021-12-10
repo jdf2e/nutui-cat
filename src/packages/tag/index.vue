@@ -9,10 +9,10 @@
   >
     <div class="nutcat-tag-box">
       <template v-if="beforeIcon">
-        <nutcat-icon  class="before-icon" :type="beforeIcon"></nutcat-icon>
+        <NutIcon  class="before-icon" :type="beforeIcon"></NutIcon>
       </template>
       <template v-if="tagType">
-        <nutcat-icon :type="tagType"></nutcat-icon>
+        <NutIcon :type="tagType"></NutIcon>
       </template>
       <template v-if="$slots.preSlot">
         <span :class="classesPre">
@@ -23,7 +23,7 @@
         <slot></slot>
       </span>
       <template v-if="afterIcon">
-        <nutcat-icon class="after-icon" :type="afterIcon"></nutcat-icon>
+        <NutIcon class="after-icon" :type="afterIcon"></NutIcon>
       </template>
     </div>
   </div>

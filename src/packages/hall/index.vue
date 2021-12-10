@@ -1,6 +1,6 @@
 <template>
   <div>
-  <!-- <nutcat-row :gutter="gutter" :scrollX="scrollX" :type="rowType" v-if="data[0] && data[0].length > 0">
+  <!-- <NutRow :gutter="gutter" :scrollX="scrollX" :type="rowType" v-if="data[0] && data[0].length > 0">
     <nutcat-col :span="24 / ~~col" v-for="(item, index) in dealData(data[0], data[1])" :key="index"> -->
       <template v-if="type == 'normal-1'">
         <normal1
@@ -150,30 +150,30 @@
         </normal8>
       </template>
       <template v-else-if="type == 'left-1'">
-        <nutcat-row type="flex">
+        <NutRow type="flex">
           <nutcat-col :span="leftSpan">
             <div class="hall-left">
               <template v-if="src">
-                <nutcat-image class="img-box" :src="src"></nutcat-image>
+                <NutImage class="img-box" :src="src"></NutImage>
               </template>
               <template v-if="logo">
-                <nutcat-image class="logo-box" :src="logo"></nutcat-image>
+                <NutImage class="logo-box" :src="logo"></NutImage>
               </template>
               <!-- <div class="shop-content"> -->
               <template v-if="name">
-                <nutcat-text class="sub-name" row="1">{{ name }}</nutcat-text>
+                <NutText class="sub-name" row="1">{{ name }}</NutText>
               </template>
               <template v-if="desc">
-                <nutcat-text class="sub-desc" row="2">{{ desc }}</nutcat-text>
+                <NutText class="sub-desc" row="2">{{ desc }}</NutText>
               </template>
               <slot name="left"></slot>
               <!-- </div> -->
             </div>
           </nutcat-col>
-          <nutcat-row type="flex" class="hall-right">
+          <NutRow type="flex" class="hall-right">
             <slot name="right"></slot>
-          </nutcat-row>
-        </nutcat-row>
+          </NutRow>
+        </NutRow>
       </template>
       <template v-else-if="type == 'free'">
         <free
@@ -206,7 +206,7 @@
         </free>
       </template>
     <!-- </nutcat-col>
-  </nutcat-row> -->
+  </NutRow> -->
 </div>
 </template>
 

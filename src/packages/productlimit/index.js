@@ -1,8 +1,8 @@
-import Productlimit from './index.vue';
+import NutProductlimit from './index.vue';
 import './index.scss';
 
-Productlimit.install = function(Vue) {
-  Vue.component('nutcat-Productlimit', Productlimit);
+NutProductlimit.install = function(Vue) {
+  Vue.component('NutProductlimit', NutProductlimit);
 };
 
-export default Productlimit;
+export default NutProductlimit;

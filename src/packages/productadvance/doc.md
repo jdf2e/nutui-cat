@@ -18,7 +18,7 @@ app.use(Product);
 
 ### 预告商品
 ```html
-<nutcat-product
+<NutProduct
     rowType="flex"
     gutter="2"
     :data="data"
@@ -30,8 +30,8 @@ app.use(Product);
     :bottomOperate='bottomOperate'
     linePricePre='京东价'
     >
-    <nutcat-tag class="top-tag tl" type="red-gradient">满199减100</nutcat-tag>
-</nutcat-product>
+    <NutTag class="top-tag tl" type="red-gradient">满199减100</NutTag>
+</NutProduct>
 ```
 ```javascript
 data() {
@@ -61,7 +61,7 @@ data() {
         desc:'去预约',
         position:'right',
         renderIcon:(h)=>{
-          return h('nutcat-icon',{
+          return h('NutIcon',{
             props:{
               color:"#ffffff", 
               type:"arrow-full"
@@ -78,7 +78,7 @@ data() {
 
 ### 预约商品
 ```html
-<nutcat-product
+<NutProduct
     rowType="flex"
     gutter="2"
     :data="data"
@@ -89,7 +89,7 @@ data() {
     type="normal-4"
     :bottomOperate='bottomOperate'
     >
-</nutcat-product>
+</NutProduct>
 ```
 ```javascript
 data() {

@@ -19,12 +19,12 @@ app.use(gooditem);
 ### 基础用法
 
 ```html
-    <nutcat-gooditem
+    <NutGooditem
       :list="data"
       :field-mapping="mapping"
       @addCart="addCart"
       @goodDetails="goodDetails"
-    ></nutcat-gooditem>
+    ></NutGooditem>
 ```
 ```javascript
 data() {

@@ -2,52 +2,52 @@
   <div class="demo">
     <h2>普通tab - 一行文字</h2>
 
-    <nutcat-tab
+    <NutTab
       class="navtab"
       :data="[list1,{cName:['title']}]"
       :activeIndex='activeIndex'
       @click="(data,i)=>{activeIndex = i}"
-    ></nutcat-tab>
+    ></NutTab>
 
 
-    <nutcat-tab
+    <NutTab
       class="navtab"
       :data="[list2,{cName:['title']}]"
       :activeIndex='activeIndex1'
       @click="(data,i)=>{activeIndex1 = i}"
-    ></nutcat-tab>
+    ></NutTab>
 
-    <nutcat-tab
+    <NutTab
       class="navtab"
       :data="[list2,{cName:['title']}]"
       :activeIndex='activeIndex2'
       :showLine='false'
       @click="(data,i)=>{activeIndex2 = i}"
-    ></nutcat-tab>
+    ></NutTab>
 
 
     <h2>重场景tab - 一行文字</h2>
-    <nutcat-tab
+    <NutTab
       class="navtab1"
       :data="[list3,{cName:['title']}]"
       :activeIndex='activeIndex3'
       :showLine='false'
       @click="(data,i)=>{activeIndex3 = i}"
       type='simple'
-    ></nutcat-tab>
+    ></NutTab>
 
     <h2>重点突出选中态 - 两行文字</h2>
-    <nutcat-tab
+    <NutTab
       class="navtab2"
       :data="[list4,{cName:['title'],cDesc:['desc']}]"
       :showLine='false'
       :activeIndex='activeIndex4'
       @click="(data,i)=>{activeIndex4 = i}"
       type='complex'
-    ></nutcat-tab>
+    ></NutTab>
 
     <h2>秒杀导航</h2>
-    <nutcat-tab
+    <NutTab
       class="navtab3"
       customClass="navtabitem"
       activeClass='navtabactive'
@@ -56,16 +56,16 @@
       :showLine='false'
       @click="(data,i)=>{activeIndex5 = i}"
       type='complex'
-    ></nutcat-tab>
+    ></NutTab>
 
     <h2>带有图片</h2>
-    <nutcat-tab
+    <NutTab
       customClass="navtabitem"
       :activeIndex='activeIndex5'
       :data="[list6,{cName:['title'],cImage:['pictureUrl']}]"
       @click="(data,i)=>{activeIndex5 = i}"
       type='image'
-    ></nutcat-tab>
+    ></NutTab>
 
   </div>
 </template>

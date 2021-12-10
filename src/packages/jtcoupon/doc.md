@@ -20,12 +20,12 @@ app.use(JtCoupon);
 ### 基础用法
 
 ```html
-<nutcat-jtCoupon 
+<NutJtcoupon 
     :data="data"
     type='normal'
     col="3"
 >
-</nutcat-jtCoupon>
+</NutJtcoupon>
 ```
 ```javascript
 this.data = [

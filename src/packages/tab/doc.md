@@ -19,7 +19,7 @@ app.use(tab);
 ### 普通 Tab - 一行文字
 
 ```html
-<nutcat-tab class="navtab" :data="[list1,{cName:['title']}]" :activeIndex='activeIndex' @click="(data,i)=>{activeIndex = i}" :showLine='true'></nutcat-tab>
+<NutTab class="navtab" :data="[list1,{cName:['title']}]" :activeIndex='activeIndex' @click="(data,i)=>{activeIndex = i}" :showLine='true'></NutTab>
 ```
 ```javascript
 data() {
@@ -39,7 +39,7 @@ data() {
 ### 重场景 Tab - 一行文字
 
 ```html
-<nutcat-tab class="navtab" :data="[list,{cName:['title']}]" :activeIndex='activeIndex3' @click="(data,i)=>{activeIndex3 = i}" type='simple'></nutcat-tab>
+<NutTab class="navtab" :data="[list,{cName:['title']}]" :activeIndex='activeIndex3' @click="(data,i)=>{activeIndex3 = i}" type='simple'></NutTab>
 ```
 ```javascript
 data() {
@@ -74,7 +74,7 @@ data() {
 ### 重点突出选中态 - 两行文字
 
 ```html
-<nutcat-tab class="navtab" :data="[list4,{cName:['title'],cDesc:['desc']}]" :activeIndex='activeIndex4' @click="(data,i)=>{activeIndex4 = i}" type='complex'></nutcat-tab>
+<NutTab class="navtab" :data="[list4,{cName:['title'],cDesc:['desc']}]" :activeIndex='activeIndex4' @click="(data,i)=>{activeIndex4 = i}" type='complex'></NutTab>
 ```
 ```javascript
 data() {
@@ -106,7 +106,7 @@ data() {
 ### 秒杀导航
 
 ```html
-<nutcat-tab customClass="tabGroup" activeClass='tabActive' :data="[list5,{cName:['title']}]" :showLine='false' @click="(data,i)=>{activeIndex5 = i}" type='complex'></nutcat-tab>
+<NutTab customClass="tabGroup" activeClass='tabActive' :data="[list5,{cName:['title']}]" :showLine='false' @click="(data,i)=>{activeIndex5 = i}" type='complex'></NutTab>
 ```
 
 ```css
@@ -159,7 +159,7 @@ data() {
 ### 带有图片
 
 ```html
-<nutcat-tab customClass="navtabitem" :activeIndex='activeIndex5' :data="[list6,{cName:['title'],cImage:['pictureUrl']}]" @click="(data,i)=>{activeIndex5 = i}" type='image'></nutcat-tab>
+<NutTab customClass="navtabitem" :activeIndex='activeIndex5' :data="[list6,{cName:['title'],cImage:['pictureUrl']}]" @click="(data,i)=>{activeIndex5 = i}" type='image'></NutTab>
 ```
 
 ```javascript

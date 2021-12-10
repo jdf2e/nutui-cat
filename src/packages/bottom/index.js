@@ -1,8 +1,8 @@
-import Bottom from './index.vue';
+import NutBottom from './index.vue';
 import './index.scss';
 
-Bottom.install = function(Vue) {
-  Vue.component('nutcat-bottom', Bottom);
+NutBottom.install = function(Vue) {
+  Vue.component('NutBottom', NutBottom);
 };
 
-export default Bottom;
+export default NutBottom;

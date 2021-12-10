@@ -34,7 +34,7 @@
               :index="i"
               @click="change(nav, i)"
             >
-              <nutcat-icon v-show="stickyOptions.showLbs && activeIndex == i" type="lbs"></nutcat-icon>
+              <NutIcon v-show="stickyOptions.showLbs && activeIndex == i" type="lbs"></NutIcon>
               <template class="type == left">
                 <div class="title" v-if="i < stickyOptions.navs.length - 1">
                   {{ i + 1 }}F
@@ -56,7 +56,7 @@
             :class="{ active: activeIndex == i }"
             @click="change(nav, i)"
           >
-            <nutcat-icon v-show="stickyOptions.showLbs && activeIndex == i" type="lbs"></nutcat-icon>
+            <NutIcon v-show="stickyOptions.showLbs && activeIndex == i" type="lbs"></NutIcon>
             {{ nav }}
           </li>
         </ul>

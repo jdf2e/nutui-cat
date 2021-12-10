@@ -1,8 +1,8 @@
-import Noticebar from './index.vue';
+import NutNoticebar from './index.vue';
 import './index.scss';
 
-Noticebar.install = function(Vue) {
-  Vue.component('nutcat-noticebar', Noticebar);
+NutNoticebar.install = function(Vue) {
+  Vue.component('NutNoticebar', NutNoticebar);
 };
 
-export default Noticebar;
+export default NutNoticebar;

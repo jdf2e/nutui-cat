@@ -1,11 +1,11 @@
 <template>
   <div :class="classes" :style="styles" @click="toShop(data)">
     <template v-if="data.cName">
-      <nutcat-text class="sub-name" row="1">{{data.cName}}</nutcat-text>
+      <NutText class="sub-name" row="1">{{data.cName}}</NutText>
     </template>
-    <nutcat-image class="img-box" :src="data.cImage"></nutcat-image>
+    <NutImage class="img-box" :src="data.cImage"></NutImage>
     <template v-if="data.cDesc">
-      <nutcat-text class="sub-desc" row="1">{{data.cDesc}}</nutcat-text>
+      <NutText class="sub-desc" row="1">{{data.cDesc}}</NutText>
     </template>
     <slot></slot>
   </div>

@@ -3,9 +3,9 @@
     <h2>类型：normal</h2>
     <p class="type">普通优惠券-无图</p>
     <div class="demo-coupon demo1">
-      <nutcat-row type="flex">
+      <NutRow type="flex">
         <nutcat-col class="mf-col-1" :span="8" v-for="(item, index) in data" :key="index">
-          <nutcat-coupon 
+          <NutCoupon 
             :data="[item, {
               cImage: false,
               cLabel: ['desc']
@@ -14,25 +14,25 @@
             col="3"
             @click-report="handelClick1(item)"
           >
-          </nutcat-coupon>
+          </NutCoupon>
         </nutcat-col>
-      </nutcat-row>
-      <!-- <nutcat-row>
+      </NutRow>
+      <!-- <NutRow>
         <nutcat-col :span="8" v-for="(item, index) in data.list" :key="index">
-          <nutcat-coupon 
+          <NutCoupon 
             :item="[item, params]"
             type='normal'
             @click-report="handelClick"
           >
-          </nutcat-coupon>
+          </NutCoupon>
         </nutcat-col>
-      </nutcat-row> -->
+      </NutRow> -->
     </div>
     <p class="type">普通优惠券-有图</p>
     <div class="demo-coupon demo3">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
-          <nutcat-coupon 
+          <NutCoupon 
             :data="[item, {
               cImage: true,
               cLabel: ['desc']
@@ -40,24 +40,24 @@
             col="3"
             type='normal'
           >
-          </nutcat-coupon>
+          </NutCoupon>
         </nutcat-col>
-      </nutcat-row> 
+      </NutRow> 
     </div>
     <!-- <h2>类型：finance</h2>
     <p class="type">金融优惠券-无图</p>
     <div class="demo-coupon demo2">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="8" v-for="(item, index) in data.list" :key="index">
-          <nutcat-coupon 
+          <NutCoupon 
             :item="item"
             :src="false"
             type='finance'
             @click-report="handelClick(state)"
           >
-          </nutcat-coupon>
+          </NutCoupon>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div> -->
   </div>
 </template>
@@ -140,7 +140,7 @@ export default createDemo({
 }
 .demo1 {
   overflow-x: auto;
-  .nutcat-coupon {
+  .NutCoupon {
     margin-left: 6px;
     &:first-child {
       margin-left: 0;
@@ -152,7 +152,7 @@ export default createDemo({
   justify-content: space-between;
   overflow-x: auto;
 }
-.nutcat-coupon {
+.NutCoupon {
   position: relative;
   margin-left: 6px;
   flex: 0 0 auto;

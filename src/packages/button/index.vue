@@ -9,13 +9,13 @@
     :style="styles" 
   >
     <template v-if="beforeIcon">
-      <nutcat-icon :type="beforeIcon" class="before-icon"></nutcat-icon>
+      <NutIcon :type="beforeIcon" class="before-icon"></NutIcon>
     </template>
     <span :class="classesButton">
       <slot></slot>
     </span>
     <template v-if="afterIcon">
-      <nutcat-icon :type="afterIcon" class="after-icon"></nutcat-icon>
+      <NutIcon :type="afterIcon" class="after-icon"></NutIcon>
     </template>
   </nut-button>
 </template>

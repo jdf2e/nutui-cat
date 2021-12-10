@@ -3,18 +3,18 @@
     <h2>类型：normal-4</h2>
     <p class="type">适用场景：一行三个榜单布局，上下结构，支持一行三个、一行三个半、一行四个等。</p>
     <div class="demo-rank">
-      <nutcat-row type="flex" gutter="2">
+      <NutRow type="flex" gutter="2">
         <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
-          <nutcat-rank
+          <NutRank
             :data="[item, {cImage: ['pictureUrl']}]" 
             bgUrl="//img11.360buyimg.com/imagetools/jfs/t1/187035/30/7524/12500/60c1cfd7E8d2e1f3b/e43f0191aea8a5bd.png"
             col="3" 
             type="normal-4" 
           >
-            <nutcat-tag type="rank-hot"></nutcat-tag>
-          </nutcat-rank>
+            <NutTag type="rank-hot"></NutTag>
+          </NutRank>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div> 
 </template>

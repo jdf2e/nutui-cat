@@ -9,15 +9,15 @@
 下面是 **normal-3** 类型，一行多个榜单布局，榜单的名称、图片、价格通过 `data` 的属性传的。
 
 ```html
-<nutcat-row type="flex" gutter="2">
+<NutRow type="flex" gutter="2">
   <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
-    <nutcat-rank
+    <NutRank
       :data="[item, params]" 
       col="3" 
       type="normal-3" 
-    ></nutcat-rank>
+    ></NutRank>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 ```javascript
 data() {

@@ -1,29 +1,29 @@
 <template>
   <div :class="classes" :style="styles" @click="toSku(data)">
     <template v-if="col == '1'">
-      <nutcat-image
+      <NutImage
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
       <div class="product-right">
         <div class="product-content">
           <template v-if="data.cName">
-            <nutcat-text class="sub-name" :row="nameRow"
-              ><slot name="preName"></slot>{{ data.cName }}</nutcat-text
+            <NutText class="sub-name" :row="nameRow"
+              ><slot name="preName"></slot>{{ data.cName }}</NutText
             >
           </template>
           <div class="line-price-box" v-if="data.cLinePrice">
             {{ linePricePre }}
-            <nutcat-price class="line-price" :price="data.cLinePrice"></nutcat-price>
+            <NutPrice class="line-price" :price="data.cLinePrice"></NutPrice>
           </div>
         </div>
-        <nutcat-image
+        <NutImage
           class="fold-img"
           src="https://img13.360buyimg.com/imagetools/jfs/t1/40975/15/16674/3851/60eb1c98E9c94d95d/c24d03cbe8a787b5.png"
-        ></nutcat-image>
+        ></NutImage>
         <!-- <div class="product-bottom"> -->
         <!-- <div class="price-wrap"> -->
         <div class="price-box">

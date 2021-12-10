@@ -1,7 +1,7 @@
-import Live from './index.vue';
+import NutLive from './index.vue';
 
-Live.install = function(Vue) {
-  Vue.component('nutcat-live', Live);
+NutLive.install = function(Vue) {
+  Vue.component('NutLive', NutLive);
 };
 
-export default Live;
+export default NutLive;

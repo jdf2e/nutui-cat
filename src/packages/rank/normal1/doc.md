@@ -10,17 +10,17 @@
 
 ```html
 <div class="demo-rank">
-  <nutcat-rank
+  <NutRank
     :data="[data1, params1]" 
     :productData="[productData2, params2]" 
     col="1" 
     type="normal-1" 
     bgColor="#820C00"
   >
-  </nutcat-rank>
+  </NutRank>
 </div>
 <div class="demo-rank">
-  <nutcat-rank
+  <NutRank
     :data="[data1, params1]" 
     :productData="[productData3, params2]" 
     col="1" 
@@ -28,7 +28,7 @@
     tag="rank-1"
     bgColor="#820C00"
   >
-  </nutcat-rank>
+  </NutRank>
 </div>
 ```
 ```javascript

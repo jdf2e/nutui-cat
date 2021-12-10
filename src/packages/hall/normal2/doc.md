@@ -15,9 +15,9 @@
 
 
 ```html
-<nutcat-row>
+<NutRow>
   <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params]"
       tag="arrow-full"
       imgWidth="90"
@@ -26,9 +26,9 @@
       col="1"
       type="normal-2"
     >
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript

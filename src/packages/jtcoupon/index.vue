@@ -2,8 +2,8 @@
   <div :class="classes" :style="styles" @click="handleClick()">
     <div :class="classesCont">
       <div :class="classesInfo">
-        <nutcat-text class="sub-quota" row="1">{{item.extension.u_line1}}</nutcat-text>
-        <nutcat-text class="sub-limitStr" row="1">{{item.extension.u_line2}}</nutcat-text>
+        <NutText class="sub-quota" row="1">{{item.extension.u_line1}}</NutText>
+        <NutText class="sub-limitStr" row="1">{{item.extension.u_line2}}</NutText>
       </div>
       <div class="sub-btn">
         <div v-if="state == 0">立即领取</div>

@@ -2,7 +2,7 @@ import Image from './index.vue';
 import './index.scss';
 
 Image.install = function(Vue) {
-  Vue.component('nutcat-image', Image);
+  Vue.component('NutImage', Image);
 };
 
 export default Image;

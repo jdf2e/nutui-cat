@@ -9,18 +9,18 @@
 下面是 **normal-4** 类型，一行多个榜单布局，榜单的名称、图片、价格通过 `data` 的属性传的。
 
 ```html
-<nutcat-row type="flex" gutter="2">
+<NutRow type="flex" gutter="2">
   <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
-    <nutcat-rank
+    <NutRank
       :data="[item, {cImage: ['pictureUrl']}]" 
       bgUrl="//img11.360buyimg.com/imagetools/jfs/t1/187035/30/7524/12500/60c1cfd7E8d2e1f3b/e43f0191aea8a5bd.png"
       col="3" 
       type="normal-4" 
     >
-      <nutcat-tag type="rank-hot"></nutcat-tag>
-    </nutcat-rank>
+      <NutTag type="rank-hot"></NutTag>
+    </NutRank>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 ```javascript
 data() {

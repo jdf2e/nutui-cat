@@ -1,22 +1,22 @@
 <template>
   <div :class="classes" :style="styles" @click="toSku(data)">
     <template v-if="col == '2'">
-      <nutcat-image
+      <NutImage
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
       <div class="product-content">
         <template v-if="data.cName">
-          <nutcat-text class="sub-name" :row="nameRow"
-            ><slot name="preName"></slot>{{ data.cName }}</nutcat-text
+          <NutText class="sub-name" :row="nameRow"
+            ><slot name="preName"></slot>{{ data.cName }}</NutText
           >
         </template>
         <div class="price-box">
           {{ pricePre }}
-          <nutcat-price class="price" :price="data.cPrice"></nutcat-price>
+          <NutPrice class="price" :price="data.cPrice"></NutPrice>
           <template v-if="$slots.priceAfterSlot">
             <slot name="priceAfterSlot"></slot>
           </template>

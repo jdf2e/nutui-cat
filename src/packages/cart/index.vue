@@ -1,6 +1,6 @@
 <template>
   <div class="nutcat-cart" @click="handleClick">
-    <nutcat-icon v-if="imgUrl==''" :color="color" :type="type" :size="size"></nutcat-icon>
+    <NutIcon v-if="imgUrl==''" :color="color" :type="type" :size="size"></NutIcon>
     <img v-else :src="imgUrl" alt="" class="">
   </div>
 </template>

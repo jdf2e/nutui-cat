@@ -18,9 +18,9 @@ app.use(barrage);
 ### 基础用法
 
 ```html
-  <nutcat-barrage
+  <NutBarrage
     :list="data"
-  ></nutcat-barrage>
+  ></NutBarrage>
 ```
 ```javascript
 data() {

@@ -1,8 +1,8 @@
-import Gooditem from './index.vue';
+import NutGooditem from './index.vue';
 import './index.scss';
 
-Gooditem.install = function(Vue) {
-  Vue.component('nutcat-gooditem', Gooditem);
+NutGooditem.install = function(Vue) {
+  Vue.component('NutGooditem', NutGooditem);
 };
 
-export default Gooditem;
+export default NutGooditem;

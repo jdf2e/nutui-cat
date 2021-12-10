@@ -2,19 +2,19 @@
   <div class="demo">
     <h2>类型：feed-1</h2>
     <p class="type">适用场景：一行二个店铺布局，上下结构，适用于 feed 流场景。</p>
-      <nutcat-row scrollX type="flex" gutter="3">
+      <NutRow scrollX type="flex" gutter="3">
         <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-        <nutcat-shop
+        <NutShop
           :data="[item, params]" 
           tag="arrow-go"
           col="2" 
           type="feed-1" 
         >
-          <nutcat-tag slot="tag" class="sub-tag" type="red-light"
-          >满199减100</nutcat-tag>
-        </nutcat-shop>
+          <NutTag slot="tag" class="sub-tag" type="red-light"
+          >满199减100</NutTag>
+        </NutShop>
       </nutcat-col>
-    </nutcat-row>
+    </NutRow>
   </div>
 </template>
 

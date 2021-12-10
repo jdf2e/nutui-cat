@@ -13,18 +13,18 @@
 
 
 ```html
-<nutcat-row type="flex" gutter="2">
+<NutRow type="flex" gutter="2">
   <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params]"
       imgWidth="44"
       imgHeight="44"
       col="2"
       type="normal-3"
     >
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript

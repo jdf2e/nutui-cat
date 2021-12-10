@@ -1,8 +1,8 @@
-import Hallcapsule from './index.vue';
+import NutHallcapsule from './index.vue';
 import './index.scss';
 
-Hallcapsule.install = function(Vue) {
-  Vue.component('nutcat-Hallcapsule', Hallcapsule);
+NutHallcapsule.install = function(Vue) {
+  Vue.component('NutHallcapsule', NutHallcapsule);
 };
 
-export default Hallcapsule;
+export default NutHallcapsule;

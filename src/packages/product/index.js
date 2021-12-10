@@ -1,8 +1,8 @@
-import Product from './index.vue';
+import NutProduct from './index.vue';
 import './index.scss';
 
-Product.install = function(Vue) {
-  Vue.component('nutcat-product', Product);
+NutProduct.install = function(Vue) {
+  Vue.component('NutProduct', NutProduct);
 };
 
-export default Product;
+export default NutProduct;

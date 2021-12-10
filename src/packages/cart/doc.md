@@ -20,11 +20,11 @@ app.use(Cart);
 ### 基础用法
 
 ```html
-  <nutcat-cart @cartClik='fn'></nutcat-cart>
+  <NutCart @cartClik='fn'></NutCart>
 ```
 ### 支持图片
 ```html
-<nutcat-cart :imgUrl='imgurl' @cartClik='fn'></nutcat-cart>
+<NutCart :imgUrl='imgurl' @cartClik='fn'></NutCart>
 
 data() {
       return {

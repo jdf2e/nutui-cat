@@ -4,21 +4,21 @@
 
     <h3 class="sub-title">一行三</h3>
 
-    <nutcat-row :gutter="8">
+    <NutRow :gutter="8">
       <nutcat-col :span="8" v-for="(item, index) in [1,2,3]" :key="index" >
         <div class="heartcurve-demo-box">
           <nutcat-heartcurve :top='topInfo' :centerPrice='centerPrice' :bottom='bottomInfo' size='small'></nutcat-heartcurve> 
         </div>
       </nutcat-col>
-    </nutcat-row>
+    </NutRow>
 
     <h3 class="sub-title">一行二</h3>
 
-    <nutcat-row :gutter="10">
+    <NutRow :gutter="10">
       <nutcat-col :span="12" v-for="(item, index) in [1,2]" :key="index">
         <nutcat-heartcurve :top='topInfo1' :centerPrice='centerPrice1' :bottom='bottomInfo1' ></nutcat-heartcurve>  
       </nutcat-col>
-    </nutcat-row>
+    </NutRow>
 
     <h3 class="sub-title">一行一</h3>
 
@@ -33,20 +33,20 @@
 
     <h2>心跳折线</h2>
     <h3 class="sub-title">一行三</h3>
-    <nutcat-row :gutter="8">
+    <NutRow :gutter="8">
       <nutcat-col :span="8" v-for="(item, index) in [1,2,3]" :key="index">
         <div style="padding:10px 0px;background:#fff">
           <nutcat-heartcurve :top='topInfo3'  :bottom='bottomInfo3' size='small' type='broken' ></nutcat-heartcurve>  
         </div>
       </nutcat-col>
-    </nutcat-row>
+    </NutRow>
 
     <h3 class="sub-title">一行二</h3>
-    <nutcat-row :gutter="10">
+    <NutRow :gutter="10">
       <nutcat-col :span="12" v-for="(item, index) in [1,2]" :key="index">
         <nutcat-heartcurve :top='topInfo4'  type='broken'></nutcat-heartcurve>  
       </nutcat-col>
-    </nutcat-row>
+    </NutRow>
 
     <h3 class="sub-title">一行一</h3>
     <div class="goods">

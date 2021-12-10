@@ -11,7 +11,7 @@
 
 
 ```html
-<nutcat-shop
+<NutShop
   :data="[data, params]" 
   col="1" 
   type="normal-1" 
@@ -19,7 +19,7 @@
   nameRow="1"
   bgColor="#820C00"
 >
-</nutcat-shop>
+</NutShop>
 ```
 
 ```javascript

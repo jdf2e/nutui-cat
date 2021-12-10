@@ -1,8 +1,8 @@
-import Progress from './index.vue';
+import NutProgress from './index.vue';
 import './index.scss';
 
-Progress.install = function(Vue) {
-  Vue.component('nutcat-progress', Progress);
+NutProgress.install = function(Vue) {
+  Vue.component('NutProgress', NutProgress);
 };
 
-export default Progress;
+export default NutProgress;

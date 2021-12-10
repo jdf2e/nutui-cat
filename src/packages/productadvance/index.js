@@ -1,8 +1,8 @@
-import Productadvance from './index.vue';
+import NutProductadvance from './index.vue';
 import './index.scss';
 
-Productadvance.install = function(Vue) {
-  Vue.component('nutcat-productadvance', Productadvance);
+NutProductadvance.install = function(Vue) {
+  Vue.component('NutProductadvance', NutProductadvance);
 };
 
-export default Productadvance;
+export default NutProductadvance;

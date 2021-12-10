@@ -3,9 +3,9 @@
     <h2>类型：normal-5</h2>
     <p class="type">适用场景：带购物车的常规类型，支持一行二个、一行三个、一行三个半等。</p>
     <div class="demo-product">
-      <nutcat-row  type="flex" gutter="2">
+      <NutRow  type="flex" gutter="2">
         <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
-          <nutcat-product
+          <NutProduct
             :data="[item, params]"
             iconType="cart"
             nameRow="2"
@@ -13,17 +13,17 @@
             type="normal-5"
           >
             <template slot="preName">
-              <nutcat-tag type="618">618</nutcat-tag>
+              <NutTag type="618">618</NutTag>
             </template>
-          </nutcat-product>
+          </NutProduct>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <p class="type">一行二个商品，多用于底部 Feed 流。</p>
     <div class="demo-product">
-      <nutcat-row  type="flex" gutter="3">
+      <NutRow  type="flex" gutter="3">
         <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-          <nutcat-product
+          <NutProduct
             :data="[item, params]"
             iconType="cart"
             name="DYSON戴森吹风机便携家用电吹风负离子智能空调"
@@ -34,23 +34,23 @@
             type="normal-5"
           >
             <template slot="preName">
-              <nutcat-tag type="618">618</nutcat-tag>
+              <NutTag type="618">618</NutTag>
             </template>
             <template slot="priceAfter">
-              <nutcat-tag class="price-tag-after" type="plus-price"></nutcat-tag>
+              <NutTag class="price-tag-after" type="plus-price"></NutTag>
             </template>
             <template slot="tag">
-              <nutcat-tag class="sub-tag" type="red-light">满199减10</nutcat-tag>
-              <nutcat-tag class="sub-tag" type="red-light">利益点利益点</nutcat-tag>
+              <NutTag class="sub-tag" type="red-light">满199减10</NutTag>
+              <NutTag class="sub-tag" type="red-light">利益点利益点</NutTag>
             </template>
-          </nutcat-product>
+          </NutProduct>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <div class="demo-product">
-      <nutcat-row type="flex" gutter="3">
+      <NutRow type="flex" gutter="3">
         <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-          <nutcat-product
+          <NutProduct
             :data="[item, params]"
             iconType="cart"
             name="京东好服务-洗衣机深度清洗"
@@ -60,22 +60,22 @@
             type="normal-5"
           >
             <template slot="preName">
-              <nutcat-tag type="618">618</nutcat-tag>
+              <NutTag type="618">618</NutTag>
             </template>
             <template slot="priceAfter">
-              <nutcat-tag class="price-tag-after" type="plus-price"></nutcat-tag>
+              <NutTag class="price-tag-after" type="plus-price"></NutTag>
             </template>
             <template slot="tag">
-              <nutcat-tag class="sub-tag" type="red-light"
-                >您最近浏览的商品正在秒杀</nutcat-tag
+              <NutTag class="sub-tag" type="red-light"
+                >您最近浏览的商品正在秒杀</NutTag
               >
             </template>
             <template slot="desc">
-              <nutcat-text class="sub-desc">4.3万人购买</nutcat-text>
+              <NutText class="sub-desc">4.3万人购买</NutText>
             </template>
-          </nutcat-product>
+          </NutProduct>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>
@@ -167,7 +167,7 @@ export default createDemo({
       margin-left: 0;
     }
   }
-  .nutcat-row {
+  .NutRow {
     overflow-x: auto;
   }
 }

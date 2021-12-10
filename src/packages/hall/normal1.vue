@@ -3,19 +3,19 @@
     <template v-if="col == '1'">
       <div class="hall-content">
         <template v-if="data.cName">
-          <nutcat-text class="sub-name" :color="nameColor" row="1">{{ data.cName }}</nutcat-text>
+          <NutText class="sub-name" :color="nameColor" row="1">{{ data.cName }}</NutText>
         </template>
       </div>
       <template v-if="tag">
-        <nutcat-icon class="sub-tag" :type="tag"></nutcat-icon>
+        <NutIcon class="sub-tag" :type="tag"></NutIcon>
       </template>
-      <nutcat-image
+      <NutImage
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
     </template>
   </div>
 </template>

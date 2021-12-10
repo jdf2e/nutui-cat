@@ -24,11 +24,11 @@ app.use(heartcurve);
 #### 一行三
 
 ```html
-<nutcat-row :gutter="8">
+<NutRow :gutter="8">
     <nutcat-col :span="8" v-for="(item, index) in [1,2,3]" :key="index" >
         <nutcat-heartcurve :top='topInfo' :centerPrice='centerPrice' :bottom='bottomInfo' size='small'></nutcat-heartcurve> 
     </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript
@@ -48,11 +48,11 @@ export default {
 ```
 一行二
 ```html
-<nutcat-row :gutter="10">
+<NutRow :gutter="10">
     <nutcat-col :span="12" v-for="(item, index) in [1,2]" :key="index">
     <nutcat-heartcurve :top='topInfo' :centerPrice='centerPrice' :bottom='bottomInfo' ></nutcat-heartcurve>  
     </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript
@@ -98,11 +98,11 @@ export default {
 
 一行三
 ```html
-<nutcat-row :gutter="8">
+<NutRow :gutter="8">
     <nutcat-col :span="8" v-for="(item, index) in [1,2,3]" :key="index">
         <nutcat-heartcurve :top='topInfo3'  :bottom='bottomInfo3' size='small' type='broken' ></nutcat-heartcurve>  
     </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript
@@ -122,11 +122,11 @@ export default {
 
 一行二
 ```html
-<nutcat-row :gutter="10">
+<NutRow :gutter="10">
     <nutcat-col :span="12" v-for="(item, index) in [1,2]" :key="index">
         <nutcat-heartcurve :top='topInfo'  type='broken'></nutcat-heartcurve>  
     </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript

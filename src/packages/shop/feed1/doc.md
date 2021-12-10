@@ -9,19 +9,19 @@
 一行两个店铺布局，`col` 传2，店铺的店铺名称、图片通过 `data` 的属性传的。
 
 ```html
-<nutcat-row scrollX type="flex" gutter="3">
+<NutRow scrollX type="flex" gutter="3">
     <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-    <nutcat-shop
+    <NutShop
       :data="[item, params]" 
       tag="arrow-go"
       col="2" 
       type="feed-1" 
     >
-      <nutcat-tag slot="tag" class="sub-tag" type="red-light"
-      >满199减100</nutcat-tag>
-    </nutcat-shop>
+      <NutTag slot="tag" class="sub-tag" type="red-light"
+      >满199减100</NutTag>
+    </NutShop>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript

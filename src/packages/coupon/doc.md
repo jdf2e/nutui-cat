@@ -19,9 +19,9 @@ app.use(Coupon);
 ### 基础用法
 
 ```html
-<nutcat-row type="flex">
+<NutRow type="flex">
     <nutcat-col class="mf-col-1" :span="8" v-for="(item, index) in data" :key="index">
-        <nutcat-coupon 
+        <NutCoupon 
         :item="[item, {
             cImage: false,
             cLabel: ['desc']
@@ -30,17 +30,17 @@ app.use(Coupon);
         col="3"
         @click-report="handelClick1(item)"
         >
-        </nutcat-coupon>
+        </NutCoupon>
     </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 普通优惠券-有图版在 cImage 设置为 true。
 
 ```html
-<nutcat-row>
+<NutRow>
     <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
-        <nutcat-coupon 
+        <NutCoupon 
         :item="[item, {
             cImage: true,
             cLabel: ['desc']
@@ -48,9 +48,9 @@ app.use(Coupon);
         col="3"
         type='normal'
         >
-        </nutcat-coupon>
+        </NutCoupon>
     </nutcat-col>
-</nutcat-row> 
+</NutRow> 
 ```
 
 ```javascript

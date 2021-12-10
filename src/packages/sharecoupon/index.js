@@ -1,8 +1,8 @@
-import Sharecoupon from './index.vue';
+import NutSharecoupon from './index.vue';
 import './index.scss';
 
-Sharecoupon.install = function(Vue) {
-  Vue.component('nutcat-sharecoupon', Sharecoupon);
+NutSharecoupon.install = function(Vue) {
+  Vue.component('NutSharecoupon', NutSharecoupon);
 };
 
-export default Sharecoupon;
+export default NutSharecoupon;

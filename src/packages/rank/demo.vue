@@ -3,17 +3,17 @@
     <!-- <h2>类型：normal-1</h2>
     <p class="type">一行一个榜单布局，左边文字区域，右边区域是商品区域。</p>
     <div class="demo-rank">
-      <nutcat-rank
+      <NutRank
         :data="[data1, params1]" 
         :productData="[productData2, params2]" 
         col="1" 
         type="normal-1" 
         bgColor="#820C00"
       >
-      </nutcat-rank>
+      </NutRank>
     </div>
     <div class="demo-rank">
-      <nutcat-rank
+      <NutRank
         :data="[data1, params1]" 
         :productData="[productData3, params2]" 
         col="1" 
@@ -21,23 +21,23 @@
         tag="rank-1"
         bgColor="#820C00"
       >
-      </nutcat-rank>
+      </NutRank>
     </div>
     <p class="type">`productData` 为空，右边的商品区域则隐藏，通过 `slot` 增加进入的 `icon`。</p>
     <div class="demo-rank demo1-2">
-      <nutcat-rank
+      <NutRank
         :data="[data1, params2]" 
         col="1" 
         type="normal-1" 
         bgColor="#820C00"
       >
-        <nutcat-icon type="arrow-full"></nutcat-icon>
-      </nutcat-rank>
+        <NutIcon type="arrow-full"></NutIcon>
+      </NutRank>
     </div>
     <h2>类型：normal-2</h2>
     <p class="type">一行二个榜单布局，左右结构，左边文字，右边图片区域。</p>
     <div class="demo-rank demo2-1">
-      <nutcat-rank
+      <NutRank
         rowType="flex"
         gutter="3"
         :data="[data2, params1]" 
@@ -46,32 +46,32 @@
         col="2" 
         type="normal-2" 
         bgColor="#820C00"
-      ></nutcat-rank>
+      ></NutRank>
     </div>
     <h2>类型：normal-3</h2>
     <p class="type">一行三个榜单布局，上下结构，支持一行三个、一行三个半、一行四个等。</p>
     <div class="demo-rank demo3-1">
-      <nutcat-rank
+      <NutRank
         rowType="flex"
         gutter="2"
         :data="[data3, params1]" 
         col="3" 
         type="normal-3" 
-      ></nutcat-rank>
+      ></NutRank>
     </div>
     <div class="demo-rank demo3-2">
-      <nutcat-rank
+      <NutRank
         rowType="flex"
         gutter="2"
         :data="[data4, params1]" 
         col="3" 
         type="normal-3" 
       >
-        <nutcat-tag type="rank-hot"></nutcat-tag>
-      </nutcat-rank>
+        <NutTag type="rank-hot"></NutTag>
+      </NutRank>
     </div>
     <div class="demo-rank demo-s3">
-      <nutcat-rank
+      <NutRank
         scrollX
         rowType="flex"
         gutter="1"
@@ -79,11 +79,11 @@
         col="3" 
         type="normal-3" 
       >
-        <nutcat-tag type="rank-hot"></nutcat-tag>
-      </nutcat-rank>
+        <NutTag type="rank-hot"></NutTag>
+      </NutRank>
     </div>
     <div class="demo-rank demo4-1">
-      <nutcat-rank
+      <NutRank
         scrollX
         rowType="flex"
         gutter="1"
@@ -91,13 +91,13 @@
         col="4" 
         type="normal-3" 
       >
-        <nutcat-tag type="rank-hot"></nutcat-tag>
-      </nutcat-rank>
+        <NutTag type="rank-hot"></NutTag>
+      </NutRank>
     </div>
     <h2>类型：normal-4</h2>
     <p class="type">一行三个榜单布局，上下结构，支持一行三个、一行三个半。</p>
     <div class="demo-rank demo3-3">
-      <nutcat-rank
+      <NutRank
         rowType="flex"
         gutter="2"
         :data="[data6, params1]" 
@@ -105,13 +105,13 @@
         col="3" 
         type="normal-4" 
       >
-        <nutcat-tag type="rank-hot"></nutcat-tag>
-      </nutcat-rank>
+        <NutTag type="rank-hot"></NutTag>
+      </NutRank>
     </div>
     <h2>类型：feed-1</h2>
     <p class="type">一行二个榜单布局，上下结构，适用于 feed 流场景。</p>
     <div class="demo-rank demo2-1">
-      <nutcat-rank
+      <NutRank
         rowType="flex"
         gutter="3"
         :data="[data7, params1]" 
@@ -119,7 +119,7 @@
         col="2" 
         type="feed-1" 
       >
-      </nutcat-rank>
+      </NutRank>
     </div> -->
   </div>
 </template>

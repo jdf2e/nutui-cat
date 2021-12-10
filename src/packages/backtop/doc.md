@@ -25,9 +25,9 @@ app.use(backtop);
 **点击逻辑:** 点击后，定位到页面顶部，按钮隐藏
 
 ```html
-<nutcat-backtop @click="handleClick" el-id="page1">
+<NutBacktop @click="handleClick" el-id="page1">
   <nut-icon size="19px" class="nut-backtop-main" name="top"></nut-icon>
-</nutcat-backtop>
+</NutBacktop>
 ```
 
 

@@ -10,9 +10,9 @@
 
 
 ```html
-<nutcat-row  type="flex" gutter="2">
+<NutRow  type="flex" gutter="2">
   <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
-    <nutcat-product
+    <NutProduct
       :data="[item, params]"
       iconType="cart"
       nameRow="2"
@@ -20,9 +20,9 @@
       type="normal-5"
     >
       <template slot="preName">
-        <nutcat-tag type="618">618</nutcat-tag>
+        <NutTag type="618">618</NutTag>
       </template>
-    </nutcat-product>
+    </NutProduct>
   </nutcat-col>
 ```
 ```javascript
@@ -61,9 +61,9 @@ data() {
 一行二个商品，多用于底部 Feed 流。
 
 ```html
-<nutcat-row  type="flex" gutter="3">
+<NutRow  type="flex" gutter="3">
   <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-    <nutcat-product
+    <NutProduct
       :data="[item, params]"
       iconType="cart"
       name="DYSON戴森吹风机便携家用电吹风负离子智能空调"
@@ -74,18 +74,18 @@ data() {
       type="normal-5"
     >
       <template slot="preName">
-        <nutcat-tag type="618">618</nutcat-tag>
+        <NutTag type="618">618</NutTag>
       </template>
       <template slot="priceAfter">
-        <nutcat-tag class="price-tag-after" type="plus-price"></nutcat-tag>
+        <NutTag class="price-tag-after" type="plus-price"></NutTag>
       </template>
       <template slot="tag">
-        <nutcat-tag class="sub-tag" type="red-light">满199减10</nutcat-tag>
-        <nutcat-tag class="sub-tag" type="red-light">利益点利益点</nutcat-tag>
+        <NutTag class="sub-tag" type="red-light">满199减10</NutTag>
+        <NutTag class="sub-tag" type="red-light">利益点利益点</NutTag>
       </template>
-    </nutcat-product>
+    </NutProduct>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript

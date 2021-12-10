@@ -19,14 +19,14 @@ app.use(Product);
 ### 秒杀
 
 ```html
-<nutcat-tab
+<NutTab
     style="height:45px"
     customClass="tabItem"
     activeClass='tabActive'
     :list="list"
     :showLine='false'
     type='complex'
-></nutcat-tab>
+></NutTab>
 
 <div class="demo-countdown">
     距离本场结束：
@@ -40,7 +40,7 @@ app.use(Product);
         </div>
      </nut-countdown>
 </div>
-<nutcat-product
+<NutProduct
     rowType="flex"
     gutter="2"
     :data="data"
@@ -49,8 +49,8 @@ app.use(Product);
     col="3"
     type="normal-5"
     >
-    <nutcat-tag class="top-tag tl" type="red-gradient">满199减100</nutcat-tag>
-</nutcat-product>
+    <NutTag class="top-tag tl" type="red-gradient">满199减100</NutTag>
+</NutProduct>
 ```
 ```JavaScript
 data() {
@@ -123,7 +123,7 @@ data() {
 ### 直降
 
 ```html
-<nutcat-product
+<NutProduct
     rowType="flex"
     gutter="2"
     :data="data"
@@ -135,8 +135,8 @@ data() {
     :bottomOperate='bottomOperate'
     linePricePre='日常价'
     >
-    <nutcat-tag class="top-tag tl" type="rank-hot">满199减100</nutcat-tag>
-</nutcat-product>
+    <NutTag class="top-tag tl" type="rank-hot">满199减100</NutTag>
+</NutProduct>
 ```
 ```JavaScript
 data() {
@@ -167,7 +167,7 @@ data() {
         desc:'马上抢',
         position:'right',
         renderIcon:(h)=>{
-          return h('nutcat-icon',{
+          return h('NutIcon',{
             props:{
               color:"#ffffff", 
               type:"arrow-full"

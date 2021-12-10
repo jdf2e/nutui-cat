@@ -1,8 +1,8 @@
-import Navleft from './index.vue';
+import NutNavleft from './index.vue';
 import './index.scss';
 
-Navleft.install = function(Vue) {
-  Vue.component('nutcat-navleft', Navleft);
+NutNavleft.install = function(Vue) {
+  Vue.component('NutNavleft', NutNavleft);
 };
 
-export default Navleft;
+export default NutNavleft;

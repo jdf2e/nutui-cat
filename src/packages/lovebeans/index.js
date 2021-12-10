@@ -1,8 +1,8 @@
-import Lovebeans from './index.vue';
+import NutLovebeans from './index.vue';
 import './index.scss';
 
-Lovebeans.install = function(Vue) {
-  Vue.component('nutcat-lovebeans', Lovebeans);
+NutLovebeans.install = function(Vue) {
+  Vue.component('NutLovebeanss', NutLovebeans);
 };
 
-export default Lovebeans;
+export default NutLovebeans;

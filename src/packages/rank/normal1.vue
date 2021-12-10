@@ -2,10 +2,10 @@
   <div :class="classes" :style="styles" @click="toRank(data)">
     <div :class="classesCont">
       <template v-if="data.cName">
-        <nutcat-text class="sub-name" row="1">{{data.cName}}</nutcat-text>
+        <NutText class="sub-name" row="1">{{data.cName}}</NutText>
       </template>
       <template v-if="data.cDesc">
-        <nutcat-text class="sub-desc" row="1">{{data.cDesc}}</nutcat-text>
+        <NutText class="sub-desc" row="1">{{data.cDesc}}</NutText>
       </template>
     </div>
     <slot></slot>

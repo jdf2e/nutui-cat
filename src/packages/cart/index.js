@@ -1,8 +1,8 @@
-import Cart from './index.vue';
+import NutCart from './index.vue';
 import './index.scss';
 
-Cart.install = function(Vue) {
-  Vue.component('nutcat-cart', Cart);
+NutCart.install = function(Vue) {
+  Vue.component('NutCart', NutCart);
 };
 
-export default Cart;
+export default NutCart;

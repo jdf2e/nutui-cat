@@ -11,15 +11,15 @@
 
 
 ```html
-<nutcat-product :data="[data1, params]" col="1" type="normal-1" nameRow="1">
+<NutProduct :data="[data1, params]" col="1" type="normal-1" nameRow="1">
   <template slot="preName">
-    <nutcat-tag type="618">618</nutcat-tag>
+    <NutTag type="618">618</NutTag>
   </template>
   <template slot="tag">
-    <nutcat-tag class="sub-tag" type="red-pink">利益点利益点</nutcat-tag>
-    <nutcat-tag class="sub-tag" type="red-pink">利益点利益点</nutcat-tag>
+    <NutTag class="sub-tag" type="red-pink">利益点利益点</NutTag>
+    <NutTag class="sub-tag" type="red-pink">利益点利益点</NutTag>
   </template>
-</nutcat-product>
+</NutProduct>
 ```
 ```javascript
 this.data1 = [
@@ -38,7 +38,7 @@ this.data1 = [
 `bgUrl` 可以设置背景图，抢购按钮通过 `tag` 传 `qiang` 显示，抢购；左上角标签通过 `slot`传入。
 
 ```html
-<nutcat-product
+<NutProduct
   :data="data2"
   col="1"
   tag="qiang"
@@ -46,11 +46,11 @@ this.data1 = [
   bgUrl="//img10.360buyimg.com/imagetools/jfs/t1/6090/8/11750/133338/60c09116E0c991a9f/cfe358af6388e40f.png"
 >
   <template slot="tag">
-    <nutcat-tag class="sub-tag" type="red-pink">277天最低价</nutcat-tag>
-    <nutcat-tag class="sub-tag" type="red-pink">放心购标签</nutcat-tag>
+    <NutTag class="sub-tag" type="red-pink">277天最低价</NutTag>
+    <NutTag class="sub-tag" type="red-pink">放心购标签</NutTag>
   </template>
-  <nutcat-tag class="top-tag tl" type="fire">某某商品top款</nutcat-tag>
-</nutcat-product>
+  <NutTag class="top-tag tl" type="fire">某某商品top款</NutTag>
+</NutProduct>
 ```
 
 ```javascript

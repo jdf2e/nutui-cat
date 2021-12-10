@@ -11,7 +11,6 @@
 <script lang="ts">
 import { createComponent } from '@/utils/create';
 const { componentName, create } = createComponent('text');
-
 export default create({
   props: {
     row: {

@@ -10,18 +10,18 @@
 会场的会场名称、图片通过 `data` 的属性传的。距离是用 `cDistance` 配置。
 
 ```html
-<nutcat-row scrollX type="flex" gutter="3">
+<NutRow scrollX type="flex" gutter="3">
   <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
-    <nutcat-shop
+    <NutShop
       :data="[item, params]" 
       col="3" 
       type="lbs" 
     >
-      <nutcat-tag slot="tag" class="sub-tag" type="red-light"
-      >满199减100</nutcat-tag>
-    </nutcat-shop>
+      <NutTag slot="tag" class="sub-tag" type="red-light"
+      >满199减100</NutTag>
+    </NutShop>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript

@@ -1,18 +1,18 @@
 <template>
   <div :class="classes" :style="styles" @click="toSku(data)">
     <template v-if="col == '1'">
-      <nutcat-image
+      <NutImage
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
       <div class="product-right">
         <div class="product-content">
           <template v-if="data.cName">
-            <nutcat-text class="sub-name" :row="nameRow"
-              ><slot name="preName"></slot>{{ data.cName }}</nutcat-text
+            <NutText class="sub-name" :row="nameRow"
+              ><slot name="preName"></slot>{{ data.cName }}</NutText
             >
           </template>
           <div v-if="$slots.tag" class="tag-box">
@@ -23,14 +23,14 @@
           <div class="bight-content">
             <p class="bight-title">{{ heartName }}</p>
             <div class="bight-price-box">
-              <nutcat-price class="bight-price" :price="data.cPrice"></nutcat-price>
+              <NutPrice class="bight-price" :price="data.cPrice"></NutPrice>
             </div>
             <div class="bight-lineprice-wrap">
-              <nutcat-price
+              <NutPrice
                 v-if="data.cLinePrice > data.cPrice"
                 class="line-price"
                 :price="data.cLinePrice"
-              ></nutcat-price>
+              ></NutPrice>
               <span class="bight-word">即将恢复</span>
             </div>
           </div>
@@ -38,17 +38,17 @@
       </div>
     </template>
     <template v-else-if="col == '2'">
-      <nutcat-image
+      <NutImage
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
       <div class="product-content">
         <template v-if="data.cName">
-          <nutcat-text class="sub-name" :row="nameRow"
-            ><slot name="preName"></slot>{{ data.cName }}</nutcat-text
+          <NutText class="sub-name" :row="nameRow"
+            ><slot name="preName"></slot>{{ data.cName }}</NutText
           >
         </template>
         <div v-if="$slots.tag" class="tag-box">
@@ -57,15 +57,15 @@
         <div class="bight-img-box">
           <div class="bight-content">
             <div class="bight-lineprice-wrap">
-              <nutcat-price
+              <NutPrice
                 v-if="data.cLinePrice > data.cPrice"
                 class="line-price"
                 :price="data.cLinePrice"
-              ></nutcat-price>
+              ></NutPrice>
               <span class="bight-word">即将恢复</span>
             </div>
             <div class="bight-price-box">
-              <nutcat-price class="bight-price" :price="data.cPrice"></nutcat-price>
+              <NutPrice class="bight-price" :price="data.cPrice"></NutPrice>
             </div>
             <p class="bight-title">{{ heartName }}</p>
           </div>
@@ -73,31 +73,31 @@
       </div>
     </template>
     <template v-else-if="col == '3'">
-      <nutcat-image
+      <NutImage
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
       <div class="product-content">
         <template v-if="data.cName">
-          <nutcat-text class="sub-name" :row="nameRow"
-            ><slot name="preName"></slot>{{ data.cName }}</nutcat-text
+          <NutText class="sub-name" :row="nameRow"
+            ><slot name="preName"></slot>{{ data.cName }}</NutText
           >
         </template>
         <div class="bight-img-box">
           <div class="bight-content">
             <p class="bight-title">{{ heartName }}</p>
             <div class="bight-price-box">
-              <nutcat-price class="bight-price" :price="data.cPrice"></nutcat-price>
+              <NutPrice class="bight-price" :price="data.cPrice"></NutPrice>
             </div>
             <div class="bight-lineprice-wrap">
-              <nutcat-price
+              <NutPrice
                 v-if="data.cLinePrice > data.cPrice"
                 class="line-price"
                 :price="data.cLinePrice"
-              ></nutcat-price>
+              ></NutPrice>
               <!-- <span class="bight-word">即将恢复</span> -->
             </div>
           </div>

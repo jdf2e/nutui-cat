@@ -2,8 +2,8 @@
     <div class="demo">
       <h2>基础用法</h2>
       
-      <nutcat-lovebeans name="wifi"></nutcat-lovebeans>
-      <nutcat-lovebeans name="mail" txt="test txt"></nutcat-lovebeans>
+      <NutLovebeans name="wifi"></NutLovebeans>
+      <NutLovebeans name="mail" txt="test txt"></NutLovebeans>
     </div>
   </template>
   
@@ -19,7 +19,7 @@
   </script>
   
   <style lang="scss" scoped>
-  .nutcat-lovebeans {
+  .NutLovebeans {
   }
   </style>
   

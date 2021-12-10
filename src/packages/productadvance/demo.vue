@@ -2,10 +2,10 @@
   <div class="demo">
     <h2>预告商品</h2>
 
-    <nutcat-row>
+    <NutRow>
       <nutcat-col :span="8" v-for="(item, index) in data6" :key="index">
        
-          <nutcat-product
+          <NutProduct
             rowType="flex"
             gutter="2"
             :data="[item,{cName: ['name'],cImage:['image'],cPrice:['price']}]"
@@ -16,9 +16,9 @@
             type="normal-4"
             :bottomOperate='bottomOperate'
           >
-          </nutcat-product>
+          </NutProduct>
       </nutcat-col>
-    </nutcat-row>
+    </NutRow>
 
       
 
@@ -26,9 +26,9 @@
 
       <h2>预约商品</h2>
 
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="8" v-for="(item, index) in data6" :key="index">
-            <nutcat-product
+            <NutProduct
                 rowType="flex"
                 gutter="2"
                 :data="[item,{cName: ['name'],cImage:['image'],cPrice:['price']}]"
@@ -40,14 +40,14 @@
                 :bottomOperate='bottomOperate1'
                 linePricePre='京东价'
               >
-              <nutcat-tag class="top-tag tl" type="red-gradient">满199减100</nutcat-tag>
-            </nutcat-product>
+              <NutTag class="top-tag tl" type="red-gradient">满199减100</NutTag>
+            </NutProduct>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
       
 
       <!-- <h2>预售商品</h2>
-      <nutcat-productadvance></nutcat-productadvance> -->
+      <NutProductadvance></NutProductadvance> -->
   </div>
 </template>
     
@@ -89,7 +89,7 @@ export default createDemo({
         desc:'去预约',
         position:'right',
         renderIcon:(h)=>{
-          return h('nutcat-icon',{
+          return h('NutIcon',{
             props:{
               color:"#ffffff", 
               type:"arrow-full"

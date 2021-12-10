@@ -19,13 +19,13 @@ app.use(ShareCoupon);
 ### 基础用法
 
 ```html
-<nutcat-shareCoupon
+<NutSharecoupon
     :data="data"
     type='share'
     col="3"
     @click-report="handelClick"
     >
-    </nutcat-shareCoupon>
+    </NutSharecoupon>
 ```
 ```javascript
 this.data = [

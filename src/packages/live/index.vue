@@ -1,5 +1,5 @@
 <template>
-  <nutcat-row type="flex" gutter="6" flexWrap="nowrap">
+  <NutRow type="flex" gutter="6" flexWrap="nowrap">
     <nutcat-col :span="24 / ~~col" v-for="(item, index) in data" :key="index">
       <template v-if="type == 'normal'">
         <goodsLiveCol2 :data="item"></goodsLiveCol2>
@@ -12,7 +12,7 @@
       </template>
       <template v-else-if="type === 'room-2'"></template>
     </nutcat-col>
-  </nutcat-row>
+  </NutRow>
 </template>
 
 <script lang="ts">

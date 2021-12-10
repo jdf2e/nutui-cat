@@ -1,12 +1,12 @@
 <template>
   <div class="demo">
     <h2>基础用法</h2>
-    <nutcat-gooditem
+    <NutGooditem
       :list="data"
       :field-mapping="mapping"
       @addCart="addCart"
       @goodDetails="goodDetails"
-    ></nutcat-gooditem>
+    ></NutGooditem>
   </div>
 </template>
 
@@ -48,7 +48,7 @@ export default createDemo({
   h2 {
     padding: 0 25px;
   }
-  .nutcat-gooditem {
+  .NutGooditem {
     
   }
   </style>

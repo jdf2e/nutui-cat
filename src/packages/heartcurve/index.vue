@@ -22,11 +22,11 @@
         <div class="bight-content">
 
           <div :class="['bight-price-box',`bight-price-${type}-box`]">
-            <nutcat-price
+            <NutPrice
               v-if="type == 'bight'"
               class="bight-price"
               :price="centerPrice"
-            ></nutcat-price>
+            ></NutPrice>
           </div>
 
           <div :class="['bight-bottom-box',`bight-bottom-${type}-box`]" v-if="bottom.left || bottom.center || bottom.right">

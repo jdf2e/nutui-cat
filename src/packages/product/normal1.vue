@@ -1,24 +1,24 @@
 <template>
   <div :class="classes" :style="styles" @click="toSku(data)">
     <template v-if="col == '1'">
-      <nutcat-image
+      <NutImage
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
       <div class="product-right" :style="styleRight">
         <div class="product-content">
           <template v-if="data.cName">
-            <nutcat-text class="sub-name" :row="nameRow"
-              ><slot name="preName"></slot>{{ data.cName }}</nutcat-text
+            <NutText class="sub-name" :row="nameRow"
+              ><slot name="preName"></slot>{{ data.cName }}</NutText
             >
           </template>
           <template v-if="data.cDesc">
-            <nutcat-text class="sub-desc" :row="descRow">{{
+            <NutText class="sub-desc" :row="descRow">{{
               data.cDesc
-            }}</nutcat-text>
+            }}</NutText>
           </template>
         </div>
         <div class="product-bottom">
@@ -27,12 +27,12 @@
           </div>
           <div class="price-box">
             {{ pricePre }}
-            <nutcat-price :price="data.cPrice" class="price" />
+            <NutPrice :price="data.cPrice" class="price" />
             <template v-if="data.cLinePrice > data.cPrice">
-              <nutcat-price class="line-price" :price="data.cLinePrice"></nutcat-price>
+              <NutPrice class="line-price" :price="data.cLinePrice"></NutPrice>
             </template>
             <template v-if="tag">
-              <nutcat-icon color="#F02B2B" :type="tag"></nutcat-icon>
+              <NutIcon color="#F02B2B" :type="tag"></NutIcon>
             </template>
           </div>
         </div>
@@ -146,6 +146,7 @@ export default create({
 $prefix: nutcat-product;
 
 .#{$prefix}-normal-1 {
+  color: red;
   .sub-tag {
     margin-bottom: 6px;
   }

@@ -1,8 +1,8 @@
-import Video from './index.vue';
+import NutVideo from './index.vue';
 import './index.scss';
 
-Video.install = function(Vue) {
-  Vue.component('nutcat-video', Video);
+NutVideo.install = function(Vue) {
+  Vue.component('NutVideo', NutVideo);
 };
 
-export default Video;
+export default NutVideo;

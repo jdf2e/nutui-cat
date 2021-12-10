@@ -17,14 +17,14 @@ app.use(TaskList);
 ### 基础用法
 ```html
 <nut-popup :style="{ padding: '10px 10px' }" v-model="show" position="bottom">
-  <nutcat-tasklist :list="options"  @clickOperate='clickOperate'></nutcat-tasklist>
+  <NutTasklist :list="options"  @clickOperate='clickOperate'></NutTasklist>
 </nut-popup>
 ```
 
 ### 自定义样式
 ```html
 <nut-popup :style="{ padding: '10px 10px' }" v-model="show" position="bottom">
-  <nutcat-tasklist :list="options" customClass="task-self" ></nutcat-tasklist>
+  <NutTasklist :list="options" customClass="task-self" ></NutTasklist>
 </nut-popup>
 
 ```
@@ -43,7 +43,7 @@ app.use(TaskList);
 可以通过 renderOpetation 和 renderIcon 分别自定义右侧按钮和左侧图标。使用 renderOpetation 或 renderIcon 指定渲染函数，该函数返回需要的节点区内容即可。
 ```html
 <nut-popup :style="{ padding: '10px 10px' }" v-model="show" position="bottom">
-  <nutcat-tasklist :list="options" class="task-self" :renderOpetation='renderOpetation' :renderIcon='renderIcon'></nutcat-tasklist>
+  <NutTasklist :list="options" class="task-self" :renderOpetation='renderOpetation' :renderIcon='renderIcon'></NutTasklist>
 </nut-popup>
 ```
 ```javascript
@@ -53,7 +53,7 @@ methods:{
     data.operationMsg = '已签到'
   },
   renderIcon(h, { node }) {
-      return h('nutcat-icon',{
+      return h('NutIcon',{
           
         props:{
           color:"#F02B2B", 

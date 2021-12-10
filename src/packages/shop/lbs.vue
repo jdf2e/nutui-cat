@@ -1,12 +1,12 @@
 <template>
   <div :class="classes" :style="styles" @click="toShop(data)">
-    <nutcat-image class="img-box" :src="data.cImage"></nutcat-image>
+    <NutImage class="img-box" :src="data.cImage"></NutImage>
     <div class="shop-content">
       <template v-if="data.cName">
-        <nutcat-text class="sub-name" row="1">{{data.cName}}</nutcat-text>
+        <NutText class="sub-name" row="1">{{data.cName}}</NutText>
       </template>
       <template v-if="data.cDistance">
-        <nutcat-text class="sub-distance" row="1"><nutcat-icon type="lbs">618</nutcat-icon>{{data.cDistance}}</nutcat-text>
+        <NutText class="sub-distance" row="1"><NutIcon type="lbs">618</NutIcon>{{data.cDistance}}</NutText>
       </template>
       <div v-if="$slots.tag" class="tag-box">
         <slot name="tag"></slot>

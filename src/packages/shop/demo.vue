@@ -3,7 +3,7 @@
     <!-- <h2>类型：normal-1</h2>
     <p class="type">一行一个店铺布局，由品牌logo+文字+进入标签组成。适合短利益点。</p>
     <div class="demo-shop demo1">
-      <nutcat-shop
+      <NutShop
         :data="[data1, params]" 
         col="1" 
         type="normal-1" 
@@ -11,19 +11,19 @@
         nameRow="1"
         bgColor="#820C00"
       >
-      </nutcat-shop>
+      </NutShop>
     </div>
     <h2>类型：normal-2</h2>
     <p class="type">一行一个店铺布局，由品牌logo+名称+运营语+利益点+进入标签组成。适合长利益点。</p>
     <div class="demo-shop">
-      <nutcat-shop
+      <NutShop
         :data="[data2, params]" 
         col="1" 
         type="normal-2" 
         descRow="1"
         bgColor="#820C00"
       >
-        <nutcat-tag
+        <NutTag
           slot="tag"
           class="tag-go"
           radius="30px"
@@ -32,91 +32,91 @@
           afterIcon="arrow-full"
         >
           进入
-        </nutcat-tag>
+        </NutTag>
         <div class="tag-box">
-          <nutcat-tag type="red-light">
+          <NutTag type="red-light">
             <span slot="preSlot">满减</span>
             满1000减300券
-          </nutcat-tag>
-          <nutcat-tag type="red-light">
+          </NutTag>
+          <NutTag type="red-light">
             <span slot="preSlot">折</span>
             全场3折起
-          </nutcat-tag>
-          <nutcat-tag type="red-light">
+          </NutTag>
+          <NutTag type="red-light">
             其他利益点
-          </nutcat-tag>
+          </NutTag>
         </div>
-      </nutcat-shop>
+      </NutShop>
     </div>
     <h2>类型：normal-3</h2>
     <p class="type">一行二个店铺布局，左右结构，左边图片，右边文字区域。</p>
     <div class="demo-shop demo3">
-      <nutcat-shop
+      <NutShop
         :data="[data3, params]" 
         rowType="flex"
         gutter="1"
         col="2" 
         type="normal-3" 
       >
-      </nutcat-shop>
+      </NutShop>
     </div>
     <h2>类型：normal-4</h2>
     <p class="type">一行多个店铺布局，上下结构，支持一行三个、一行三个半、一行四个等。</p>
     <div class="demo-shop demo4">
-      <nutcat-shop
+      <NutShop
         :data="[data4, params]" 
         rowType="flex"
         gutter="2"
         col="3" 
         type="normal-4" 
       >
-      </nutcat-shop>
+      </NutShop>
     </div>
     <div class="demo-shop demo5">
-      <nutcat-shop
+      <NutShop
         :data="[data5, params]" 
         rowType="flex"
         gutter="2"
         col="3" 
         type="normal-4" 
       >
-      </nutcat-shop>
+      </NutShop>
     </div>
     <div class="demo-shop">
-      <nutcat-shop
+      <NutShop
         :data="[data6, params]" 
         rowType="flex"
         gutter="1"
         col="4" 
         type="normal-4" 
       >
-      </nutcat-shop>
+      </NutShop>
     </div>
     <h2>类型：normal-5</h2>
     <p class="type">一行多个店铺布局，上下结构，上边图片，下边文字区域。支持一行二个、一行三个、一行三个半、一行四个等。</p>
     <div class="demo-shop">
-      <nutcat-shop
+      <NutShop
         :data="[data7, params]" 
         rowType="flex"
         gutter="3"
         col="3" 
         type="normal-5" 
       >
-      </nutcat-shop>
+      </NutShop>
     </div>
     <div class="demo-shop">
-      <nutcat-shop
+      <NutShop
         :data="[data8, params]" 
         rowType="flex"
         gutter="3"
         col="3" 
         type="normal-5" 
       >
-      </nutcat-shop>
+      </NutShop>
     </div>
     <p class="type">通过 `slot` 增加自定义内容，例如领券按钮。</p>
     <div class="demo-shop demo6">
-      <nutcat-shop
+      <NutShop
         :data="[data9, params]" 
         rowType="flex"
         gutter="3"
@@ -124,10 +124,10 @@
         type="normal-5" 
       >
         <div class="btn-follow">+关注 领30元券</div>
-      </nutcat-shop>
+      </NutShop>
     </div>
     <div class="demo-shop demo3-5">
-      <nutcat-shop
+      <NutShop
         :data="[data10, params]" 
         rowType="flex"
         gutter="3"
@@ -135,11 +135,11 @@
         type="normal-5" 
       >
         <div class="btn-follow">+关注 领30元券</div>
-      </nutcat-shop>
+      </NutShop>
     </div>
     <p class="type">增加 `scrollX` 支持左右滑动，通过 `slot` 增加自定义内容，例如直播标签</p>
     <div class="demo-shop demo-s3">
-      <nutcat-shop
+      <NutShop
         scrollX
         :data="[data11, params]" 
         rowType="flex"
@@ -147,13 +147,13 @@
         col="3" 
         type="normal-5" 
       >
-        <nutcat-tag type="live-on">直播中</nutcat-tag>
-      </nutcat-shop>
+        <NutTag type="live-on">直播中</NutTag>
+      </NutShop>
     </div>
     <h2>类型：lbs</h2>
     <p class="type">一行多个店铺布局，上下结构，适用于 lbs 场景。支持一行二个、一行三个、一行三个半、一行四个等。</p>
     <div class="demo-shop demo-s2">
-      <nutcat-shop
+      <NutShop
         scrollX
         :data="[data12, params]" 
         rowType="flex"
@@ -161,14 +161,14 @@
         col="3" 
         type="lbs" 
       >
-        <nutcat-tag slot="tag" class="sub-tag" type="red-light"
-        >满199减100</nutcat-tag>
-      </nutcat-shop>
+        <NutTag slot="tag" class="sub-tag" type="red-light"
+        >满199减100</NutTag>
+      </NutShop>
     </div>
     <h2>类型：feed-1</h2>
     <p class="type">一行二个店铺布局，上下结构，适用于 feed 流场景。</p>
     <div class="demo-shop">
-      <nutcat-shop
+      <NutShop
         scrollX
         :data="[data13, params]" 
         tag="arrow-go"
@@ -177,47 +177,47 @@
         col="2" 
         type="feed-1" 
       >
-        <nutcat-tag slot="tag" class="sub-tag" type="red-light"
-        >满199减100</nutcat-tag>
-      </nutcat-shop>
+        <NutTag slot="tag" class="sub-tag" type="red-light"
+        >满199减100</NutTag>
+      </NutShop>
     </div>
     <h2>类型：left</h2>
     <p class="type">一拖二</p>
     <div class="demo-shop demol1-1">
-      <nutcat-row type="flex">
+      <NutRow type="flex">
         <nutcat-col :span="8" class="shop-left">
-          <nutcat-shop
+          <NutShop
             desc="满199减100"
             logo="https://img14.360buyimg.com/imagetools/jfs/t1/178006/28/13004/7510/60e3f7c1E7500c2a7/d15fa4a3da6b1501.png"
             bgColor="#830101"
             type="left"
           >
-            <nutcat-tag type="live-on">直播中</nutcat-tag>
-            <nutcat-button
+            <NutTag type="live-on">直播中</NutTag>
+            <NutButton
               afterIcon="arrow-full"
               borderColor="#fff"
               txtColor="#fff"
-              >进店看看</nutcat-button
+              >进店看看</NutButton
             >
-          </nutcat-shop>
+          </NutShop>
         </nutcat-col>
-        <nutcat-row type="flex" class="shop-right">
+        <NutRow type="flex" class="shop-right">
           <nutcat-col
             :span="12"
             v-for="(item, index) in productData.list || ''"
             :key="index"
           >
-            <nutcat-product
+            <NutProduct
               :name="item.name"
               tag="源头好物"
               :price="item.pPrice"
               :src="item.image"
               col="3"
             >
-            </nutcat-product>
+            </NutProduct>
           </nutcat-col>
-        </nutcat-row>
-      </nutcat-row>
+        </NutRow>
+      </NutRow>
     </div> -->
   </div>
 </template>

@@ -1,23 +1,23 @@
 <template>
   <div :class="classes" :style="styles" @click="toVideo(data)">
     <template v-if="col == '2'">
-      <nutcat-image :src="data.src" class="img-box">
-        <nutcat-tag class="video-time" type="video-time">{{getVideoTime(data.videoDuration)}}</nutcat-tag>
-        <nutcat-text class="sub-name" :row="nameRow">{{data.name}}</nutcat-text>
-      </nutcat-image>
+      <NutImage :src="data.src" class="img-box">
+        <NutTag class="video-time" type="video-time">{{getVideoTime(data.videoDuration)}}</NutTag>
+        <NutText class="sub-name" :row="nameRow">{{data.name}}</NutText>
+      </NutImage>
       <div class="video-content">
-        <nutcat-text class="sub-name" row="2">
-          <nutcat-tag class="icon-618" type="618">618</nutcat-tag>
+        <NutText class="sub-name" row="2">
+          <NutTag class="icon-618" type="618">618</NutTag>
           {{data.productName}}
-        </nutcat-text>
+        </NutText>
         <div class="video-bottom">
           <div class="user-box">
-            <nutcat-image class="user-img" :src="data.authorPic"></nutcat-image>
-            <nutcat-text class="user-name" row="2">{{data.authorName}}</nutcat-text>
+            <NutImage class="user-img" :src="data.authorPic"></NutImage>
+            <NutText class="user-name" row="2">{{data.authorName}}</NutText>
           </div>
           <div class="zan-box" @click.stop="toZan(data)" :class="{'zan': data.isZan}">
-            <nutcat-icon class="icon-zan" type="good"></nutcat-icon>
-            <nutcat-text class="sub-num" row="1">{{data.pageView}}</nutcat-text>
+            <NutIcon class="icon-zan" type="good"></NutIcon>
+            <NutText class="sub-num" row="1">{{data.pageView}}</NutText>
           </div>
         </div>
       </div>

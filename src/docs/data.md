@@ -7,7 +7,7 @@
 名称区域展示 “我是商品名称”
 
 ```javascript
-<nutcat-product 
+<NutProduct 
   :data="[data, 
     { 
       cName: ['我是商品名称'] 
@@ -15,7 +15,7 @@
   ]"
   type="normal-1"
 >
-</nutcat-product>
+</NutProduct>
 ```
 
 
@@ -25,7 +25,7 @@
 设置 false 模块直接隐藏，不展示商品名称
 
 ```javascript
-<nutcat-product 
+<NutProduct 
   :data="[data, 
     { 
       cName: [false] 
@@ -33,7 +33,7 @@
   ]"
   type="normal-1"
 >
-</nutcat-product>
+</NutProduct>
 ```
 
 
@@ -43,7 +43,7 @@
 读取 data 下的 name 字段
 
 ```javascript
-<nutcat-product 
+<NutProduct 
   :data="[data, 
     { 
       cName: ['name'] 
@@ -51,13 +51,13 @@
   ]"
   type="normal-1"
 >
-</nutcat-product>
+</NutProduct>
 ```
 
 读取 data 下的 desc 字段，若 desc 为空，则读取comments[0]
 
 ```javascript
-<nutcat-product 
+<NutProduct 
   :data="[data, 
     { 
       uDesc: ['desc', 'comments[0]'] 
@@ -65,13 +65,13 @@
   ]"
   type="normal-1"
 >
-</nutcat-product>
+</NutProduct>
 ```
 
 读取 data 下的 extension.subSku[0].name 字段，若 extension.subSku[0].name 为空，则读取 comments[0]，如此类推，直到读到最后一个为止。
 
 ```javascript
-<nutcat-product 
+<NutProduct 
   :data="[data, 
     { 
       uDesc: ['extension.subSku[0].name', 'comments[0]', 'comments[1]']
@@ -79,13 +79,13 @@
   ]"
   type="normal-1"
 >
-</nutcat-product>
+</NutProduct>
 ```
 
 读取 data 下的 name 字段，若 name 为空，则读取“热卖中”这个字符串。
 
 ```javascript
-<nutcat-product 
+<NutProduct 
   :data="[data, 
     { 
       uDesc: ['desc', '"热卖中"'] 

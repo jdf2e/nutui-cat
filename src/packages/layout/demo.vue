@@ -2,20 +2,20 @@
   <div class="demo full">
     <h2>基础布局</h2>
     <div class="box-item">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24">
           <div class="flex-content">span:24</div>
         </nutcat-col>
-      </nutcat-row>
-      <nutcat-row>
+      </NutRow>
+      <NutRow>
         <nutcat-col :span="12">
           <div class="flex-content">span:12</div>
         </nutcat-col>
         <nutcat-col :span="12">
           <div class="flex-content flex-content-light">span:12</div>
         </nutcat-col>
-      </nutcat-row>
-      <nutcat-row>
+      </NutRow>
+      <NutRow>
         <nutcat-col :span="8">
           <div class="flex-content">span:8</div>
         </nutcat-col>
@@ -25,8 +25,8 @@
         <nutcat-col :span="8">
           <div class="flex-content">span:8</div>
         </nutcat-col>
-      </nutcat-row>
-      <nutcat-row>
+      </NutRow>
+      <NutRow>
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
@@ -39,11 +39,11 @@
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <h2>分栏间隔</h2>
     <div class="box-item">
-      <nutcat-row :gutter="8">
+      <NutRow :gutter="8">
         <nutcat-col :span="8">
           <div class="flex-content">span:8</div>
         </nutcat-col>
@@ -53,11 +53,11 @@
         <nutcat-col :span="8">
           <div class="flex-content">span:8</div>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <h2>Flex布局</h2>
     <div class="box-item">
-      <nutcat-row type="flex" wrap="nowrap">
+      <NutRow type="flex" wrap="nowrap">
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
@@ -67,8 +67,8 @@
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
-      </nutcat-row>
-      <nutcat-row type="flex" justify="center">
+      </NutRow>
+      <NutRow type="flex" justify="center">
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
@@ -78,8 +78,8 @@
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
-      </nutcat-row>
-      <nutcat-row type="flex" justify="end">
+      </NutRow>
+      <NutRow type="flex" justify="end">
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
@@ -89,8 +89,8 @@
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
-      </nutcat-row>
-      <nutcat-row type="flex" justify="space-between">
+      </NutRow>
+      <NutRow type="flex" justify="space-between">
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
@@ -100,8 +100,8 @@
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
-      </nutcat-row>
-      <nutcat-row type="flex" justify="space-around">
+      </NutRow>
+      <NutRow type="flex" justify="space-around">
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
@@ -111,7 +111,7 @@
         <nutcat-col :span="6">
           <div class="flex-content">span:6</div>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>
@@ -135,7 +135,7 @@ export default createDemo({
   margin-bottom: 20px;
   padding: 20px 0;
 }
-.demo .nutcat-row {
+.demo .NutRow {
   overflow: hidden;
   &:not(:last-child) .nutcat-col {
     margin-bottom: 15px;

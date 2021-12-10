@@ -26,7 +26,7 @@ app.use(Live);
 
 
 ```html
-<nutcat-live col="1" :data="data" type="normal"></nutcat-live>
+<NutLive col="1" :data="data" type="normal"></NutLive>
 ```
 
 ```javascript
@@ -54,7 +54,7 @@ export default {
 
 
 ```html
-<nutcat-live col="2" :data="data" type="normal"></nutcat-live>
+<NutLive col="2" :data="data" type="normal"></NutLive>
 ```
 
 ```javascript
@@ -88,7 +88,7 @@ export default {
 ### 商品直播 一行三
 
 ```html
-<nutcat-live col="3" :data="data" type="normal"></nutcat-live>
+<NutLive col="3" :data="data" type="normal"></NutLive>
 ```
 
 ```javascript
@@ -128,7 +128,7 @@ export default {
 ### 会场直播 一行二 无商品
 
 ```html
-<nutcat-live col="2" :data="data" type="room-1"></nutcat-live>
+<NutLive col="2" :data="data" type="room-1"></NutLive>
 ```
 
 ```javascript
@@ -163,7 +163,7 @@ export default {
 
 ### 会场直播 一行二 有商品
 ```html
-<nutcat-live col="2" :data="data" type="room-2"></nutcat-live>
+<NutLive col="2" :data="data" type="room-2"></NutLive>
 ```
 
 ```javascript

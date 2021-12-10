@@ -13,7 +13,7 @@
       <div class="nav-floor">10F</div>
     </div>
     <h2>普通选中</h2>
-    <nutcat-bottom :data="data1" el-id="page1" activeName="年货攻略" @onClick="handClick" @backTop="backTop"></nutcat-bottom>
+    <NutBottom :data="data1" el-id="page1" activeName="年货攻略" @onClick="handClick" @backTop="backTop"></NutBottom>
     <!-- <h2>普通选中</h2> -->
   </div>
 </template>

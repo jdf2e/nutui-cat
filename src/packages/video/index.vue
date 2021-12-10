@@ -1,6 +1,6 @@
 
 <template>
-  <nutcat-row :gutter="gutter" :scrollX="scrollX" :type="rowType">
+  <NutRow :gutter="gutter" :scrollX="scrollX" :type="rowType">
     <nutcat-col :span="24 / ~~col" v-for="(item, index) in data" :key="index">
       <template v-if="type == 'feed-1'">
         <video-feed1
@@ -16,7 +16,7 @@
         </video-feed1>
       </template>
     </nutcat-col>
-  </nutcat-row>
+  </NutRow>
 </template>
 
 <script lang="ts">

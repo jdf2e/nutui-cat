@@ -3,9 +3,9 @@
     <h2>类型：normal-6</h2>
     <p class="type">适用场景：强化抢购氛围，支持一行二个、一行三个、一行三个半等。</p>
     <div class="demo-product">
-      <nutcat-row type="flex" gutter="3">
+      <NutRow type="flex" gutter="3">
         <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-          <nutcat-product
+          <NutProduct
             :data="[item, params]"
             nameRow="2"
             pricePre="拼团价"
@@ -13,28 +13,28 @@
             type="normal-6"
           >
             <template slot="preName">
-              <nutcat-tag type="618">618</nutcat-tag>
+              <NutTag type="618">618</NutTag>
             </template>
             <template slot="tag">
-              <nutcat-tag class="sub-tag" type="red-pink">闪购进行时</nutcat-tag>
+              <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
             </template>
-          </nutcat-product>
+          </NutProduct>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <div class="demo-product">
       <div class="demo-product">
-        <nutcat-row type="flex" gutter="2">
+        <NutRow type="flex" gutter="2">
           <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
-            <nutcat-product
+            <NutProduct
               :data="[item, params]"
               nameRow="2"
               col="3"
               type="normal-6"
             >
-            </nutcat-product>
+            </NutProduct>
           </nutcat-col>
-        </nutcat-row>
+        </NutRow>
       </div>
     </div>
   </div>
@@ -127,7 +127,7 @@ export default createDemo({
       margin-left: 0;
     }
   }
-  .nutcat-row {
+  .NutRow {
     overflow-x: auto;
   }
 }

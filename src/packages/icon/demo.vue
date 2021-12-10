@@ -1,7 +1,7 @@
 <template>
   <div class="demo">
     <h2>基础用法</h2>
-    <nutcat-nav
+    <NutNav
       :options="stickyOptions"
     />
     <div class="floor-box">
@@ -10,31 +10,31 @@
           <h3>基础用法</h3>
           <div class="icon-box">
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="heart"></nutcat-icon>
+              <NutIcon type="heart"></NutIcon>
             </nutcat-col>
           </div>
           <h3>图标大小</h3>
           <div class="icon-box">
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="heart" size="16px"></nutcat-icon>
+              <NutIcon type="heart" size="16px"></NutIcon>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="heart" size="24px"></nutcat-icon>
+              <NutIcon type="heart" size="24px"></NutIcon>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="heart" size="36px"></nutcat-icon>
+              <NutIcon type="heart" size="36px"></NutIcon>
             </nutcat-col>
           </div>
           <h3>图标颜色</h3>
           <div class="icon-box">
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="heart" color="#fa2c19"></nutcat-icon>
+              <NutIcon type="heart" color="#fa2c19"></NutIcon>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="heart" color="#64b578"></nutcat-icon>
+              <NutIcon type="heart" color="#64b578"></NutIcon>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="heart" color="rgb(25, 137, 250)"></nutcat-icon>
+              <NutIcon type="heart" color="rgb(25, 137, 250)"></NutIcon>
             </nutcat-col>
           </div>
         </div>
@@ -44,42 +44,42 @@
           <h3>箭头类</h3>
           <div class="icon-box">
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="arrow-normal"></nutcat-icon>
+              <NutIcon type="arrow-normal"></NutIcon>
               <span>arrow-normal</span>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon style="font-size: 30px; height: 12px;" type="arrow-go"></nutcat-icon>
+              <NutIcon style="font-size: 30px; height: 12px;" type="arrow-go"></NutIcon>
               <span>arrow-go</span>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="arrow-full"></nutcat-icon>
+              <NutIcon type="arrow-full"></NutIcon>
               <span>arrow-full</span>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="triangle-arrow"></nutcat-icon>
+              <NutIcon type="triangle-arrow"></NutIcon>
               <span>triangle-arrow</span>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="circle-arrow"></nutcat-icon>
+              <NutIcon type="circle-arrow"></NutIcon>
               <span>circle-arrow</span>
             </nutcat-col>
           </div>
           <h3>加购类</h3>
           <div class="icon-box cart">
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="qiang"></nutcat-icon>
+              <NutIcon type="qiang"></NutIcon>
               <span>qiang</span>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="cart"></nutcat-icon>
+              <NutIcon type="cart"></NutIcon>
               <span>cart</span>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="cart-rect"></nutcat-icon>
+              <NutIcon type="cart-rect"></NutIcon>
               <span>cart-rect</span>
             </nutcat-col>
             <nutcat-col span="6" class="copy-box">
-              <nutcat-icon type="cart-full"></nutcat-icon>
+              <NutIcon type="cart-full"></NutIcon>
               <span>cart-full</span>
             </nutcat-col>
           </div>
@@ -90,7 +90,7 @@
           <h3>基础图标</h3>
           <div class="icon-box">
             <nutcat-col v-for="(item, index) in icons.glyphs" :key="index" span="6" class="copy-box">
-              <nutcat-icon :type="item.name"></nutcat-icon>
+              <NutIcon :type="item.name"></NutIcon>
               <span>{{ item.name }}</span>
             </nutcat-col>
           </div>
@@ -132,7 +132,7 @@ export default createDemo({
     // let copys = new copy('.copy-box', {
     //   text: function(trigger) {
     //     console.log('trigger', trigger.textContent)
-    //     return `nutcat-icon-${trigger.textContent}`;
+    //     return `NutIcon-${trigger.textContent}`;
     //   }
     // });
     // copys.on('success', (e) => {
@@ -143,7 +143,7 @@ export default createDemo({
 
     // let copySize = new copy('.copy-box-size', {
     //   text: function(trigger) {
-    //     return `<nutcat-icon type="${trigger.textContent}" size="40px"></nutcat-icon>`;
+    //     return `<NutIcon type="${trigger.textContent}" size="40px"></NutIcon>`;
     //   }
     // });
     // copySize.on('success', e => {
@@ -151,7 +151,7 @@ export default createDemo({
     // });
     // let copyColor = new copy('.copy-box-color', {
     //   text: function(trigger) {
-    //     return `<nutcat-icon type="${trigger.textContent}" color="#f0250f"></nutcat-icon>`;
+    //     return `<NutIcon type="${trigger.textContent}" color="#f0250f"></NutIcon>`;
     //   }
     // });
     // copyColor.on('success', e => {
@@ -159,7 +159,7 @@ export default createDemo({
     // });
     // let copySelf = new copy('.copy-box-self', {
     //   text: function(trigger) {
-    //     return `<nutcat-icon type="self" :url="require('../../assets/svg/${trigger.textContent}.svg')"></nutcat-icon>`;
+    //     return `<NutIcon type="self" :url="require('../../assets/svg/${trigger.textContent}.svg')"></NutIcon>`;
     //   }
     // });
     // copySelf.on('success', e => {

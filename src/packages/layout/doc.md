@@ -8,10 +8,11 @@
 
 ``` javascript
 import { createApp } from 'vue';
-import { Layout } from '@nutui/nutui';
+import { Row, Col } from '@nutui/nutui-cat';
 
 const app = createApp();
-app.use(Layout);
+app.use(Row);
+app.use(Col);
 ```
 
 ## 代码演示
@@ -19,20 +20,20 @@ app.use(Layout);
 ### 基础用法
 
 ```html
-<nutcat-row>
+<NutRow>
   <nutcat-col :span="24">
     <div class="flex-content">span:24</div>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row>
+</NutRow>
+<NutRow>
   <nutcat-col :span="12">
     <div class="flex-content">span:12</div>
   </nutcat-col>
   <nutcat-col :span="12">
     <div class="flex-content flex-content-light">span:12</div>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row>
+</NutRow>
+<NutRow>
   <nutcat-col :span="8">
     <div class="flex-content">span:8</div>
   </nutcat-col>
@@ -42,8 +43,8 @@ app.use(Layout);
   <nutcat-col :span="8">
     <div class="flex-content">span:8</div>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row>
+</NutRow>
+<NutRow>
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
@@ -56,13 +57,13 @@ app.use(Layout);
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ### 设置元素间距
 
 ```html
-<nutcat-row :gutter="10">
+<NutRow :gutter="10">
     <nutcat-col :span="8">
         <div class="flex-content">span:8</div>
     </nutcat-col>
@@ -72,12 +73,12 @@ app.use(Layout);
     <nutcat-col :span="8">
         <div class="flex-content">span:8</div>
     </nutcat-col>
-</nutcat-row>   
+</NutRow>   
 ```
 ### Flex布局
 
 ```html
-<nutcat-row type="flex" wrap="nowrap">
+<NutRow type="flex" wrap="nowrap">
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
@@ -87,8 +88,8 @@ app.use(Layout);
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row type="flex" justify="center">
+</NutRow>
+<NutRow type="flex" justify="center">
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
@@ -98,8 +99,8 @@ app.use(Layout);
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row type="flex" justify="end">
+</NutRow>
+<NutRow type="flex" justify="end">
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
@@ -109,8 +110,8 @@ app.use(Layout);
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row type="flex" justify="space-between">
+</NutRow>
+<NutRow type="flex" justify="space-between">
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
@@ -120,8 +121,8 @@ app.use(Layout);
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
-</nutcat-row>
-<nutcat-row type="flex" justify="space-around">
+</NutRow>
+<NutRow type="flex" justify="space-around">
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
@@ -131,7 +132,7 @@ app.use(Layout);
   <nutcat-col :span="6">
     <div class="flex-content">span:6</div>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ## Prop

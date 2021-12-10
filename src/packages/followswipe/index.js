@@ -1,8 +1,8 @@
-import Followswipe from './index.vue';
+import NutFollowswipe from './index.vue';
 import './index.scss';
 
-Followswipe.install = function(Vue) {
-  Vue.component('nutcat-followswipe', Followswipe);
+NutFollowswipe.install = function(Vue) {
+  Vue.component('NutFollowswipe', NutFollowswipe);
 };
 
-export default Followswipe;
+export default NutFollowswipe;

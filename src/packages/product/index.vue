@@ -1,6 +1,6 @@
 <template>
   <div>
-  <!-- <nutcat-row :gutter="gu :type="rowType" v-if="data[0] && data[0].length > 0">
+  <!-- <NutRow :gutter="gu :type="rowType" v-if="data[0] && data[0].length > 0">
     <nutcat-col :span="24 / ~~col" v-for="(item, index) in dealData(data[0], data[1])" :key="index"> -->
       <template v-if="type == 'normal-1'">
         <normal1
@@ -269,14 +269,14 @@
       </template>
       <template v-else-if="type == 'normal-free'">
         <template v-if="col == '1'">
-          <nutcat-image
+          <NutImage
             class="img-box"
             :src="src"
             :width="imgWidth"
             :height="imgHeight"
             v-on="$listeners"
           >
-          </nutcat-image>
+          </NutImage>
           <div class="product-right">
             <div class="product-content">
               <slot name="rightSlot"></slot>
@@ -286,7 +286,7 @@
       </template>
       <!-- </div> -->
     <!-- </nutcat-col>
-  </nutcat-row> -->
+  </NutRow> -->
   </div>
 </template>
 
@@ -409,5 +409,4 @@ export default create({
 </script>
 
 <style lang="scss" scoped>
-// @import 'index.scss';
 </style>

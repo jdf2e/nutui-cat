@@ -1,7 +1,7 @@
 <template>
   <div class="demo">
     <h2>跟随滚动</h2>
-    <nutcat-followswipe :value="value" />
+    <NutFollowswipe :value="value" />
   </div>
 </template>
 

@@ -1,8 +1,8 @@
-import Barrage from './index.vue';
+import NutBarrage from './index.vue';
 import './index.scss';
 
-Barrage.install = function(Vue) {
-  Vue.component('nutcat-barrage', Barrage);
+NutBarrage.install = function(Vue) {
+  Vue.component('NutBarrage', NutBarrage);
 };
 
-export default Barrage;
+export default NutBarrage;

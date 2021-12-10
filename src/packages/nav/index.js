@@ -1,8 +1,8 @@
-import Nav from './index.vue';
+import NutNav from './index.vue';
 import './index.scss';
 
-Nav.install = function(Vue) {
-  Vue.component('nutcat-nav', Nav);
+NutNav.install = function(Vue) {
+  Vue.component('NutNav', NutNav);
 };
 
-export default Nav;
+export default NutNav;

@@ -10,28 +10,28 @@
 通过 `left`、`right` 插槽，开发自己需要的组件。
 
 ```html
-<nutcat-row>
+<NutRow>
   <nutcat-col :span="24" v-for="(item, index) in data1" :key="index">
-    <nutcat-hall :data="[item, params]" bgColor="#820C00" col="1" type="free">
+    <NutHall :data="[item, params]" bgColor="#820C00" col="1" type="free">
       <template slot="left">
-        <nutcat-text class="sub-name" row="1">京东美妆</nutcat-text>
-        <nutcat-text class="sub-desc" row="1">
+        <NutText class="sub-name" row="1">京东美妆</NutText>
+        <NutText class="sub-desc" row="1">
           全场满999减200
-          <nutcat-icon class="sub-tag" type="arrow-full"></nutcat-icon>
-        </nutcat-text>
+          <NutIcon class="sub-tag" type="arrow-full"></NutIcon>
+        </NutText>
       </template>
       <template slot="right">
-        <nutcat-image
+        <NutImage
           class="img-box"
           :width="90"
           :height="44"
           src="https://img11.360buyimg.com/imagetools/jfs/t1/176928/22/13163/23498/60e65cffE9eda1beb/5267b71a88705447.png"
         >
-        </nutcat-image>
+        </NutImage>
       </template>
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript
@@ -54,37 +54,37 @@ data() {
 <!-- 通过 `left`、`right` 插槽，开发自己需要的组件。  -->
 
 ```html
-<nutcat-row type="flex" gutter="1">
+<NutRow type="flex" gutter="1">
   <nutcat-col :span="12" v-for="(item, index) in data2" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params]"
       col="2"
       type="free"
     >
       <template slot="left">
-        <nutcat-image
+        <NutImage
           class="img-box"
           src="https://img12.360buyimg.com/imagetools/jfs/t1/184366/12/13604/18481/60e6e839E0d7a3bfd/e242fa7889e7d39a.png"
           width="57"
           height="57"
         >
-        </nutcat-image>
+        </NutImage>
       </template>
       <template slot="right">
-        <nutcat-tag class="sub-tag" type="red-gradient">
-          <nutcat-icon
+        <NutTag class="sub-tag" type="red-gradient">
+          <NutIcon
             style="font-size: 10px;vertical-align: initial"
             color="#fff"
             type="clock"
-          ></nutcat-icon>
+          ></NutIcon>
           正在秒杀
-        </nutcat-tag>
-        <nutcat-text class="sub-name" row="1">品牌闪购</nutcat-text>
-        <nutcat-text class="sub-desc" row="1">超值单品9.9</nutcat-text>
+        </NutTag>
+        <NutText class="sub-name" row="1">品牌闪购</NutText>
+        <NutText class="sub-desc" row="1">超值单品9.9</NutText>
       </template>
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript
@@ -114,40 +114,40 @@ data() {
 通过 `top`、`bottom` 插槽，开发自己需要的组件。
 
 ```html
-<nutcat-row type="flex" gutter="2">
+<NutRow type="flex" gutter="2">
   <nutcat-col :span="8" v-for="(item, index) in data3" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params]"
       bgColor="#820C00"
       col="3"
       type="free"
     >
       <template slot="top">
-        <nutcat-image
+        <NutImage
           class="img-box"
           src="https://img12.360buyimg.com/imagetools/jfs/t1/184366/12/13604/18481/60e6e839E0d7a3bfd/e242fa7889e7d39a.png"
           width="76"
           height="76"
         >
-        </nutcat-image>
+        </NutImage>
       </template>
       <template slot="bottom">
         <div class="hall-content">
-          <nutcat-tag class="sub-tag" type="red-gradient">
-            <nutcat-icon
+          <NutTag class="sub-tag" type="red-gradient">
+            <NutIcon
               style="font-size: 10px;vertical-align: initial"
               color="#fff"
               type="clock"
-            ></nutcat-icon>
+            ></NutIcon>
             正在秒杀
-          </nutcat-tag>
-          <nutcat-text class="sub-name" color="#fff" row="1">会场名称</nutcat-text>
-          <nutcat-text class="sub-desc" color="#fff" row="1">满199减100</nutcat-text>
+          </NutTag>
+          <NutText class="sub-name" color="#fff" row="1">会场名称</NutText>
+          <NutText class="sub-desc" color="#fff" row="1">满199减100</NutText>
         </div>
       </template>
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 

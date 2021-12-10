@@ -1,8 +1,8 @@
-import Jtcoupon from './index.vue';
+import NutJtcoupon from './index.vue';
 import './index.scss';
 
-Jtcoupon.install = function(Vue) {
-  Vue.component('nutcat-jtcoupon', Jtcoupon);
+NutJtcoupon.install = function(Vue) {
+  Vue.component('NutJtcoupon', NutJtcoupon);
 };
 
-export default Jtcoupon;
+export default NutJtcoupon;

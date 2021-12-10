@@ -23,7 +23,7 @@ app.use(Nav);
 锚点吸顶导航
 
 ```html
-<nutcat-nav
+<NutNav
   :options="stickyOptions"
   @click="clickHandler"
   @changed="onchange"

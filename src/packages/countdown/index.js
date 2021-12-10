@@ -1,8 +1,8 @@
-import Countdown from './index.vue';
+import NutCountdown from './index.vue';
 import './index.scss';
 
-Countdown.install = function(Vue) {
-  Vue.component('nutcat-Countdown', Countdown);
+NutCountdown.install = function(Vue) {
+  Vue.component('NutCountdown', NutCountdown);
 };
 
-export default Countdown;
+export default NutCountdown;

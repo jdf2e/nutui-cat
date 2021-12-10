@@ -9,9 +9,9 @@
 下面是 **normal-2** 类型，一行两个榜单布局，`col` 传2，榜单的名称、图片、价格通过 `data` 的属性传的。
 
 ```html
-<nutcat-row type="flex" gutter="3">
+<NutRow type="flex" gutter="3">
   <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-    <nutcat-rank
+    <NutRank
       :data="[item, params1]" 
       :productData="[item.productData, params2]" 
       descRow="2"
@@ -21,19 +21,19 @@
     >
       <ul class="nutcat-rank-list" v-if="item.productData.length > 0">
         <div class="nutcat-rank-item" v-for="(productItem, productIndex) in (item.productData || '')" :key="productIndex">
-          <nutcat-image 
+          <NutImage 
             class="imgs-box"
             :src="productItem.image"
           >
-          </nutcat-image>
+          </NutImage>
           <template v-if="tag">
-            <nutcat-tag :type="tag" :class="`top${productIndex + 1}`">{{productIndex + 1}}</nutcat-tag>
+            <NutTag :type="tag" :class="`top${productIndex + 1}`">{{productIndex + 1}}</NutTag>
           </template>
         </div>
       </ul>
-    </nutcat-rank>
+    </NutRank>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 ```javascript
 data() {

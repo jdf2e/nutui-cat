@@ -1,8 +1,8 @@
-import Tab from './index.vue';
+import NutTab from './index.vue';
 import './index.scss';
 
-Tab.install = function(Vue) {
-  Vue.component('nutcat-tab', Tab);
+NutTab.install = function(Vue) {
+  Vue.component('NutTab', NutTab);
 };
 
-export default Tab;
+export default NutTab;

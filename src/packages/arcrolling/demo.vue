@@ -1,23 +1,23 @@
 <template>
   <div class="demo">
     <h2>弧形轮播</h2>
-    <nutcat-arcrolling
+    <NutArcrolling
       class="demo1"
       :list="starList"
       :leftDistance="size"
       @callback="cbClick"
     >
-    </nutcat-arcrolling>
+    </NutArcrolling>
 
     <h2>水平轮播</h2>
-    <nutcat-arcrolling
+    <NutArcrolling
       class="demo2"
       directionType="horizontal"
       :list="starList"
       :leftDistance="size"
       @callback="cbClick"
     >
-    </nutcat-arcrolling>
+    </NutArcrolling>
   </div>
 </template>
 

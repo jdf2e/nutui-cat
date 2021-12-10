@@ -3,9 +3,9 @@
     <h2>类型：normal-2</h2>
     <p class="type">适用场景：一行一个商品布局，左右结构。与 normal-1 的区别在于利益点、划线价的顺序结构有所调整。</p>
     <div class="demo-product">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
-          <nutcat-product
+          <NutProduct
             :data="[item, params]"
             col="1"
             type="normal-2"
@@ -13,23 +13,23 @@
             linePricePre="日常价"
           >
             <template slot="priceSlot">
-              <nutcat-tag class="price-tag-pre" type="red" radius="2px"
-                >秒杀</nutcat-tag
+              <NutTag class="price-tag-pre" type="red" radius="2px"
+                >秒杀</NutTag
               >
               预估到手价
-              <nutcat-price price="1649" class="price" />
+              <NutPrice price="1649" class="price" />
             </template>
             <template slot="tag">
-              <nutcat-tag class="sub-tag" type="red-light"
-                >利益点利益点利益点</nutcat-tag
+              <NutTag class="sub-tag" type="red-light"
+                >利益点利益点利益点</NutTag
               >
-              <nutcat-tag class="sub-tag" type="red-light"
-                >利益点利益点利益点</nutcat-tag
+              <NutTag class="sub-tag" type="red-light"
+                >利益点利益点利益点</NutTag
               >
             </template>
-          </nutcat-product>
+          </NutProduct>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>

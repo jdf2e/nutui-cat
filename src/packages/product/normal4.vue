@@ -1,22 +1,22 @@
 <template>
   <div :class="classes" :style="styles" @click="toSku(data)">
     <template v-if="col == '4'">
-      <nutcat-image
+      <NutImage
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
       <div class="product-content">
         <template v-if="data.cName">
-          <nutcat-text class="sub-name" :row="nameRow"
-            ><slot name="preName"></slot>{{ data.cName }}</nutcat-text
+          <NutText class="sub-name" :row="nameRow"
+            ><slot name="preName"></slot>{{ data.cName }}</NutText
           >
         </template>
         <div class="price-box" v-if="data.cPrice">
           <p class="sub-pre">{{ pricePre }}</p>
-          <nutcat-price class="price" :price="data.cPrice"></nutcat-price>
+          <NutPrice class="price" :price="data.cPrice"></NutPrice>
           <template v-if="$slots.priceAfterSlot">
             <slot name="priceAfterSlot"></slot>
           </template>
@@ -24,7 +24,7 @@
         </div>
         <div class="line-price-box">
           <p class="sub-pre">{{ linePricePre }}</p>
-          <nutcat-price class="line-price" :price="data.cLinePrice"></nutcat-price>
+          <NutPrice class="line-price" :price="data.cLinePrice"></NutPrice>
         </div>
         <div v-if="$slots.tag" class="tag-box-bottom">
           <slot name="tag"></slot>
@@ -32,25 +32,25 @@
       </div>
     </template>
     <template v-else>
-      <nutcat-image
+      <NutImage
         class="img-box"
         :src="data.cImage"
         :width="imgWidth"
         :height="imgHeight"
       >
-      </nutcat-image>
+      </NutImage>
       <div class="product-content">
         <template v-if="data.cName">
-          <nutcat-text class="sub-name" :row="nameRow"
-            ><slot name="preName"></slot>{{ data.cName }}</nutcat-text
+          <NutText class="sub-name" :row="nameRow"
+            ><slot name="preName"></slot>{{ data.cName }}</NutText
           >
         </template>
         <div class="product-bottom">
           <div class="price-wrap">
             <div class="price-box">
               <!-- <div class="price-pre">{{ pricePre }}</div> -->
-              <nutcat-text class="price-pre">{{ pricePre }}</nutcat-text>
-              <nutcat-price class="price" :price="data.cPrice"></nutcat-price>
+              <NutText class="price-pre">{{ pricePre }}</NutText>
+              <NutPrice class="price" :price="data.cPrice"></NutPrice>
               <template v-if="$slots.priceAfterSlot">
                 <slot name="priceAfterSlot"></slot>
               </template>
@@ -59,7 +59,7 @@
             <div class="line-price-box">
               <template v-if="data.cLinePrice && data.cLinePrice > data.cPrice">
                 {{ linePricePre }}
-                <nutcat-price class="line-price" :price="data.cLinePrice"></nutcat-price>
+                <NutPrice class="line-price" :price="data.cLinePrice"></NutPrice>
               </template>
             </div>
             <div v-if="$slots.tag" class="tag-box-bottom">
@@ -67,7 +67,7 @@
             </div>
           </div>
           <template v-if="iconType">
-            <nutcat-icon class="icon-right" :type="iconType"></nutcat-icon>
+            <NutIcon class="icon-right" :type="iconType"></NutIcon>
           </template>
         </div>
       </div>

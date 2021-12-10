@@ -2,10 +2,10 @@
     <div class="demo">
       <h2>基础用法</h2>
       
-      <nutcat-cart @cartClik='fn'></nutcat-cart>
+      <NutCart @cartClik='fn'></NutCart>
        <h2>使用图片</h2>
       
-      <nutcat-cart :imgUrl='imgurl' @cartClik='fn'></nutcat-cart>
+      <NutCart :imgUrl='imgurl' @cartClik='fn'></NutCart>
     </div>
   </template>
   
@@ -28,7 +28,7 @@
   </script>
   
   <style lang="scss" scoped>
-  .nutcat-cart {
+  .NutCart {
   }
   </style>
   

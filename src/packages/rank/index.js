@@ -1,8 +1,8 @@
-import Rank from './index.vue';
+import NutRank from './index.vue';
 import './index.scss';
 
-Rank.install = function(Vue) {
-  Vue.component('nutcat-rank', Rank);
+NutRank.install = function(Vue) {
+  Vue.component('NutRank', NutRank);
 };
 
-export default Rank;
+export default NutRank;

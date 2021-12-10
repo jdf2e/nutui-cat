@@ -3,9 +3,9 @@
     <h2>类型：normal-1</h2>
     <p class="type">适用场景：一行一个店铺布局，由品牌logo+文字+进入标签组成。适合短利益点。</p>
     <div class="demo-shop">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
-          <nutcat-shop
+          <NutShop
             :data="[item, params]" 
             col="1" 
             type="normal-1" 
@@ -13,9 +13,9 @@
             nameRow="1"
             bgColor="#820C00"
           >
-          </nutcat-shop>
+          </NutShop>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>

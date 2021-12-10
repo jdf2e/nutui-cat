@@ -2,37 +2,37 @@
   <div class="demo">
     <h2>京贴 + PLUS</h2>
     <div class="demo-coupon">
-      <nutcat-row :gutter="1">
+      <NutRow :gutter="1">
         <nutcat-col :span="16">
-          <nutcat-text row="1" type="jtCoupon">
+          <NutText row="1" type="jtCoupon">
             头号京贴·跨店满减·可叠加
-          </nutcat-text>
-          <div class="nutcat-coupon-bd demo1">
-            <nutcat-jtCoupon  v-for="(item, index) in (data.list || '').slice(0, 2)" :key="index"
+          </NutText>
+          <div class="NutCoupon-bd demo1">
+            <NutJtcoupon  v-for="(item, index) in (data.list || '').slice(0, 2)" :key="index"
               :item="item"
               type='normal'
               col="3"
               @click-report="handelClick"
             >
-            </nutcat-jtCoupon>
+            </NutJtcoupon>
           </div>
         </nutcat-col>
         <nutcat-col :span="8">
-          <nutcat-text row="1" type="plusCoupon">
-          <nutcat-tag type="plus-couponHd"></nutcat-tag>
+          <NutText row="1" type="plusCoupon">
+          <NutTag type="plus-couponHd"></NutTag>
             开通/续费PLUS得
-          </nutcat-text>
-          <div class="nutcat-coupon-bd demo2">
-            <nutcat-jtCoupon  v-for="(item, index) in (data.list || '').slice(0, 1)" :key="index"
+          </NutText>
+          <div class="NutCoupon-bd demo2">
+            <NutJtcoupon  v-for="(item, index) in (data.list || '').slice(0, 1)" :key="index"
               :item="item"
               type='normal'
               col="3"
               @click-report="handelClick"
             >
-            </nutcat-jtCoupon>
+            </NutJtcoupon>
           </div>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>
@@ -85,7 +85,7 @@ export default createDemo({
   }
 }
 .demo1 {
-  .nutcat-jtCoupon {
+  .NutJtcoupon {
     width: 118px;
     margin-left: 2px;
     &:first-child {
@@ -94,7 +94,7 @@ export default createDemo({
   }
 }
 .demo2 {
-  .nutcat-jtCoupon {
+  .NutJtcoupon {
     width: 100%;
   }
 }

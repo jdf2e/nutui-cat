@@ -4,19 +4,19 @@
 
     <nut-cell title="展示做任务列表" @click.native="show = true"></nut-cell>
     <nut-popup :style="{ padding: '10px 10px' }" v-model="show" position="bottom">
-      <nutcat-tasklist :list="data" @clickOperate='clickOperate'></nutcat-tasklist>
+      <NutTasklist :list="data" @clickOperate='clickOperate'></NutTasklist>
     </nut-popup>
 
     <h2>自定义样式</h2>
     <nut-cell title="展示做任务列表" @click.native="showCustomClass = true"></nut-cell>
     <nut-popup :style="{ padding: '10px 10px' }" v-model="showCustomClass" position="bottom">
-      <nutcat-tasklist :list="data" customClass="task-self" ></nutcat-tasklist>
+      <NutTasklist :list="data" customClass="task-self" ></NutTasklist>
     </nut-popup>
 
     <h2>自定义右侧按钮</h2>
     <nut-cell title="展示做任务列表" @click.native="showCustomBtn = true"></nut-cell>
     <nut-popup :style="{ padding: '10px 10px' }" v-model="showCustomBtn" position="bottom">
-      <nutcat-tasklist :list="data" class="task-self" :renderOpetation='renderOpetation' :renderIcon='renderIcon'></nutcat-tasklist>
+      <NutTasklist :list="data" class="task-self" :renderOpetation='renderOpetation' :renderIcon='renderIcon'></NutTasklist>
     </nut-popup>
     
   </div>
@@ -77,7 +77,7 @@ export default createDemo({
       data.operationMsg = '已签到'
     },
     renderIcon(h, { node }) {
-        return h('nutcat-icon',{
+        return h('NutIcon',{
           
           props:{
             color:"#F02B2B", 

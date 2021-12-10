@@ -10,7 +10,7 @@
     </div>
     <div class="name">{{ goodsItem.name }}</div>
     <div class="info">
-      <nutcat-price
+      <NutPrice
         class="price"
         :price="goodsItem.pPrice"
         :decimalDigits="2"

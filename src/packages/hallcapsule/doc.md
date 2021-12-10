@@ -20,15 +20,15 @@ app.use(hallcapsule);
 
 
 ```html
-<nutcat-hallcapsule 
+<NutHallcapsule 
   :lists="lists1"
-></nutcat-hallcapsule>
+></NutHallcapsule>
 <br />
-<nutcat-hallcapsule 
+<NutHallcapsule 
   :lists="partialLists2" 
   :hasChangeBtn="true"
   @change="handleChange"
-></nutcat-hallcapsule>
+></NutHallcapsule>
 ```
 
 ```javascript
@@ -139,22 +139,22 @@ export default {
 
 
 ```html
-<nutcat-hallcapsule 
+<NutHallcapsule 
   :lists="lists1"
   :lines="1"
-></nutcat-hallcapsule>
+></NutHallcapsule>
 <br />
-<nutcat-hallcapsule 
+<NutHallcapsule 
   :lists="lists1"
   :lines="1"
   :width="90"
-></nutcat-hallcapsule>
+></NutHallcapsule>
 <br />
-<nutcat-hallcapsule 
+<NutHallcapsule 
   :lists="lists3"
   :lines="1"
   :width="90"
-></nutcat-hallcapsule>
+></NutHallcapsule>
 ```
 
 ```javascript

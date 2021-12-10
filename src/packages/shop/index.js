@@ -1,8 +1,8 @@
-import Shop from './index.vue';
+import NutShop from './index.vue';
 import './index.scss';
 
-Shop.install = function(Vue) {
-  Vue.component('nutcat-shop', Shop);
+NutShop.install = function(Vue) {
+  Vue.component('NutShop', NutShop);
 };
 
-export default Shop;
+export default NutShop;

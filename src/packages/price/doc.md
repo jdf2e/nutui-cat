@@ -22,19 +22,19 @@ app.use(Price);
 
 #### 基础样式-整数
 ```html
- <nutcat-price :price="888" :prop-class="'myPrice'" :need-symbol="false"></nutcat-price>
+ <NutPrice :price="888" :prop-class="'myPrice'" :need-symbol="false"></NutPrice>
 ```
 #### 基础样式-小数
 ```html
- <nutcat-price :price="888.88"  :need-symbol="false"></nutcat-price>
+ <NutPrice :price="888.88"  :need-symbol="false"></NutPrice>
 ```
 #### 基础样式-小数(整数为0)
 ```html
-  <nutcat-price :price="0.89"  :need-symbol="false"></nutcat-price>
+  <NutPrice :price="0.89"  :need-symbol="false"></NutPrice>
 ```
 #### 单位展示
 ```html
-  <nutcat-price :price="888.88" :need-symbol="true" symbol="$"></nutcat-price>
+  <NutPrice :price="888.88" :need-symbol="true" symbol="$"></NutPrice>
 ```
 
 ### 控制小数点位数
@@ -42,10 +42,10 @@ app.use(Price);
 使用 `decimal-digits`控制小数位数。使用`rounding`控制是否四舍五入
 
 ```html
- <nutcat-price :price="888.88" :decimal-digits="0" :rounding="false" ></nutcat-price>
- <nutcat-price :price="888.88" :decimal-digits="0" :rounding="true" ></nutcat-price>
- <nutcat-price :price="666.66666" :decimal-digits="2" :rounding="false" ></nutcat-price>
-  <nutcat-price :price="6666.6666" :decimal-digits="2" :rounding="true" ></nutcat-price>
+ <NutPrice :price="888.88" :decimal-digits="0" :rounding="false" ></NutPrice>
+ <NutPrice :price="888.88" :decimal-digits="0" :rounding="true" ></NutPrice>
+ <NutPrice :price="666.66666" :decimal-digits="2" :rounding="false" ></NutPrice>
+  <NutPrice :price="6666.6666" :decimal-digits="2" :rounding="true" ></NutPrice>
 ```
 
 ### 千位分割
@@ -53,14 +53,14 @@ app.use(Price);
 使用`thousands`控制是否千位分割展示
 
 ```html
-  <nutcat-price :price="123456.88" :thousands="true"></nutcat-price>
+  <NutPrice :price="123456.88" :thousands="true"></NutPrice>
 ```
 
 ### 异步展示案例
 
 
 ```html
-   <nutcat-price :price="price" :thousands="true" :decimal-digits="2" ></nutcat-price>
+   <NutPrice :price="price" :thousands="true" :decimal-digits="2" ></NutPrice>
 
    export default ({
     props: {},

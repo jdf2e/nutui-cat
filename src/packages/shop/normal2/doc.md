@@ -12,14 +12,14 @@
 
 
 ```html
-<nutcat-shop
+<NutShop
   :data="[data, params]" 
   col="1" 
   type="normal-2" 
   descRow="1"
   bgColor="#820C00"
 >
-  <nutcat-tag
+  <NutTag
     slot="tag"
     class="tag-go"
     radius="30px"
@@ -28,21 +28,21 @@
     afterIcon="arrow-full"
   >
     进入
-  </nutcat-tag>
+  </NutTag>
   <div class="tag-box">
-    <nutcat-tag type="red-light">
+    <NutTag type="red-light">
       <span slot="preSlot">满减</span>
       满1000减300券
-    </nutcat-tag>
-    <nutcat-tag type="red-light">
+    </NutTag>
+    <NutTag type="red-light">
       <span slot="preSlot">折</span>
       全场3折起
-    </nutcat-tag>
-    <nutcat-tag type="red-light">
+    </NutTag>
+    <NutTag type="red-light">
       其他利益点
-    </nutcat-tag>
+    </NutTag>
   </div>
-</nutcat-shop>
+</NutShop>
 ```
 
 ```javascript

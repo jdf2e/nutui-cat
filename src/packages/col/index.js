@@ -1,8 +1,8 @@
-import Col from './index.vue';
+import NutCol from './index.vue';
 import './index.scss';
 
-Col.install = function(Vue) {
-  Vue.component('nutcat-col', Col);
+NutCol.install = function(Vue) {
+  Vue.component('NutCol', NutCol);
 };
 
-export default Col;
+export default NutCol;

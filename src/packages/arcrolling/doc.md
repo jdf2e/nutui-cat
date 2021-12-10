@@ -18,21 +18,21 @@ app.use(arcrolling);
 ### 基础用法
 
 ```html
-<nutcat-arcrolling
+<NutArcrolling
     class="demo1"
     :list="starList"
     :leftDistance="size"
     @callback="cbClick"
 >
-</nutcat-arcrolling>
-<nutcat-arcrolling
+</NutArcrolling>
+<NutArcrolling
     class="demo2"
     directionType="horizontal"
     :list="starList"
     :leftDistance="size"
     @callback="cbClick"
 >
-</nutcat-arcrolling>
+</NutArcrolling>
 ```
 ```javascript
 data() {

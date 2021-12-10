@@ -3,19 +3,19 @@
     <!-- <h2>类型：normal-1</h2>
     <p class="type">一行一个商品布局，左右结构。支持一行一个、一行一个半等。</p>
     <div class="demo-product">
-      <nutcat-product :data="[data1, params]" col="1" type="normal-1" nameRow="1">
+      <NutProduct :data="[data1, params]" col="1" type="normal-1" nameRow="1">
         <template slot="preName">
-          <nutcat-tag type="618">618</nutcat-tag>
+          <NutTag type="618">618</NutTag>
         </template>
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-pink">利益点利益点</nutcat-tag>
-          <nutcat-tag class="sub-tag" type="red-pink">利益点利益点</nutcat-tag>
+          <NutTag class="sub-tag" type="red-pink">利益点利益点</NutTag>
+          <NutTag class="sub-tag" type="red-pink">利益点利益点</NutTag>
         </template>
-      </nutcat-product>
+      </NutProduct>
     </div>
     <p class="type">增加氛围图、标签、抢购按钮。</p>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         :data="[data2, params]"
         col="1"
         tag="qiang"
@@ -23,14 +23,14 @@
         bgUrl="//img10.360buyimg.com/imagetools/jfs/t1/6090/8/11750/133338/60c09116E0c991a9f/cfe358af6388e40f.png"
       >
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-pink">277天最低价</nutcat-tag>
-          <nutcat-tag class="sub-tag" type="red-pink">放心购标签</nutcat-tag>
+          <NutTag class="sub-tag" type="red-pink">277天最低价</NutTag>
+          <NutTag class="sub-tag" type="red-pink">放心购标签</NutTag>
         </template>
-        <nutcat-tag class="top-tag tl" type="fire">某某商品top款</nutcat-tag>
-      </nutcat-product>
+        <NutTag class="top-tag tl" type="fire">某某商品top款</NutTag>
+      </NutProduct>
     </div>
     <div class="demo-product demo-s1">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="2"
         scrollX
@@ -41,20 +41,20 @@
         type="normal-1"
       >
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-pink">277天最低价</nutcat-tag>
-          <nutcat-tag class="sub-tag" type="red-pink">放心购标签</nutcat-tag>
+          <NutTag class="sub-tag" type="red-pink">277天最低价</NutTag>
+          <NutTag class="sub-tag" type="red-pink">放心购标签</NutTag>
         </template>
-        <nutcat-tag class="top-tag tl" type="red-gradient"
-          >全年历史最低价</nutcat-tag
+        <NutTag class="top-tag tl" type="red-gradient"
+          >全年历史最低价</NutTag
         >
-      </nutcat-product>
+      </NutProduct>
     </div>
     <h2>类型：normal-2</h2>
     <p class="type">一行一个商品布局，左右结构。与 normal-1 的区别在于利益点、划线价的顺序结构有所调整。</p>
     <div class="demo-product">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24">
-          <nutcat-product
+          <NutProduct
             :data="[data4, params]"
             col="1"
             type="normal-2"
@@ -62,23 +62,23 @@
             linePricePre="日常价"
           >
             <template slot="priceSlot">
-              <nutcat-tag class="price-tag-pre" type="red" radius="2px"
-                >秒杀</nutcat-tag
+              <NutTag class="price-tag-pre" type="red" radius="2px"
+                >秒杀</NutTag
               >
               预估到手价
-              <nutcat-price price="1649" class="price" />
+              <NutPrice price="1649" class="price" />
             </template>
             <template slot="tag">
-              <nutcat-tag class="sub-tag" type="red-light"
-                >利益点利益点利益点</nutcat-tag
+              <NutTag class="sub-tag" type="red-light"
+                >利益点利益点利益点</NutTag
               >
-              <nutcat-tag class="sub-tag" type="red-light"
-                >利益点利益点利益点</nutcat-tag
+              <NutTag class="sub-tag" type="red-light"
+                >利益点利益点利益点</NutTag
               >
             </template>
-          </nutcat-product>
+          </NutProduct>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <h2>类型：normal-3</h2>
     <p class="type"
@@ -87,30 +87,30 @@
     <p class="type"
       >2. 秒杀未开始时，按键显示“提醒我”，点击后，变为“已提醒”；</p
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         :data="[data5, params]"
         col="1"
         type="normal-3"
       >
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-pink">限量5000件</nutcat-tag>
-          <nutcat-tag class="sub-tag" type="red-pink">限量5000件</nutcat-tag>
+          <NutTag class="sub-tag" type="red-pink">限量5000件</NutTag>
+          <NutTag class="sub-tag" type="red-pink">限量5000件</NutTag>
         </template>
         <template slot="priceSlot">
-          <nutcat-tag class="price-tag-pre" type="red" radius="2px"
-            >秒杀</nutcat-tag
+          <NutTag class="price-tag-pre" type="red" radius="2px"
+            >秒杀</NutTag
           >
-          <nutcat-price price="1649" class="price" />
+          <NutPrice price="1649" class="price" />
         </template>
-        <nutcat-tag class="top-tag tl" type="red-gradient"
-          >全年历史最低价</nutcat-tag
+        <NutTag class="top-tag tl" type="red-gradient"
+          >全年历史最低价</NutTag
         >
-      </nutcat-product>
+      </NutProduct>
     </div>
     <h2>类型：normal-4</h2>
     <p class="type">一行多个商品布局，上下结构的常规类型，支持一行三个、一行三个半等。</p>
     <div class="demo-product demo-3">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="2"
         :data="[data6, params]"
@@ -118,16 +118,16 @@
         type="normal-4"
       >
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-light">噱头标签</nutcat-tag>
+          <NutTag class="sub-tag" type="red-light">噱头标签</NutTag>
         </template>
-        <nutcat-tag class="sub-tag tl" type="red-gradient">
-          <nutcat-icon class="sub-icon" type="crown"></nutcat-icon>
+        <NutTag class="sub-tag tl" type="red-gradient">
+          <NutIcon class="sub-icon" type="crown"></NutIcon>
           数码销量TOP1
-        </nutcat-tag>
-      </nutcat-product>
+        </NutTag>
+      </NutProduct>
     </div>
     <div class="demo-product demo-s3">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="1"
         :data="[data7, params]"
@@ -136,16 +136,16 @@
         scrollX
       >
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-light">噱头标签</nutcat-tag>
+          <NutTag class="sub-tag" type="red-light">噱头标签</NutTag>
         </template>
-        <nutcat-tag class="sub-tag tl" type="red-gradient">
-          <nutcat-icon class="sub-icon" type="crown"></nutcat-icon>
+        <NutTag class="sub-tag tl" type="red-gradient">
+          <NutIcon class="sub-icon" type="crown"></NutIcon>
           数码销量TOP1
-        </nutcat-tag>
-      </nutcat-product>
+        </NutTag>
+      </NutProduct>
     </div>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="1"
         :data="[data8, params]"
@@ -155,12 +155,12 @@
         type="normal-4"
         scrollX
       >
-      </nutcat-product>
+      </NutProduct>
     </div>
     <h2>类型：normal-5</h2>
     <p class="type">带购物车的常规类型，支持一行二个、一行三个、一行三个半等。</p>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="2"
         :data="[data6, params]"
@@ -170,13 +170,13 @@
         type="normal-5"
       >
         <template slot="preName">
-          <nutcat-tag type="618">618</nutcat-tag>
+          <NutTag type="618">618</NutTag>
         </template>
-      </nutcat-product>
+      </NutProduct>
     </div>
     <p class="type">一行二个商品，多用于底部 Feed 流。</p>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="3"
         :data="[data6, params]"
@@ -191,19 +191,19 @@
         type="normal-5"
       >
         <template slot="preName">
-          <nutcat-tag type="618">618</nutcat-tag>
+          <NutTag type="618">618</NutTag>
         </template>
         <template slot="priceAfter">
-          <nutcat-tag class="price-tag-after" type="plus-price"></nutcat-tag>
+          <NutTag class="price-tag-after" type="plus-price"></NutTag>
         </template>
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-light">满199减10</nutcat-tag>
-          <nutcat-tag class="sub-tag" type="red-light">利益点利益点</nutcat-tag>
+          <NutTag class="sub-tag" type="red-light">满199减10</NutTag>
+          <NutTag class="sub-tag" type="red-light">利益点利益点</NutTag>
         </template>
-      </nutcat-product>
+      </NutProduct>
     </div>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="3"
         :data="[data6, params]"
@@ -217,25 +217,25 @@
         type="normal-5"
       >
         <template slot="preName">
-          <nutcat-tag type="618">618</nutcat-tag>
+          <NutTag type="618">618</NutTag>
         </template>
         <template slot="priceAfter">
-          <nutcat-tag class="price-tag-after" type="plus-price"></nutcat-tag>
+          <NutTag class="price-tag-after" type="plus-price"></NutTag>
         </template>
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-light"
-            >您最近浏览的商品正在秒杀</nutcat-tag
+          <NutTag class="sub-tag" type="red-light"
+            >您最近浏览的商品正在秒杀</NutTag
           >
         </template>
         <template slot="desc">
-          <nutcat-text class="sub-desc">4.3万人购买</nutcat-text>
+          <NutText class="sub-desc">4.3万人购买</NutText>
         </template>
-      </nutcat-product>
+      </NutProduct>
     </div>
     <h2>类型：normal-6</h2>
     <p class="type">强化抢购氛围，支持一行二个、一行三个、一行三个半等。</p>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="3"
         :data="[data9, params]"
@@ -245,16 +245,16 @@
         type="normal-6"
       >
         <template slot="preName">
-          <nutcat-tag type="618">618</nutcat-tag>
+          <NutTag type="618">618</NutTag>
         </template>
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-pink">闪购进行时</nutcat-tag>
+          <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
         </template>
-      </nutcat-product>
+      </NutProduct>
     </div>
     <div class="demo-product">
       <div class="demo-product">
-        <nutcat-product
+        <NutProduct
           rowType="flex"
           gutter="2"
           :data="[data9, params]"
@@ -262,13 +262,13 @@
           col="3"
           type="normal-6"
         >
-        </nutcat-product>
+        </NutProduct>
       </div>
     </div>
     <h2>类型：heart</h2>
     <p class="type">心跳曲线类型，支持一行一个、一行二个、一行三个等。</p>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         :data="[data2, params]"
         nameRow="1"
         heartName="限时优惠价"
@@ -276,15 +276,15 @@
         type="heart"
       >
         <template slot="preName">
-          <nutcat-tag type="618">618</nutcat-tag>
+          <NutTag type="618">618</NutTag>
         </template>
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-pink">利益点利益点</nutcat-tag>
+          <NutTag class="sub-tag" type="red-pink">利益点利益点</NutTag>
         </template>
-      </nutcat-product>
+      </NutProduct>
     </div>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="3"
         :data="[data6, params]"
@@ -294,15 +294,15 @@
         type="heart"
       >
         <template slot="preName">
-          <nutcat-tag type="618">618</nutcat-tag>
+          <NutTag type="618">618</NutTag>
         </template>
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-pink">闪购进行时</nutcat-tag>
+          <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
         </template>
-      </nutcat-product>
+      </NutProduct>
     </div>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="3"
         :data="[data6, params]"
@@ -312,17 +312,17 @@
         type="heart"
       >
         <template slot="preName">
-          <nutcat-tag type="618">618</nutcat-tag>
+          <NutTag type="618">618</NutTag>
         </template>
         <template slot="tag">
-          <nutcat-tag class="sub-tag" type="red-pink">闪购进行时</nutcat-tag>
+          <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
         </template>
-      </nutcat-product>
+      </NutProduct>
     </div>
     <h2>类型：fold</h2>
     <p class="type">心跳折线类型，支持一行一个。</p>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         :data="[data5, params]"
         nameRow="1"
         linePricePre="日常价"
@@ -330,18 +330,18 @@
         type="fold"
       >
         <template slot="priceSlot">
-          <nutcat-tag class="price-tag-pre" type="red" radius="2px"
-            >秒杀</nutcat-tag
+          <NutTag class="price-tag-pre" type="red" radius="2px"
+            >秒杀</NutTag
           >
           限时优惠价
-          <nutcat-price price="1649" class="price" />
+          <NutPrice price="1649" class="price" />
         </template>
-      </nutcat-product>
+      </NutProduct>
     </div>
     <h2>类型：feed-shop</h2>
     <p class="type">商品+店铺类型，多用于底部 Feed 流。</p>
     <div class="demo-product">
-      <nutcat-product
+      <NutProduct
         rowType="flex"
         gutter="3"
         :data="[data6, params]"
@@ -351,97 +351,97 @@
         type="feed-shop"
       >
         <template slot="preName">
-          <nutcat-tag type="618">618</nutcat-tag>
+          <NutTag type="618">618</NutTag>
         </template>
         <template slot="priceAfter">
-          <nutcat-tag class="price-tag-after" type="plus-price"></nutcat-tag>
+          <NutTag class="price-tag-after" type="plus-price"></NutTag>
         </template>
         <template slot="shop">
-          <nutcat-text class="shop-name">店铺名称</nutcat-text>
-          <nutcat-text class="shop-desc"
-            >接受预定，明日23:00开始营业</nutcat-text
+          <NutText class="shop-name">店铺名称</NutText>
+          <NutText class="shop-desc"
+            >接受预定，明日23:00开始营业</NutText
           >
         </template>
-        <nutcat-tag class="tl9" type="lbs">1.3km</nutcat-tag>
-      </nutcat-product>
+        <NutTag class="tl9" type="lbs">1.3km</NutTag>
+      </NutProduct>
     </div>
     <h2>类型：normal-free</h2>
     <p class="type">一行一-自定义类型</p>
     <div class="demo-product">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24">
-          <nutcat-product
+          <NutProduct
             src="https://img12.360buyimg.com/imagetools/jfs/t1/185218/3/12954/50806/60ead6b5E2716e7ee/d51415655b04ad48.png"
             col="1"
             type="normal-free"
           >
             <template slot="rightSlot">
               <div class="product-content">
-                <nutcat-text class="sub-name" row="1">
-                  <nutcat-tag type="618">618</nutcat-tag>
+                <NutText class="sub-name" row="1">
+                  <NutTag type="618">618</NutTag>
                   商品名HUAWEI Mate30 商品名商品名商品名
-                </nutcat-text>
-                <nutcat-text class="sub-desc" row="1">我是利益点啊</nutcat-text>
-                <nutcat-tag class="sub-tag" type="red-pink"
-                  >利益点利益点</nutcat-tag
+                </NutText>
+                <NutText class="sub-desc" row="1">我是利益点啊</NutText>
+                <NutTag class="sub-tag" type="red-pink"
+                  >利益点利益点</NutTag
                 >
-                <nutcat-tag class="sub-tag" type="red-pink"
-                  >利益点利益点</nutcat-tag
+                <NutTag class="sub-tag" type="red-pink"
+                  >利益点利益点</NutTag
                 >
               </div>
               <div class="product-bottom">
                 <div class="price-wrap">
                   <div class="price-box">
-                    <nutcat-price price="1649" class="price" />
+                    <NutPrice price="1649" class="price" />
                   </div>
                   <div class="line-price-box">
                     京东价
-                    <nutcat-price class="line-price" :price="1999"></nutcat-price>
+                    <NutPrice class="line-price" :price="1999"></NutPrice>
                   </div>
                 </div>
               </div>
             </template>
-          </nutcat-product>
+          </NutProduct>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <div class="demo-product">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24">
-          <nutcat-product
+          <NutProduct
             src="https://img12.360buyimg.com/imagetools/jfs/t1/185218/3/12954/50806/60ead6b5E2716e7ee/d51415655b04ad48.png"
             col="1"
             type="normal-free"
           >
             <template slot="rightSlot">
               <div class="product-content">
-                <nutcat-text class="sub-name" row="1">
-                  <nutcat-tag type="618">618</nutcat-tag>
+                <NutText class="sub-name" row="1">
+                  <NutTag type="618">618</NutTag>
                   商品名HUAWEI Mate30 商品名商品名商品名
-                </nutcat-text>
-                <nutcat-text class="sub-desc" row="1">我是利益点啊</nutcat-text>
-                <nutcat-tag class="sub-tag" type="red-pink"
-                  >利益点利益点</nutcat-tag
+                </NutText>
+                <NutText class="sub-desc" row="1">我是利益点啊</NutText>
+                <NutTag class="sub-tag" type="red-pink"
+                  >利益点利益点</NutTag
                 >
-                <nutcat-tag class="sub-tag" type="red-pink"
-                  >利益点利益点</nutcat-tag
+                <NutTag class="sub-tag" type="red-pink"
+                  >利益点利益点</NutTag
                 >
               </div>
               <div class="product-bottom">
                 <div class="price-wrap">
                   <div class="price-box">
-                    <nutcat-price price="1649" class="price" />
+                    <NutPrice price="1649" class="price" />
                   </div>
                   <div class="line-price-box">
                     京东价
-                    <nutcat-price class="line-price" :price="1999"></nutcat-price>
+                    <NutPrice class="line-price" :price="1999"></NutPrice>
                   </div>
                 </div>
               </div>
             </template>
-          </nutcat-product>
+          </NutProduct>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div> -->
   </div>
 </template>
@@ -740,7 +740,7 @@ export default createDemo({
       margin-left: 0;
     }
   }
-  .nutcat-row {
+  .NutRow {
     overflow-x: auto;
   }
 }

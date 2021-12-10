@@ -3,54 +3,54 @@
     <h2>类型：normal-3</h2>
     <p class="type">适用场景：一行三个榜单布局，上下结构，支持一行三个、一行三个半、一行四个等。</p>
     <div class="demo-rank">
-      <nutcat-row type="flex" gutter="2">
+      <NutRow type="flex" gutter="2">
         <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
-          <nutcat-rank
+          <NutRank
             :data="[item, params]" 
             col="3" 
             type="normal-3" 
-          ></nutcat-rank>
+          ></NutRank>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <div class="demo-rank">
-      <nutcat-row type="flex" gutter="2">
+      <NutRow type="flex" gutter="2">
         <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
-          <nutcat-rank
+          <NutRank
             :data="[item, {cDesc: false,cImage: ['pictureUrl']}]" 
             col="3" 
             type="normal-3" 
           >
-            <nutcat-tag type="rank-hot"></nutcat-tag>
-          </nutcat-rank>
+            <NutTag type="rank-hot"></NutTag>
+          </NutRank>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <div class="demo-rank demo-s3">
-      <nutcat-row scrollX type="flex" gutter="1">
+      <NutRow scrollX type="flex" gutter="1">
         <nutcat-col :span="8" v-for="(item, index) in data3" :key="index">
-          <nutcat-rank
+          <NutRank
             :data="[item, params]" 
             col="3" 
             type="normal-3" 
           >
-            <nutcat-tag type="rank-hot"></nutcat-tag>
-          </nutcat-rank>
+            <NutTag type="rank-hot"></NutTag>
+          </NutRank>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
     <div class="demo-rank">
-      <nutcat-row scrollX type="flex" gutter="1">
+      <NutRow scrollX type="flex" gutter="1">
         <nutcat-col :span="6" v-for="(item, index) in data3" :key="index">
-          <nutcat-rank
+          <NutRank
             :data="[item, params]" 
             col="4" 
             type="normal-3" 
           >
-            <nutcat-tag type="rank-hot"></nutcat-tag>
-          </nutcat-rank>
+            <NutTag type="rank-hot"></NutTag>
+          </NutRank>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div> 
 </template>

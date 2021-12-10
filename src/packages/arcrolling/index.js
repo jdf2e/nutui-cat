@@ -1,8 +1,8 @@
-import Arcrolling from './index.vue';
+import NutArcrolling from './index.vue';
 import './index.scss';
 
-Arcrolling.install = function(Vue) {
-  Vue.component('nutcat-arcrolling', Arcrolling);
+NutArcrolling.install = function(Vue) {
+  Vue.component('NutArcrolling', NutArcrolling);
 };
 
-export default Arcrolling;
+export default NutArcrolling;

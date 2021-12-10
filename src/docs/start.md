@@ -37,7 +37,7 @@ npm i @nutui/nutui-cat -S
       // 在 #app 标签下渲染一个文本组件
       const app = Vue.createApp({
         template: `
-        <nutcat-text>我是标题</nutcat-text>
+        <NutText>我是标题</NutText>
         `,
       });
       app.use(nutui);
@@ -53,9 +53,9 @@ npm i @nutui/nutui-cat -S
 ```javascript
 import { createApp } from "vue";
 import App from "./App.vue";
-import NutUI from "@nutui/nutui-cat";
+import NutCat from "@nutui/nutui-cat";
 import "@nutui/nutui-cat/dist/nutui-cat.css";
-createApp(App).use(NutUI).mount("#app");
+createApp(App).use(NutCat).mount("#app");
 ```
 
 > 注意：这种方式将会导入所有组件

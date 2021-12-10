@@ -1,15 +1,15 @@
 <template>
   <div class="demo">
     <h2>商品直播 一行一</h2>
-    <nutcat-live col="1" :data="data5" type="normal"></nutcat-live>
+    <NutLive col="1" :data="data5" type="normal"></NutLive>
     <h2>商品直播 一行二</h2>
-    <nutcat-live col="2" :data="data2" type="normal"></nutcat-live>
+    <NutLive col="2" :data="data2" type="normal"></NutLive>
     <h2>商品直播 一行三</h2>
-    <nutcat-live col="3" :data="data1" type="normal"></nutcat-live>
+    <NutLive col="3" :data="data1" type="normal"></NutLive>
     <h2>会场直播 一行二 无商品</h2>
-    <nutcat-live col="2" :data="data3" type="room-1"></nutcat-live>
+    <NutLive col="2" :data="data3" type="room-1"></NutLive>
     <h2>会场直播 一行二 有商品</h2>
-    <nutcat-live col="2" :data="data4" type="room-2"></nutcat-live>
+    <NutLive col="2" :data="data4" type="room-2"></NutLive>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="demo">
     <h2>基础用法</h2>
-    <nutcat-starbrand :brand-list="list" @callback="handleClick"></nutcat-starbrand>
+    <NutShowmore :brand-list="list" @callback="handleClick"></NutShowmore>
   </div>
 </template>
 
@@ -52,7 +52,7 @@ export default createDemo({
     color: #fff;
   }
 }
-.nutcat-starbrand {
+.NutShowmore {
 }
 </style>
   

@@ -21,7 +21,7 @@ app.use(Nav);
 左侧导航
 
 ```html
-<nutcat-nav
+<NutNav
   type="left"
   :options="stickyOptions"
   @click="clickHandler"

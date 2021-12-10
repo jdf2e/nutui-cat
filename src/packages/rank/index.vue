@@ -1,7 +1,7 @@
 
 <template>
   <div>
-  <!-- <nutcat-row :gutter="gutter" :scrollX="scrollX" :type="rowType" v-if="data[0] && data[0].length > 0">
+  <!-- <NutRow :gutter="gutter" :scrollX="scrollX" :type="rowType" v-if="data[0] && data[0].length > 0">
     <nutcat-col :span="24 / ~~col" v-for="(item, index) in dealData(data[0], data[1])" :key="index"> -->
       <template v-if="type == 'normal-1'">
         <normal1
@@ -84,7 +84,7 @@
         </feed1>
       </template>
     <!-- </nutcat-col>
-  </nutcat-row> -->
+  </NutRow> -->
   </div>
 </template>
 

@@ -5,7 +5,7 @@
       :style="styles"
     >
       <template v-if="src">
-        <nutcat-image :src="src"></nutcat-image>
+        <NutImage :src="src"></NutImage>
       </template>
     </i>
 </template>

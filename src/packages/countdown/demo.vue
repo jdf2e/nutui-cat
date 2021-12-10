@@ -3,14 +3,14 @@
     <h2>基础用法</h2>
     <nut-cell>
       <span slot="title">
-        <nutcat-countdown :endTime="endTime" showDays ></nutcat-countdown>
+        <NutCountdown :endTime="endTime" showDays ></NutCountdown>
       </span>
     </nut-cell>
 
     <h2>自定义展示样式</h2>
     <nut-cell>
       <span slot="title">
-        <nutcat-countdown v-model="resetTime" :endTime="endTime" ref="countdown">
+        <NutCountdown v-model="resetTime" :endTime="endTime" ref="countdown">
           <div class="countdown-part-box">
             <div class="part-item-symbol">{{ resetTime.d }}天</div>
             <div class="part-item h">{{ resetTime.h }}</div>
@@ -19,7 +19,7 @@
             <span class="part-item-symbol">:</span>
             <div class="part-item s">{{ resetTime.s }}</div>
           </div>
-        </nutcat-countdown>
+        </NutCountdown>
       </span>
     </nut-cell>
   </div>

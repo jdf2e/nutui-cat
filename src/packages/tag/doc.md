@@ -21,15 +21,15 @@ app.use(Tag);
 <!-- 按钮支持 `default`、`primary`、`info`、`warning`、`danger`、`success` 六种类型，默认为 `default`。 -->
 
 ```html
-<nutcat-tag type="red">标签</nutcat-tag>
-<nutcat-tag type="red-line">标签</nutcat-tag>
-<nutcat-tag type="red-gradient">正在秒杀</nutcat-tag>
-<nutcat-tag type="red-light">其他利益点</nutcat-tag>
-<nutcat-tag type="red-pink">其他利益点</nutcat-tag>
-<nutcat-tag type="red-light">
+<NutTag type="red">标签</NutTag>
+<NutTag type="red-line">标签</NutTag>
+<NutTag type="red-gradient">正在秒杀</NutTag>
+<NutTag type="red-light">其他利益点</NutTag>
+<NutTag type="red-pink">其他利益点</NutTag>
+<NutTag type="red-light">
   <span slot="preSlot">满减</span>
   其他利益点
-</nutcat-tag>
+</NutTag>
 
 ```
 
@@ -38,8 +38,8 @@ app.use(Tag);
 `tag`的`radius`属性用来设置标签的圆角；
 
 ```html
-<nutcat-tag radius borderColor="#E8220E" color="#E8220E">满199减100</nutcat-tag>
-<nutcat-tag radius bgColor="#E8220E">商品名称</nutcat-tag>
+<NutTag radius borderColor="#E8220E" color="#E8220E">满199减100</NutTag>
+<NutTag radius bgColor="#E8220E">商品名称</NutTag>
 ```
 
 ### 自定义颜色
@@ -49,9 +49,9 @@ app.use(Tag);
 `borderColor`属性用来设置标签的边框颜色；
 
 ```html
-<nutcat-tag radius bgColor="rgb(114, 50, 221)">商品名称</nutcat-tag>
-<nutcat-tag radius bgColor="rgb(255, 225, 225)" color="rgb(173, 0, 0)">商品名称</nutcat-tag>
-<nutcat-tag radius borderColor="rgb(114, 50, 221)" color="rgb(114, 50, 221)">商品名称</nutcat-tag>
+<NutTag radius bgColor="rgb(114, 50, 221)">商品名称</NutTag>
+<NutTag radius bgColor="rgb(255, 225, 225)" color="rgb(173, 0, 0)">商品名称</NutTag>
+<NutTag radius borderColor="rgb(114, 50, 221)" color="rgb(114, 50, 221)">商品名称</NutTag>
 ```
 
 

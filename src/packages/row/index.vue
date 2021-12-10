@@ -48,7 +48,7 @@ export default create({
         ${(this as any).getClass('justify', (this as any).justify)}
         ${(this as any).getClass('align', (this as any).align)}
         ${(this as any).getClass('flex', (this as any).wrap)}
-        ${(this as any).scrollX ? 'nutcat-row-scroll-x' : ''}
+        ${(this as any).scrollX ? 'NutRow-scroll-x' : ''}
         ${componentName}
         `;
     }
@@ -57,9 +57,9 @@ export default create({
     getClass(prefix: string, type: string) {
       return prefix
         ? type
-          ? `nutcat-row-${prefix}-${type}`
+          ? `NutRow-${prefix}-${type}`
           : ''
-        : `nutcat-row-${type}`;
+        : `NutRow-${type}`;
     }
   }
 });

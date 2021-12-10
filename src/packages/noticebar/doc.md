@@ -20,7 +20,7 @@ app.use(NoticeBar);
 
 ```html
 <div class="interstroll-list">
-    <nutcat-noticebar direction="vertical" :list="horseLamp1" :speed='10' :standTime='1000' :showIcon='true' @go='go' color='#14100D' background='transparent'></nutcat-noticebar>
+    <NutNoticebar direction="vertical" :list="horseLamp1" :speed='10' :standTime='1000' :showIcon='true' @go='go' color='#14100D' background='transparent'></NutNoticebar>
 </div>
 ```
 ```javascript
@@ -42,7 +42,7 @@ methods:{
 
 ```html
 <div class="interstroll-list">
-    <nutcat-noticebar direction="vertical" :list="horseLamp2" :speed='10' :standTime='2000' :complexAm='true' color='#14100D' background='transparent'></nutcat-noticebar>
+    <NutNoticebar direction="vertical" :list="horseLamp2" :speed='10' :standTime='2000' :complexAm='true' color='#14100D' background='transparent'></NutNoticebar>
 </div>
 ```
 ```javascript
@@ -62,9 +62,9 @@ methods:{
 
 ```html
 <div class="interstroll-list">
-    <nutcat-noticebar direction="vertical" :height='50' :speed='10' :standTime='1000' :list="[]" :showIcon='true'  @goIcon='go' color='#14100D' background='transparent'>
+    <NutNoticebar direction="vertical" :height='50' :speed='10' :standTime='1000' :list="[]" :showIcon='true'  @goIcon='go' color='#14100D' background='transparent'>
         <div class="custom-item" :data-index='index' v-for="(item,index) in horseLamp3" :key="index"></div>
-    </nutcat-noticebar>
+    </NutNoticebar>
 </div>
 ```
 
@@ -81,11 +81,11 @@ data() {
 
 ```html
 <div class="interstroll-list">
-    <nutcat-noticebar direction="vertical" :list="horseLamp1" :speed='10' :standTime='1000' :showIcon='true' color='#14100D' background='transparent'>
+    <NutNoticebar direction="vertical" :list="horseLamp1" :speed='10' :standTime='1000' :showIcon='true' color='#14100D' background='transparent'>
         <template v-slot:rightIcon>
-          <nutcat-icon style="font-size: 20px;" color="#F02B2B" type="qiang"></nutcat-icon>
+          <NutIcon style="font-size: 20px;" color="#F02B2B" type="qiang"></NutIcon>
         </template>
-    </nutcat-noticebar>
+    </NutNoticebar>
 </div>
 ```
 ```javascript

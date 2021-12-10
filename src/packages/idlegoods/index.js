@@ -1,8 +1,8 @@
-import Idlegoods from './index.vue';
+import NutIdlegoods from './index.vue';
 import './index.scss';
 
-Idlegoods.install = function(Vue) {
-  Vue.component('nutcat-idlegoods', Idlegoods);
+NutIdlegoods.install = function(Vue) {
+  Vue.component('NutIdlegoods', NutIdlegoods);
 };
 
-export default Idlegoods;
+export default NutIdlegoods;

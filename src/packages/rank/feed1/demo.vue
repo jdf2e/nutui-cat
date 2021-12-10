@@ -3,17 +3,17 @@
     <h2>类型：feed-1</h2>
     <p class="type">适用场景：一行二个榜单布局，上下结构，适用于 feed 流场景。</p>
     <div class="demo-rank demo2-1">
-      <nutcat-row type="flex" gutter="3"> 
+      <NutRow type="flex" gutter="3"> 
         <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
-          <nutcat-rank
+          <NutRank
             :data="[item, params]" 
             tag="arrow-go"
             col="2" 
             type="feed-1" 
           >
-          </nutcat-rank>
+          </NutRank>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div> 
 </template>

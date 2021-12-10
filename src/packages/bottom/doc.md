@@ -28,7 +28,7 @@ app.use(Bottom);
 - 隐藏导航有一个缓动的效果，持续时间为300ms -->
 
 ```html
-<nutcat-bottom :data="data1" el-id="page1" activeName="年货攻略" @onClick="handClick" @backTop="backTop"></nutcat-bottom>
+<NutBottom :data="data1" el-id="page1" activeName="年货攻略" @onClick="handClick" @backTop="backTop"></NutBottom>
 ```
 
 ``` javascript

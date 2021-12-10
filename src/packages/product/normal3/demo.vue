@@ -3,29 +3,29 @@
     <h2>类型：normal-3</h2>
     <p class="type">适用场景：一行一个商品布局，左右结构。适用于秒杀限量商品，去抢购的进度条显示剩余库存量比例。</p>
     <div class="demo-product">
-      <nutcat-row>
+      <NutRow>
         <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
-          <nutcat-product
+          <NutProduct
             :data="[item, params]"
             col="1"
             type="normal-3"
           >
             <template slot="tag">
-              <nutcat-tag class="sub-tag" type="red-pink">限量5000件</nutcat-tag>
-              <nutcat-tag class="sub-tag" type="red-pink">限量5000件</nutcat-tag>
+              <NutTag class="sub-tag" type="red-pink">限量5000件</NutTag>
+              <NutTag class="sub-tag" type="red-pink">限量5000件</NutTag>
             </template>
             <template slot="priceSlot">
-              <nutcat-tag class="price-tag-pre" type="red" radius="2px"
-                >秒杀</nutcat-tag
+              <NutTag class="price-tag-pre" type="red" radius="2px"
+                >秒杀</NutTag
               >
-              <nutcat-price price="1649" class="price" />
+              <NutPrice price="1649" class="price" />
             </template>
-            <nutcat-tag class="top-tag tl" type="red-gradient"
-              >全年历史最低价</nutcat-tag
+            <NutTag class="top-tag tl" type="red-gradient"
+              >全年历史最低价</NutTag
             >
-          </nutcat-product>
+          </NutProduct>
         </nutcat-col>
-      </nutcat-row>
+      </NutRow>
     </div>
   </div>
 </template>

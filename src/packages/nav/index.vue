@@ -69,10 +69,10 @@
                 @click="change(nav, i)"
               >
                 <template v-if="stickyOptions.icon">
-                  <nutcat-icon
+                  <NutIcon
                     v-show="stickyOptions.showLbs && activeIndex == i"
                     :type="stickyOptions.icon"
-                  ></nutcat-icon>
+                  ></NutIcon>
                 </template>
                 <span class="content">{{ nav }}</span>
                 <!-- <span class="item-content">activeIndex:{{activeIndex}}</span> -->
@@ -106,7 +106,7 @@
             @click="change(nav, i)"
           >
             <template v-if="stickyOptions.icon">
-              <nutcat-icon v-show="stickyOptions.showLbs && activeIndex == i" :type="stickyOptions.icon"></nutcat-icon>
+              <NutIcon v-show="stickyOptions.showLbs && activeIndex == i" :type="stickyOptions.icon"></NutIcon>
             </template>
             {{ nav }}
           </li>

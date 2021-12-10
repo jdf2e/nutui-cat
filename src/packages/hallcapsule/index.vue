@@ -21,7 +21,7 @@
         @click="handleClick" 
         class="hall-capsule-refresh"
       >
-        <nutcat-icon type="refresh"></nutcat-icon>换一批
+        <NutIcon type="refresh"></NutIcon>换一批
       </div>
     </div>
   </template>

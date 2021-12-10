@@ -13,17 +13,17 @@
 
 
 ```html
-<nutcat-row type="flex" gutter="1">
+<NutRow type="flex" gutter="1">
   <nutcat-col :span="12" v-for="(item, index) in data1" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params]"
       descRow="2"
       col="2"
       type="normal-4"
     >
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript
@@ -55,9 +55,9 @@ data() {
 
 
 ```html
-<nutcat-row type="flex" gutter="3">
+<NutRow type="flex" gutter="3">
   <nutcat-col :span="12" v-for="(item, index) in data2" :key="index">
-    <nutcat-hall
+    <NutHall
       :data="[item, params]"
       tag="arrow-go"
       nameColor="#fff"
@@ -66,9 +66,9 @@ data() {
       col="2"
       type="normal-4"
     >
-    </nutcat-hall>
+    </NutHall>
   </nutcat-col>
-</nutcat-row>
+</NutRow>
 ```
 
 ```javascript

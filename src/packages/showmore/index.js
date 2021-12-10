@@ -1,8 +1,8 @@
-import Showmore from './index.vue';
+import NutShowmore from './index.vue';
 import './index.scss';
 
-Showmore.install = function(Vue) {
-  Vue.component('nutcat-showmore', Showmore);
+NutShowmore.install = function(Vue) {
+  Vue.component('NutShowmore', NutShowmore);
 };
 
-export default Showmore;
+export default NutShowmore;
