@@ -123,7 +123,7 @@
 
 <script>
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('nav');
+const { componentClass, create } = createComponent('nav');
 import assign from 'lodash/assign';
 import throttle from 'lodash/throttle';
 import TWEEN from '@tweenjs/tween.js';
@@ -271,9 +271,9 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [componentName + '-' + this.type]: this.type,
-        // [`${componentName}-${(this as any).col}`]: (this as any).col,
+        [componentClass]: true,
+        [componentClass + '-' + this.type]: this.type,
+        // [`${componentClass}-${(this as any).col}`]: (this as any).col,
         'hide-nutcat-nav': this.stickyOptions.scrollShow && !this.visable,
         'hide-up': this.scrollHide
       };

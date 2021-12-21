@@ -19,7 +19,7 @@
 <script lang="ts">
 import { createComponent } from '@/utils/create';
 import { Toast } from '@nutui/nutui';
-const { componentName, create } = createComponent('shareCoupon');
+const { componentClass, create } = createComponent('shareCoupon');
 const _toast: any = Toast;
 export default create({
   props: {
@@ -51,19 +51,19 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${(this as any).type}`]: (this as any).type,
-        [`${componentName}-${(['get','use','ban'] as any)[(this as any).state]}`]: (this as any).state
+        [componentClass]: true,
+        [`${componentClass}-${(this as any).type}`]: (this as any).type,
+        [`${componentClass}-${(['get','use','ban'] as any)[(this as any).state]}`]: (this as any).state
       };
     },
     classesCont() {
       return {
-        [`${componentName}-cont`]: true
+        [`${componentClass}-cont`]: true
       };
     },
     classesInfo() {
       return {
-        [`${componentName}-info`]: true
+        [`${componentClass}-info`]: true
       };
     },
     styles() {

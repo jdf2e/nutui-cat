@@ -5,7 +5,7 @@
 </template>
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('row');
+const { componentClass, create } = createComponent('row');
 
 export default create({
   props: {
@@ -49,7 +49,7 @@ export default create({
         ${(this as any).getClass('align', (this as any).align)}
         ${(this as any).getClass('flex', (this as any).wrap)}
         ${(this as any).scrollX ? 'NutRow-scroll-x' : ''}
-        ${componentName}
+        ${componentClass}
         `;
     }
   },

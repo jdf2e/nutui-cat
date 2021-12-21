@@ -11,7 +11,7 @@
 
 ```html
 <NutRow type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data1" :key="index">
     <NutHall
       :data="[item, params1]"
       imgHeight="76"
@@ -19,13 +19,13 @@
       type="normal-5"
     >
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 
 ```html
 <NutRow type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data2" :key="index">
     <NutHall
       :data="[item, params2]"
       imgHeight="76"
@@ -33,13 +33,13 @@
       type="normal-5"
     >
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 
 ```html
 <NutRow type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data3" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data3" :key="index">
     <NutHall
       :data="[item, params1]"
       imgWidth="71"
@@ -48,13 +48,13 @@
       type="normal-5"
     >
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 
 ```html
 <NutRow type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data4" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data4" :key="index">
     <NutHall
       :data="[item, params2]"
       imgWidth="71"
@@ -63,7 +63,7 @@
       type="normal-5"
     >
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

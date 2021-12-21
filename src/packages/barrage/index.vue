@@ -21,7 +21,7 @@
 </template>
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('barrage');
+const { componentClass, create } = createComponent('barrage');
 
 export default create({
   props: {
@@ -53,7 +53,7 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName + '-page']: true
+        [componentClass + '-page']: true
       };
     }
   },

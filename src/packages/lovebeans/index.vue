@@ -7,7 +7,7 @@
   <script>
   
   import { createComponent } from '@/utils/create';
-  const { componentName, create } = createComponent('lovebeans');
+  const { componentClass, create } = createComponent('lovebeans');
   
   export default create({
     props: {
@@ -28,7 +28,7 @@
     computed:{
       classes() {
         return {
-          [componentName+'-page']: true,
+          [componentClass+'-page']: true,
         };
       },
     },

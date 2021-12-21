@@ -4,18 +4,18 @@
     <p class="type">适用场景：一行三个榜单布局，上下结构，支持一行三个、一行三个半、一行四个等。</p>
     <div class="demo-rank">
       <NutRow type="flex" gutter="2">
-        <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data1" :key="index">
           <NutRank
             :data="[item, params]" 
             col="3" 
             type="normal-3" 
           ></NutRank>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-rank">
       <NutRow type="flex" gutter="2">
-        <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data2" :key="index">
           <NutRank
             :data="[item, {cDesc: false,cImage: ['pictureUrl']}]" 
             col="3" 
@@ -23,12 +23,12 @@
           >
             <NutTag type="rank-hot"></NutTag>
           </NutRank>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-rank demo-s3">
       <NutRow scrollX type="flex" gutter="1">
-        <nutcat-col :span="8" v-for="(item, index) in data3" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data3" :key="index">
           <NutRank
             :data="[item, params]" 
             col="3" 
@@ -36,12 +36,12 @@
           >
             <NutTag type="rank-hot"></NutTag>
           </NutRank>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-rank">
       <NutRow scrollX type="flex" gutter="1">
-        <nutcat-col :span="6" v-for="(item, index) in data3" :key="index">
+        <NutCol :span="6" v-for="(item, index) in data3" :key="index">
           <NutRank
             :data="[item, params]" 
             col="4" 
@@ -49,7 +49,7 @@
           >
             <NutTag type="rank-hot"></NutTag>
           </NutRank>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div> 

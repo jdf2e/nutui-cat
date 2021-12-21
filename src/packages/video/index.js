@@ -1,5 +1,5 @@
 import NutVideo from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutVideo.install = function(Vue) {
   Vue.component('NutVideo', NutVideo);

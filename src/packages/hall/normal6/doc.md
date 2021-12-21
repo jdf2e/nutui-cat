@@ -13,7 +13,7 @@
 
 ```html
 <NutRow type="flex" gutter="3">
-  <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data" :key="index">
     <NutHall
       :data="[item, params]"
       imgWidth="117"
@@ -25,7 +25,7 @@
       type="normal-6"
     >
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

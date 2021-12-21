@@ -4,7 +4,7 @@
     <p class="type">适用场景：强化抢购氛围，支持一行二个、一行三个、一行三个半等。</p>
     <div class="demo-product">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data" :key="index">
           <NutProduct
             :data="[item, params]"
             nameRow="2"
@@ -19,13 +19,13 @@
               <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
             </template>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-product">
       <div class="demo-product">
         <NutRow type="flex" gutter="2">
-          <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
+          <NutCol :span="8" v-for="(item, index) in data" :key="index">
             <NutProduct
               :data="[item, params]"
               nameRow="2"
@@ -33,7 +33,7 @@
               type="normal-6"
             >
             </NutProduct>
-          </nutcat-col>
+          </NutCol>
         </NutRow>
       </div>
     </div>

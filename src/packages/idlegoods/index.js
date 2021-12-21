@@ -1,5 +1,5 @@
 import NutIdlegoods from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutIdlegoods.install = function(Vue) {
   Vue.component('NutIdlegoods', NutIdlegoods);

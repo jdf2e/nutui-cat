@@ -12,9 +12,10 @@
         <div class="doc-footer-item"><a href="https://docs.jd.com/sites/cr21aLm2/6U8fPq4G/_layouts/15/WopiFrame.aspx?sourcedoc={E89191E8-830B-4234-8957-24191E3972CA}&file=%E5%A4%A7%E4%BF%83%E5%9B%A2%E9%98%9F%E5%8E%9F%E5%AD%90%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83.docx&action=default" target="_blank">大促团队原子设计规范</a></div>
       </div>
       <div class="doc-footer-list">
-        <h4 class="doc-footer-title">素材与发布</h4>
-        <div class="doc-footer-item"><a href="https://babel.m.jd.com/active/babelCommon/index.html" target="_blank">通天塔</a></div>
+        <h4 class="doc-footer-title">素材与开发</h4>
         <div class="doc-footer-item"><a href="http://ace.jd.com/launch/#/" target="_blank">投放平台</a></div>
+        <div class="doc-footer-item"><a href="https://babel.m.jd.com/active/babelCommon/index.html" target="_blank">通天塔</a></div>
+        <div class="doc-footer-item"><a href="http://deco.jd.com/" target="_blank">Deco - 设计稿转代码平台</a></div>
       </div>
       <div class="doc-footer-list">
         <h4 class="doc-footer-title">埋点测试工具</h4>

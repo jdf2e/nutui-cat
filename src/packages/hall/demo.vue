@@ -180,7 +180,7 @@
           <nut-button color="#7232dd">单色按钮</nut-button>
         </template>
         <template slot="right">
-          <nutcat-col :span="12" v-for="(item, index) in (productData.list || '')" :key="index">
+          <NutCol :span="12" v-for="(item, index) in (productData.list || '')" :key="index">
             <NutProduct 
               :name="item.name"
               tag="源头好物"
@@ -189,7 +189,7 @@
               col="3"
             >
             </NutProduct>
-          </nutcat-col>
+          </NutCol>
         </template>
       </NutHall>
     </div> -->

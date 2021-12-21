@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行多个会场布局，氛围图和内容区域上下布局。支持一行三个、一行三个半、一行四个等。</p>
     <div class="demo-hall">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data" :key="index">
           <NutHall
             :data="[item, params]"
             imgWidth="117"
@@ -16,7 +16,7 @@
             type="normal-6"
           >
           </NutHall>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

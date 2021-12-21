@@ -1,5 +1,5 @@
 import Image from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 Image.install = function(Vue) {
   Vue.component('NutImage', Image);

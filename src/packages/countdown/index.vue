@@ -13,7 +13,7 @@
 </template>
 <script>
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('countdown');
+const { componentClass, create } = createComponent('countdown');
 
 export default create({
   props: {

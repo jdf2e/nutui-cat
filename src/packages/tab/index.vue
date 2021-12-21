@@ -41,7 +41,7 @@
 </template>
   <script>
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('tab');
+const { componentClass, create } = createComponent('tab');
 import connectData  from '@/utils/connect';
 export default create({
   props: {
@@ -88,7 +88,7 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName + '-page']: true
+        [componentClass + '-page']: true
       };
     }
   },

@@ -6,7 +6,7 @@
 <script>
 
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('backtop');
+const { componentClass, create } = createComponent('backtop');
 import throttle from 'lodash/throttle';
 
 export default create({
@@ -30,7 +30,7 @@ export default create({
   computed:{
     classes() {
       return {
-        [componentName]: true,
+        [componentClass]: true,
       };
     },
   },

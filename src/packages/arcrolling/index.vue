@@ -30,7 +30,7 @@
 </template>
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('arcrolling');
+const { componentClass, create } = createComponent('arcrolling');
 import Swiper from '../utils/swiper';
 
 export default create({
@@ -67,7 +67,7 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName + '-page']: true
+        [componentClass + '-page']: true
       };
     }
   },

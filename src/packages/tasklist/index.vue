@@ -16,7 +16,7 @@
 </template>
   <script>
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('tasklist');
+const { componentClass, create } = createComponent('tasklist');
 
 export default create({
   props: {
@@ -74,7 +74,7 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName + '-page']: true
+        [componentClass + '-page']: true
       };
     }
   },

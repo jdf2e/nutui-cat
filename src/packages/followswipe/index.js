@@ -1,5 +1,5 @@
 import NutFollowswipe from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutFollowswipe.install = function(Vue) {
   Vue.component('NutFollowswipe', NutFollowswipe);

@@ -22,7 +22,7 @@
   <script>
 import { createComponent } from '@/utils/create';
 // import ScrollItem from './item'
-const { componentName, create } = createComponent('noticebar');
+const { componentClass, create } = createComponent('noticebar');
 
 export default create({
   props: {
@@ -96,7 +96,7 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName + '-page']: true
+        [componentClass + '-page']: true
       };
     },
 

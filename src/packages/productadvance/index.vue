@@ -12,7 +12,7 @@
 </template>
   <script>
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('productadvance');
+const { componentClass, create } = createComponent('productadvance');
 
 export default create({
   props: {
@@ -27,7 +27,7 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName + '-page']: true
+        [componentClass + '-page']: true
       };
     }
   },

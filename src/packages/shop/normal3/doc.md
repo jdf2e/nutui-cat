@@ -13,14 +13,14 @@
 
 ```html
 <NutRow type="flex" gutter="1">
-  <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+  <NutCol :span="12" v-for="(item, index) in data" :key="index">
     <NutShop
       :data="[item, params]" 
       col="2" 
       type="normal-3" 
     >
     </NutShop>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

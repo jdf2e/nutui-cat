@@ -1,5 +1,5 @@
 import NutProductlimit from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutProductlimit.install = function(Vue) {
   Vue.component('NutProductlimit', NutProductlimit);

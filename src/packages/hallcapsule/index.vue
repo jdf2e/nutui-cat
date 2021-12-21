@@ -28,7 +28,7 @@
   <script>
   
   import { createComponent } from '@/utils/create';
-  const { componentName, create } = createComponent('hallcapsule');
+  const { componentClass, create } = createComponent('hallcapsule');
   
   export default create({
     props: {
@@ -52,7 +52,7 @@
     computed:{
       classes() {
         let classObj = {
-          [componentName+'-page']: true,
+          [componentClass+'-page']: true,
         }
 
         if(this.lines === 1) {

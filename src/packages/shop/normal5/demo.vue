@@ -4,32 +4,32 @@
     <p class="type">适用场景：一行多个店铺布局，上下结构，上边图片，下边文字区域。支持一行二个、一行三个、一行三个半、一行四个等。</p>
     <div class="demo-shop">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data1" :key="index">
           <NutShop
             :data="[item, params]" 
             col="3" 
             type="normal-5" 
           >
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-shop">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data2" :key="index">
           <NutShop
             :data="[item, params]" 
             col="3" 
             type="normal-5" 
           >
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <p class="type">通过 `slot` 增加自定义内容，例如领券按钮。</p>
     <div class="demo-shop">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="12" v-for="(item, index) in data3" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data3" :key="index">
           <NutShop
             :data="[item, params]" 
             col="2" 
@@ -37,12 +37,12 @@
           >
             <div class="btn-follow">+关注 领30元券</div>
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-shop">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="8" v-for="(item, index) in data4" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data4" :key="index">
           <NutShop
             :data="[item, params]" 
             col="3" 
@@ -50,12 +50,12 @@
           >
             <div class="btn-follow">+关注 领30元券</div>
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <!-- <div class="demo-shop demo-s3">
       <NutRow scrollX type="flex" gutter="1">
-        <nutcat-col :span="8" v-for="(item, index) in data5" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data5" :key="index">
           <NutShop
             :data="[item, {
                 cLogo: false,
@@ -66,7 +66,7 @@
           >
             <NutTag type="live-on">直播中</NutTag>
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div> -->
   </div>

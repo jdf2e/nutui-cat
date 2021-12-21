@@ -3,114 +3,114 @@
     <h2>基础布局</h2>
     <div class="box-item">
       <NutRow>
-        <nutcat-col :span="24">
+        <NutCol :span="24">
           <div class="flex-content">span:24</div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
       <NutRow>
-        <nutcat-col :span="12">
+        <NutCol :span="12">
           <div class="flex-content">span:12</div>
-        </nutcat-col>
-        <nutcat-col :span="12">
+        </NutCol>
+        <NutCol :span="12">
           <div class="flex-content flex-content-light">span:12</div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
       <NutRow>
-        <nutcat-col :span="8">
+        <NutCol :span="8">
           <div class="flex-content">span:8</div>
-        </nutcat-col>
-        <nutcat-col :span="8">
+        </NutCol>
+        <NutCol :span="8">
           <div class="flex-content flex-content-light">span:8</div>
-        </nutcat-col>
-        <nutcat-col :span="8">
+        </NutCol>
+        <NutCol :span="8">
           <div class="flex-content">span:8</div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
       <NutRow>
-        <nutcat-col :span="6">
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content flex-content-light">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <h2>分栏间隔</h2>
     <div class="box-item">
       <NutRow :gutter="8">
-        <nutcat-col :span="8">
+        <NutCol :span="8">
           <div class="flex-content">span:8</div>
-        </nutcat-col>
-        <nutcat-col :span="8">
+        </NutCol>
+        <NutCol :span="8">
           <div class="flex-content flex-content-light">span:8</div>
-        </nutcat-col>
-        <nutcat-col :span="8">
+        </NutCol>
+        <NutCol :span="8">
           <div class="flex-content">span:8</div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <h2>Flex布局</h2>
     <div class="box-item">
       <NutRow type="flex" wrap="nowrap">
-        <nutcat-col :span="6">
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content flex-content-light">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
       <NutRow type="flex" justify="center">
-        <nutcat-col :span="6">
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content flex-content-light">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
       <NutRow type="flex" justify="end">
-        <nutcat-col :span="6">
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content flex-content-light">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
       <NutRow type="flex" justify="space-between">
-        <nutcat-col :span="6">
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content flex-content-light">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
       <NutRow type="flex" justify="space-around">
-        <nutcat-col :span="6">
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content flex-content-light">span:6</div>
-        </nutcat-col>
-        <nutcat-col :span="6">
+        </NutCol>
+        <NutCol :span="6">
           <div class="flex-content">span:6</div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>
@@ -137,7 +137,7 @@ export default createDemo({
 }
 .demo .NutRow {
   overflow: hidden;
-  &:not(:last-child) .nutcat-col {
+  &:not(:last-child) .NutCol {
     margin-bottom: 15px;
   }
 }

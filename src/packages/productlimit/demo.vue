@@ -26,7 +26,7 @@
     </div>
 
     <NutRow>
-      <nutcat-col :span="8" v-for="(item, index) in data6" :key="index">
+      <NutCol :span="8" v-for="(item, index) in data6" :key="index">
         <NutProduct
           :data="[
             item,
@@ -41,13 +41,13 @@
             >满199减100</NutTag
           >
         </NutProduct>
-      </nutcat-col>
+      </NutCol>
     </NutRow>
 
     <h2>直降</h2>
 
     <NutRow>
-      <nutcat-col :span="8" v-for="(item, index) in data6" :key="index">
+      <NutCol :span="8" v-for="(item, index) in data6" :key="index">
         <NutProduct
           rowType="flex"
           :data="[item, { cName: ['name'], cImage: ['image'],cPrice:['price'] }]"
@@ -61,7 +61,7 @@
         >
           <NutTag class="top-tag tl" type="rank-hot">满199减100</NutTag>
         </NutProduct>
-      </nutcat-col>
+      </NutCol>
     </NutRow>
   </div>
 </template>

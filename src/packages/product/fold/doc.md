@@ -11,7 +11,7 @@
 
 ```html
 <NutRow>
-  <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
+  <NutCol :span="24" v-for="(item, index) in data" :key="index">
     <NutProduct
       :data="[item, params]"
       nameRow="1"
@@ -27,7 +27,7 @@
         <NutPrice price="1649" class="price" />
       </template>
     </NutProduct>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 ```javascript

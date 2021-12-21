@@ -16,7 +16,7 @@
 
 ```html
 <NutRow>
-  <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
+  <NutCol :span="24" v-for="(item, index) in data" :key="index">
     <NutHall
       :data="[item, params]"
       tag="arrow-full"
@@ -27,7 +27,7 @@
       type="normal-2"
     >
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

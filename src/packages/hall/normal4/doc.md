@@ -14,7 +14,7 @@
 
 ```html
 <NutRow type="flex" gutter="1">
-  <nutcat-col :span="12" v-for="(item, index) in data1" :key="index">
+  <NutCol :span="12" v-for="(item, index) in data1" :key="index">
     <NutHall
       :data="[item, params]"
       descRow="2"
@@ -22,7 +22,7 @@
       type="normal-4"
     >
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 
@@ -56,7 +56,7 @@ data() {
 
 ```html
 <NutRow type="flex" gutter="3">
-  <nutcat-col :span="12" v-for="(item, index) in data2" :key="index">
+  <NutCol :span="12" v-for="(item, index) in data2" :key="index">
     <NutHall
       :data="[item, params]"
       tag="arrow-go"
@@ -67,7 +67,7 @@ data() {
       type="normal-4"
     >
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

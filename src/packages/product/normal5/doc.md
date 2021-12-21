@@ -11,7 +11,7 @@
 
 ```html
 <NutRow  type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data" :key="index">
     <NutProduct
       :data="[item, params]"
       iconType="cart"
@@ -23,7 +23,7 @@
         <NutTag type="618">618</NutTag>
       </template>
     </NutProduct>
-  </nutcat-col>
+  </NutCol>
 ```
 ```javascript
 data() {
@@ -62,7 +62,7 @@ data() {
 
 ```html
 <NutRow  type="flex" gutter="3">
-  <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+  <NutCol :span="12" v-for="(item, index) in data" :key="index">
     <NutProduct
       :data="[item, params]"
       iconType="cart"
@@ -84,7 +84,7 @@ data() {
         <NutTag class="sub-tag" type="red-light">利益点利益点</NutTag>
       </template>
     </NutProduct>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

@@ -17,7 +17,7 @@
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('live');
+const { componentClass, create } = createComponent('live');
 export default create({
   props: {
     data: {
@@ -28,8 +28,8 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-normal`]: true
+        [componentClass]: true,
+        [`${componentClass}-normal`]: true
       };
     }
   },

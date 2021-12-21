@@ -10,13 +10,13 @@
 
 ```html
 <NutRow type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data1" :key="index">
     <NutRank
       :data="[item, params]" 
       col="3" 
       type="normal-3" 
     ></NutRank>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 ```javascript

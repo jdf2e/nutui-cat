@@ -4,7 +4,7 @@
     <p class="type">适用场景：商品+店铺类型，多用于底部 Feed 流。</p>
     <div class="demo-product">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data" :key="index">
           <NutProduct
             :data="[item, params]"
             tag="满199减10"
@@ -26,7 +26,7 @@
             </template>
             <NutTag class="tl9" type="lbs">1.3km</NutTag>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

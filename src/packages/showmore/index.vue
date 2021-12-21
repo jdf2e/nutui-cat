@@ -10,7 +10,7 @@
 </template>
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('showmore');
+const { componentClass, create } = createComponent('showmore');
 
 export default create({
   props: {
@@ -51,7 +51,7 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName + '-page']: true
+        [componentClass + '-page']: true
       };
     },
     styleWH() {

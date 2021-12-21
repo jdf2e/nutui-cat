@@ -11,7 +11,7 @@
 
 ```html
 <NutRow>
-  <nutcat-col :span="24" v-for="(item, index) in data1" :key="index">
+  <NutCol :span="24" v-for="(item, index) in data1" :key="index">
     <NutHall :data="[item, params]" bgColor="#820C00" col="1" type="free">
       <template slot="left">
         <NutText class="sub-name" row="1">京东美妆</NutText>
@@ -30,7 +30,7 @@
         </NutImage>
       </template>
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 
@@ -55,7 +55,7 @@ data() {
 
 ```html
 <NutRow type="flex" gutter="1">
-  <nutcat-col :span="12" v-for="(item, index) in data2" :key="index">
+  <NutCol :span="12" v-for="(item, index) in data2" :key="index">
     <NutHall
       :data="[item, params]"
       col="2"
@@ -83,7 +83,7 @@ data() {
         <NutText class="sub-desc" row="1">超值单品9.9</NutText>
       </template>
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 
@@ -115,7 +115,7 @@ data() {
 
 ```html
 <NutRow type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data3" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data3" :key="index">
     <NutHall
       :data="[item, params]"
       bgColor="#820C00"
@@ -146,7 +146,7 @@ data() {
         </div>
       </template>
     </NutHall>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

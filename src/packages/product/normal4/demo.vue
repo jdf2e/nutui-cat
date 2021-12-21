@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行多个商品布局，上下结构的常规类型，支持一行三个、一行三个半等。</p>
     <div class="demo-product demo-1">
       <NutRow type="flex" gutter="2">
-        <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data1" :key="index">
           <NutProduct
             :data="[item, params]"
             col="3"
@@ -18,12 +18,12 @@
               数码销量TOP1
             </NutTag>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-product demo-s1">
       <NutRow type="flex" gutter="1" scrollX>
-        <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data2" :key="index">
           <NutProduct
             :data="[item, params]"
             col="3"
@@ -37,12 +37,12 @@
               数码销量TOP1
             </NutTag>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <!-- <div class="demo-product">
       <NutRow type="flex" gutter="1" scrollX>
-        <nutcat-col :span="6" v-for="(item, index) in data3" :key="index">
+        <NutCol :span="6" v-for="(item, index) in data3" :key="index">
           <NutProduct
             :data="[item, {cLinePrice: ['false']}]"
             nameRow="1"
@@ -51,7 +51,7 @@
             type="normal-4"
           >
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div> -->
   </div>

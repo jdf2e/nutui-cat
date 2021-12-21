@@ -12,7 +12,7 @@
 
 ```html
 <NutRow type="flex" gutter="3">
-  <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+  <NutCol :span="12" v-for="(item, index) in data" :key="index">
     <NutProduct
       :data="[item, params]"
       nameRow="2"
@@ -27,7 +27,7 @@
         <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
       </template>
     </NutProduct>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 ```javascript

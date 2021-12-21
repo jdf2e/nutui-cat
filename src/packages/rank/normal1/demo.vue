@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行一个榜单布局，左边文字区域，右边区域是商品区域。</p>
     <div class="demo-rank">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data1" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data1" :key="index">
           <NutRank
             :data="[item, params1]" 
             :productData="[item.productData, params2]" 
@@ -25,12 +25,12 @@
               </div>
             </ul>
           </NutRank>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-rank">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data2" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data2" :key="index">
           <NutRank
             :data="[item, params1]" 
             :productData="[item.productData, params2]" 
@@ -52,13 +52,13 @@
               </div>
             </ul>
           </NutRank>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <p class="type">`productData` 为空，右边的商品区域则隐藏，通过 `slot` 增加进入的 `icon`。</p>
     <div class="demo-rank demo1-2">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data1" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data1" :key="index">
           <NutRank
             :data="[item, params2]" 
             col="1" 
@@ -67,7 +67,7 @@
           >
             <NutIcon type="arrow-full"></NutIcon>
           </NutRank>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div> 

@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行一个商品布局，左右结构。适用于秒杀限量商品，去抢购的进度条显示剩余库存量比例。</p>
     <div class="demo-product">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data" :key="index">
           <NutProduct
             :data="[item, params]"
             col="1"
@@ -24,7 +24,7 @@
               >全年历史最低价</NutTag
             >
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

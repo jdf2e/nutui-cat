@@ -11,7 +11,7 @@
 
 ```html
 <NutRow scrollX type="flex" gutter="1">
-  <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data" :key="index">
     <NutShop
       :data="[item, {
           cLogo: false,
@@ -21,7 +21,7 @@
       type="normal-6" 
     >
     </NutShop>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

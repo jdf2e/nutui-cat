@@ -1,5 +1,5 @@
 import NutBottom from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutBottom.install = function(Vue) {
   Vue.component('NutBottom', NutBottom);

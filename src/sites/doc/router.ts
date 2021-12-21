@@ -119,7 +119,7 @@ router.afterEach((to, from) => {
 
   // new HttpClient().request('/user/saveVisitInfo', 'post', {
   //   headers: '',
-  //   componentName: to.path.split('/')[1]
+  //   componentClass: to.path.split('/')[1]
   // });
 });
 export default router;

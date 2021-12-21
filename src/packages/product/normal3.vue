@@ -57,7 +57,7 @@
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('product');
+const { componentClass, create } = createComponent('product');
 
 export default create({
   props: {
@@ -113,10 +113,10 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${(this as any).col}`]: (this as any).col,
-        [`${componentName}-${(this as any).type}`]: (this as any).type,
-        [`${componentName}-scrollX`]: (this as any).scrollX
+        [componentClass]: true,
+        [`${componentClass}-${(this as any).col}`]: (this as any).col,
+        [`${componentClass}-${(this as any).type}`]: (this as any).type,
+        [`${componentClass}-scrollX`]: (this as any).scrollX
       };
     },
     styles() {

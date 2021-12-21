@@ -1,5 +1,5 @@
 import NutBacktop from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutBacktop.install = function(Vue) {
   Vue.component('NutBacktop', NutBacktop);

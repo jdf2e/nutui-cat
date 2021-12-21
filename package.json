@@ -1,6 +1,6 @@
 {
   "name": "nutlu",
-  "version": "0.0.49",
+  "version": "0.0.52",
   "private": false,
   "description": "基于 NutUI 2.0 的大促业务组件库",
   "main": "dist/nutui-cat.common.js",
@@ -33,9 +33,10 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
-    "build:site": "vue-cli-service build --target lib --name nutui-cat --dest dist config-site.js",
-    "lib": "vue-cli-service build --target lib --name nutui-cat --dest dist src/packages/nutui-cat.js",
-    "build": "vue-cli-service build",
+    "build:site": "vue-cli-service build --target lib --name nutui-cat --dest dist vue.config-site.js",
+    "build": "vue-cli-service build --target lib --name nutui-cat --dest dist src/packages/nutui-cat.js",
+    "build:package": "vue-cli-service build",
+    "build:deco": "vue-cli-service build --target lib --name nutui-cat --dest dist vue.config-deco.js",
     "lint": "vue-cli-service lint",
     "upload": "vue-cli-service build && node ./jd/upload.js",
     "add": "node jd/createComponentMode.js",

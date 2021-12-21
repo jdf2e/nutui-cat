@@ -21,42 +21,42 @@ app.use(Col);
 
 ```html
 <NutRow>
-  <nutcat-col :span="24">
+  <NutCol :span="24">
     <div class="flex-content">span:24</div>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 <NutRow>
-  <nutcat-col :span="12">
+  <NutCol :span="12">
     <div class="flex-content">span:12</div>
-  </nutcat-col>
-  <nutcat-col :span="12">
+  </NutCol>
+  <NutCol :span="12">
     <div class="flex-content flex-content-light">span:12</div>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 <NutRow>
-  <nutcat-col :span="8">
+  <NutCol :span="8">
     <div class="flex-content">span:8</div>
-  </nutcat-col>
-  <nutcat-col :span="8">
+  </NutCol>
+  <NutCol :span="8">
     <div class="flex-content flex-content-light">span:8</div>
-  </nutcat-col>
-  <nutcat-col :span="8">
+  </NutCol>
+  <NutCol :span="8">
     <div class="flex-content">span:8</div>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 <NutRow>
-  <nutcat-col :span="6">
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content flex-content-light">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 
@@ -64,74 +64,74 @@ app.use(Col);
 
 ```html
 <NutRow :gutter="10">
-    <nutcat-col :span="8">
+    <NutCol :span="8">
         <div class="flex-content">span:8</div>
-    </nutcat-col>
-    <nutcat-col :span="8">
+    </NutCol>
+    <NutCol :span="8">
         <div class="flex-content flex-content-light">span:8</div>
-    </nutcat-col>
-    <nutcat-col :span="8">
+    </NutCol>
+    <NutCol :span="8">
         <div class="flex-content">span:8</div>
-    </nutcat-col>
+    </NutCol>
 </NutRow>   
 ```
 ### Flex布局
 
 ```html
 <NutRow type="flex" wrap="nowrap">
-  <nutcat-col :span="6">
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content flex-content-light">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 <NutRow type="flex" justify="center">
-  <nutcat-col :span="6">
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content flex-content-light">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 <NutRow type="flex" justify="end">
-  <nutcat-col :span="6">
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content flex-content-light">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 <NutRow type="flex" justify="space-between">
-  <nutcat-col :span="6">
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content flex-content-light">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 <NutRow type="flex" justify="space-around">
-  <nutcat-col :span="6">
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content flex-content-light">span:6</div>
-  </nutcat-col>
-  <nutcat-col :span="6">
+  </NutCol>
+  <NutCol :span="6">
     <div class="flex-content">span:6</div>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

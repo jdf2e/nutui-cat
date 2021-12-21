@@ -51,7 +51,7 @@
 </template>
   <script>
 import { createComponent } from "@/utils/create";
-const { componentName, create } = createComponent("heartcurve");
+const { componentClass, create } = createComponent("heartcurve");
 
 export default create({
   props: {
@@ -95,7 +95,7 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName + "-page"]: true,
+        [componentClass + "-page"]: true,
       };
     },
   },

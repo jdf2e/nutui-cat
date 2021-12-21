@@ -1,5 +1,5 @@
 import { prefix } from '@/utils/prefix';
-import './index.scss';
+// import './index.scss';
 
 /**
  * @module actLoadingJoy

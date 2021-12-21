@@ -84,7 +84,7 @@
 
 <script>
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('product');
+const { componentClass, create } = createComponent('product');
 
 export default create({
   props: {
@@ -167,10 +167,10 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${this.col}`]: this.col,
-        [`${componentName}-${this.type}`]: this.type,
-        [`${componentName}-scrollX`]: this.scrollX
+        [componentClass]: true,
+        [`${componentClass}-${this.col}`]: this.col,
+        [`${componentClass}-${this.type}`]: this.type,
+        [`${componentClass}-scrollX`]: this.scrollX
       };
     },
     styles() {

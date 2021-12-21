@@ -1,5 +1,5 @@
 import NutCart from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutCart.install = function(Vue) {
   Vue.component('NutCart', NutCart);

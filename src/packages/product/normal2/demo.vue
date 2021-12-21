@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行一个商品布局，左右结构。与 normal-1 的区别在于利益点、划线价的顺序结构有所调整。</p>
     <div class="demo-product">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data" :key="index">
           <NutProduct
             :data="[item, params]"
             col="1"
@@ -28,7 +28,7 @@
               >
             </template>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

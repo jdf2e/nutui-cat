@@ -10,7 +10,7 @@
 
 ```html
 <NutRow type="flex" gutter="3"> 
-  <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+  <NutCol :span="12" v-for="(item, index) in data" :key="index">
     <NutRank
       :data="[item, params]" 
       tag="arrow-go"
@@ -18,7 +18,7 @@
       type="feed-1" 
     >
     </NutRank>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 ```javascript

@@ -9,33 +9,33 @@
         <div class="nav-floor-box">
           <h3>基础用法</h3>
           <div class="icon-box">
-            <nutcat-col span="6" class="copy-box">
+            <div span="6" class="copy-box">
               <NutIcon type="heart"></NutIcon>
-            </nutcat-col>
+            </div>
           </div>
           <h3>图标大小</h3>
           <div class="icon-box">
-            <nutcat-col span="6" class="copy-box">
+            <div span="6" class="copy-box">
               <NutIcon type="heart" size="16px"></NutIcon>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon type="heart" size="24px"></NutIcon>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon type="heart" size="36px"></NutIcon>
-            </nutcat-col>
+            </div>
           </div>
           <h3>图标颜色</h3>
           <div class="icon-box">
-            <nutcat-col span="6" class="copy-box">
+            <div span="6" class="copy-box">
               <NutIcon type="heart" color="#fa2c19"></NutIcon>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon type="heart" color="#64b578"></NutIcon>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon type="heart" color="rgb(25, 137, 250)"></NutIcon>
-            </nutcat-col>
+            </div>
           </div>
         </div>
       </div>
@@ -43,45 +43,45 @@
         <div class="nav-floor-box">
           <h3>箭头类</h3>
           <div class="icon-box">
-            <nutcat-col span="6" class="copy-box">
+            <div span="6" class="copy-box">
               <NutIcon type="arrow-normal"></NutIcon>
               <span>arrow-normal</span>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon style="font-size: 30px; height: 12px;" type="arrow-go"></NutIcon>
               <span>arrow-go</span>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon type="arrow-full"></NutIcon>
               <span>arrow-full</span>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon type="triangle-arrow"></NutIcon>
               <span>triangle-arrow</span>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon type="circle-arrow"></NutIcon>
               <span>circle-arrow</span>
-            </nutcat-col>
+            </div>
           </div>
           <h3>加购类</h3>
           <div class="icon-box cart">
-            <nutcat-col span="6" class="copy-box">
+            <div span="6" class="copy-box">
               <NutIcon type="qiang"></NutIcon>
               <span>qiang</span>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon type="cart"></NutIcon>
               <span>cart</span>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon type="cart-rect"></NutIcon>
               <span>cart-rect</span>
-            </nutcat-col>
-            <nutcat-col span="6" class="copy-box">
+            </div>
+            <div span="6" class="copy-box">
               <NutIcon type="cart-full"></NutIcon>
               <span>cart-full</span>
-            </nutcat-col>
+            </div>
           </div>
         </div>
       </div>
@@ -89,10 +89,10 @@
         <div class="nav-floor-box">
           <h3>基础图标</h3>
           <div class="icon-box">
-            <nutcat-col v-for="(item, index) in icons.glyphs" :key="index" span="6" class="copy-box">
+            <div v-for="(item, index) in icons.glyphs" :key="index" span="6" class="copy-box">
               <NutIcon :type="item.name"></NutIcon>
               <span>{{ item.name }}</span>
-            </nutcat-col>
+            </div>
           </div>
         </div>
       </div>
@@ -227,6 +227,7 @@ export default createDemo({
   justify-content: space-between;
 }
 .copy-box {
+  width: 33.3%;
   text-align: center;
   vertical-align: middle;
   .nutcat-icon {

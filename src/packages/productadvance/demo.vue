@@ -3,7 +3,7 @@
     <h2>预告商品</h2>
 
     <NutRow>
-      <nutcat-col :span="8" v-for="(item, index) in data6" :key="index">
+      <NutCol :span="8" v-for="(item, index) in data6" :key="index">
        
           <NutProduct
             rowType="flex"
@@ -17,7 +17,7 @@
             :bottomOperate='bottomOperate'
           >
           </NutProduct>
-      </nutcat-col>
+      </NutCol>
     </NutRow>
 
       
@@ -27,7 +27,7 @@
       <h2>预约商品</h2>
 
       <NutRow>
-        <nutcat-col :span="8" v-for="(item, index) in data6" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data6" :key="index">
             <NutProduct
                 rowType="flex"
                 gutter="2"
@@ -42,7 +42,7 @@
               >
               <NutTag class="top-tag tl" type="red-gradient">满199减100</NutTag>
             </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
       
 

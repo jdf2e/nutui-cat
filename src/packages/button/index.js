@@ -1,5 +1,5 @@
 import NutButton from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutButton.install = function(Vue) {
   Vue.component('NutButton', NutButton);

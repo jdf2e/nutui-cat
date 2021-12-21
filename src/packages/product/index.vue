@@ -1,7 +1,7 @@
 <template>
   <div>
   <!-- <NutRow :gutter="gu :type="rowType" v-if="data[0] && data[0].length > 0">
-    <nutcat-col :span="24 / ~~col" v-for="(item, index) in dealData(data[0], data[1])" :key="index"> -->
+    <NutCol :span="24 / ~~col" v-for="(item, index) in dealData(data[0], data[1])" :key="index"> -->
       <template v-if="type == 'normal-1'">
         <normal1
           :data="dealData(data[0], data[1])"
@@ -285,14 +285,14 @@
         </template>
       </template>
       <!-- </div> -->
-    <!-- </nutcat-col>
+    <!-- </NutCol>
   </NutRow> -->
   </div>
 </template>
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('product');
+const { componentClass, create } = createComponent('product');
 import connectData  from '@/utils/connect';
 // import normal1 from './normal1/index.vue';
 import normal1 from './normal1.vue';

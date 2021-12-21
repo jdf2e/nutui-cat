@@ -11,38 +11,38 @@
 
 ```html
 <NutRow type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data1" :key="index">
     <NutShop
       :data="[item, params1]" 
       col="3" 
       type="normal-4"
     >
     </NutShop>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 ```html
 <NutRow type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data2" :key="index">
     <NutShop
       :data="[item, params2]" 
       col="3" 
       type="normal-4" 
     >
     </NutShop>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 ```html
 <NutRow type="flex" gutter="1">
-  <nutcat-col :span="6" v-for="(item, index) in data3" :key="index">
+  <NutCol :span="6" v-for="(item, index) in data3" :key="index">
     <NutShop
       :data="[item, params1]" 
       col="4" 
       type="normal-4" 
     >
     </NutShop>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

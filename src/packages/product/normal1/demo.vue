@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行一个商品布局，左右结构。支持一行一个、一行一个半等。</p>
     <div class="demo-product">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data1" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data1" :key="index">
           <NutProduct :data="[item, params]" col="1" type="normal-1" nameRow="1">
             <template slot="preName">
               <NutTag type="618">618</NutTag>
@@ -14,13 +14,13 @@
               <NutTag class="sub-tag" type="red-pink">利益点利益点</NutTag>
             </template>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <p class="type">增加氛围图、标签、抢购按钮。</p>
     <div class="demo-product">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data2" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data2" :key="index">
           <NutProduct
             :data="[item, {
               cDesc: false
@@ -37,12 +37,12 @@
             </template>
             <NutTag class="top-tag tl" type="fire">某某商品top款</NutTag>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-product demo-s1">
       <NutRow scrollX type="flex" gutter="2">
-        <nutcat-col :span="24" v-for="(item, index) in data3" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data3" :key="index">
           <NutProduct
             :data="[item, {
               cDesc: false
@@ -60,7 +60,7 @@
               >全年历史最低价</NutTag
             >
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

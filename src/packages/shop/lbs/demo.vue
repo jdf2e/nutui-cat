@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行多个店铺布局，上下结构，适用于 lbs 场景。支持一行二个、一行三个、一行三个半、一行四个等。</p>
     <div class="demo-shop demo-s2">
       <NutRow scrollX type="flex" gutter="3">
-        <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data" :key="index">
           <NutShop
             :data="[item, params]" 
             col="3" 
@@ -13,7 +13,7 @@
             <NutTag slot="tag" class="sub-tag" type="red-light"
             >满199减100</NutTag>
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

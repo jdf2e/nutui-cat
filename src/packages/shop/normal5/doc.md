@@ -12,24 +12,24 @@
 
 ```html
 <NutRow type="flex" gutter="3">
-  <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data1" :key="index">
     <NutShop
       :data="[item, params]" 
       col="3" 
       type="normal-5" 
     >
     </NutShop>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 <NutRow type="flex" gutter="3">
-  <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data2" :key="index">
     <NutShop
       :data="[item, params]" 
       col="3" 
       type="normal-5" 
     >
     </NutShop>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 
@@ -37,7 +37,7 @@
 
 ```html
 <NutRow type="flex" gutter="3">
-  <nutcat-col :span="12" v-for="(item, index) in data3" :key="index">
+  <NutCol :span="12" v-for="(item, index) in data3" :key="index">
     <NutShop
       :data="[item, params]" 
       col="2" 
@@ -45,10 +45,10 @@
     >
       <div class="btn-follow">+关注 领30元券</div>
     </NutShop>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 <NutRow type="flex" gutter="3">
-  <nutcat-col :span="8" v-for="(item, index) in data4" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data4" :key="index">
     <NutShop
       :data="[item, params]" 
       col="3" 
@@ -56,7 +56,7 @@
     >
       <div class="btn-follow">+关注 领30元券</div>
     </NutShop>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

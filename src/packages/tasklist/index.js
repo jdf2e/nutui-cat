@@ -1,5 +1,5 @@
 import NutTasklist from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutTasklist.install = function(Vue) {
   Vue.component('NutTasklist', NutTasklist);

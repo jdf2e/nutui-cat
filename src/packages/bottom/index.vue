@@ -34,7 +34,7 @@
 </template>
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('bottom');
+const { componentClass, create } = createComponent('bottom');
 import throttle from 'lodash/throttle';
 
 export default create({
@@ -100,8 +100,8 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${(this as any).type}`]: (this as any).type,
+        [componentClass]: true,
+        [`${componentClass}-${(this as any).type}`]: (this as any).type,
       };
     },
     styles() {

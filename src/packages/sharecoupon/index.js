@@ -1,5 +1,5 @@
 import NutSharecoupon from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutSharecoupon.install = function(Vue) {
   Vue.component('NutSharecoupon', NutSharecoupon);

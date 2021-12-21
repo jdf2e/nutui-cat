@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('text');
+const { componentClass, create } = createComponent('text');
 export default create({
   props: {
     row: {
@@ -32,18 +32,18 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true
+        [componentClass]: true
       };
     },
     classesText() {
       if( (this as any).row  == "1" ) {
         return {
-          [componentName+'-content']: true,
+          [componentClass+'-content']: true,
           ['oneline']: true,
         };
       } else {
         return {
-          [componentName+'-content']: true,
+          [componentClass+'-content']: true,
           ['moreline']: true,
         };
       }
@@ -70,4 +70,7 @@ export default create({
 
 <style lang="scss" scoped>
 @import 'index.scss';
+.nutcat-text {
+  line-height: 1.4;
+}
 </style>

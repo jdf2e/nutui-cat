@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('icon');
+const { componentClass, create } = createComponent('icon');
 
 export default create({
   props: {
@@ -43,8 +43,8 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${(this as any).type}`]: true,
+        [componentClass]: true,
+        [`${componentClass}-${(this as any).type}`]: true,
       }
     },
     styles() {

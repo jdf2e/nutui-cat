@@ -3,7 +3,7 @@
     <h2>类型：feed-1</h2>
     <p class="type">适用场景：一行二个店铺布局，上下结构，适用于 feed 流场景。</p>
       <NutRow scrollX type="flex" gutter="3">
-        <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data" :key="index">
         <NutShop
           :data="[item, params]" 
           tag="arrow-go"
@@ -13,7 +13,7 @@
           <NutTag slot="tag" class="sub-tag" type="red-light"
           >满199减100</NutTag>
         </NutShop>
-      </nutcat-col>
+      </NutCol>
     </NutRow>
   </div>
 </template>

@@ -87,12 +87,12 @@ import { createComponent } from '@/utils/create';
 import connectData  from '@/utils/connect';
 import { Toast } from '@nutui/nutui';
 import moment from 'moment'
-const { componentName, create } = createComponent('coupon');
+const { componentClass, create } = createComponent('coupon');
 const _toast: any = Toast;
 
 export default create({
   props: {
-    data: {
+    item: {
       type: [Array, Object],
       default: () => []
     },
@@ -110,9 +110,9 @@ export default create({
     },
   },
   watch: {
-    data(newValue) {
+    item(newValue) {
       if(newValue) {
-        (this as any).dealData((this as any).data[0], (this as any).data[1])
+        (this as any).dealData((this as any).item[0], (this as any).item[1])
       }
     }
   },
@@ -129,21 +129,21 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${(this as any).type}`]: (this as any).type,
-        [`${componentName}-${(this as any).col}`]: (this as any).col,
-        [(this as any).data.cImage ? `${componentName}-image` : '']: true,
-        [`${componentName}-${(['get','use','ban'] as any)[(this as any).state]}`]: (this as any).state
+        [componentClass]: true,
+        [`${componentClass}-${(this as any).type}`]: (this as any).type,
+        [`${componentClass}-${(this as any).col}`]: (this as any).col,
+        [(this as any).data.cImage ? `${componentClass}-image` : '']: true,
+        [`${componentClass}-${(['get','use','ban'] as any)[(this as any).state]}`]: (this as any).state
       };
     },
     classesCont() {
       return {
-        [`${componentName}-cont`]: true
+        [`${componentClass}-cont`]: true
       };
     },
     classesInfo() {
       return {
-        [`${componentName}-info`]: true
+        [`${componentClass}-info`]: true
       };
     },
     styles() {
@@ -153,7 +153,7 @@ export default create({
     }
   },
   created() {
-    (this as any).dealData((this as any).data[0], (this as any).data[1])
+    (this as any).dealData((this as any).item[0], (this as any).item[1])
     // 处理券的字段数据
     switch (this.type) {
       case 'normal': this.setNormalCoupon(); break;
@@ -162,8 +162,8 @@ export default create({
     }
   },
   methods: {
-    dealData(data, params) {
-      (this as any).data = connectData(data, params);
+    dealData(item, params) {
+      (this as any).data = connectData(item, params);
     },
     // 普通商城券
     setNormalCoupon() {

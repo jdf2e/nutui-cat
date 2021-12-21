@@ -145,9 +145,6 @@ const buildConfig = {
     },
     sourceMap: true,
     extract: false
-    // extract: {
-    //   filename: '[name]/index.css'
-    // }
   },
   configureWebpack: {
     entry: {

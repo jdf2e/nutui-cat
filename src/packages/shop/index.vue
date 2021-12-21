@@ -2,7 +2,7 @@
 <template>
   <div>
   <!-- <NutRow :gutter="gutter" :scrollX="scrollX" :type="rowType">
-    <nutcat-col :span="24 / ~~col" v-for="(item, index) in dealData(data[0], data[1])" :key="index"> -->
+    <NutCol :span="24 / ~~col" v-for="(item, index) in dealData(data[0], data[1])" :key="index"> -->
       <template v-if="type == 'normal-1'">
         <normal1
           :data="dealData(data[0], data[1])"
@@ -160,7 +160,7 @@
             <NutText class="sub-desc" row="1">{{desc}}</NutText>
           </template>
       </template>
-    <!-- </nutcat-col>
+    <!-- </NutCol>
   </NutRow> -->
   </div>
 </template>

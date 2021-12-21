@@ -1,5 +1,5 @@
 import NutProduct from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutProduct.install = function(Vue) {
   Vue.component('NutProduct', NutProduct);

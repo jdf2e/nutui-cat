@@ -6,7 +6,7 @@
 </template>
   <script>
 import { createComponent } from "@/utils/create";
-const { componentName, create } = createComponent("cart");
+const { componentClass, create } = createComponent("cart");
 
 export default create({
   props: {

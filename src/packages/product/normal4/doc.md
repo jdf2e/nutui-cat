@@ -10,7 +10,7 @@
 
 ```html
 <NutRow type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data1" :key="index">
     <NutProduct
       :data="[item, params]"
       col="3"
@@ -24,7 +24,7 @@
         数码销量TOP1
       </NutTag>
     </NutProduct>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 ```javascript

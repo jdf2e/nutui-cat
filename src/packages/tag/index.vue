@@ -31,7 +31,7 @@
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('tag');
+const { componentClass, create } = createComponent('tag');
 
 export default create({
   props: {
@@ -102,12 +102,12 @@ export default create({
     },
     classesTag() {
       return {
-        [componentName+'-content']: true,
+        [componentClass+'-content']: true,
       };
     },
     classesPre() {
       return {
-        [componentName+'-pre']: true,
+        [componentClass+'-pre']: true,
       };
     },
     styles() {

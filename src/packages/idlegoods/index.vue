@@ -27,7 +27,7 @@
 <script>
 
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('idlegoods');
+const { componentClass, create } = createComponent('idlegoods');
 
 export default create({
   props: {
@@ -49,7 +49,7 @@ export default create({
   computed:{
     classes() {
       return {
-        [componentName+'-page']: true,
+        [componentClass+'-page']: true,
       };
     },
   },

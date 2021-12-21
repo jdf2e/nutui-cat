@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行一个店铺布局，由品牌logo+名称+运营语+利益点+进入标签组成。适合长利益点。</p>
     <div class="demo-shop">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data" :key="index">
           <NutShop
             :data="[item, params]" 
             col="1" 
@@ -36,7 +36,7 @@
               </NutTag>
             </div>
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

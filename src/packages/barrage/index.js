@@ -1,5 +1,5 @@
 import NutBarrage from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutBarrage.install = function(Vue) {
   Vue.component('NutBarrage', NutBarrage);

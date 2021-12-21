@@ -185,7 +185,7 @@
     <p class="type">一拖二</p>
     <div class="demo-shop demol1-1">
       <NutRow type="flex">
-        <nutcat-col :span="8" class="shop-left">
+        <NutCol :span="8" class="shop-left">
           <NutShop
             desc="满199减100"
             logo="https://img14.360buyimg.com/imagetools/jfs/t1/178006/28/13004/7510/60e3f7c1E7500c2a7/d15fa4a3da6b1501.png"
@@ -200,9 +200,9 @@
               >进店看看</NutButton
             >
           </NutShop>
-        </nutcat-col>
+        </NutCol>
         <NutRow type="flex" class="shop-right">
-          <nutcat-col
+          <NutCol
             :span="12"
             v-for="(item, index) in productData.list || ''"
             :key="index"
@@ -215,7 +215,7 @@
               col="3"
             >
             </NutProduct>
-          </nutcat-col>
+          </NutCol>
         </NutRow>
       </NutRow>
     </div> -->

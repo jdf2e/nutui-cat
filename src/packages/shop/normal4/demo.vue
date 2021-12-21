@@ -4,38 +4,38 @@
     <p class="type">适用场景：一行多个店铺布局，上下结构，支持一行三个、一行三个半、一行四个等。</p>
     <div class="demo-shop">
       <NutRow type="flex" gutter="2">
-        <nutcat-col :span="8" v-for="(item, index) in data1" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data1" :key="index">
           <NutShop
             :data="[item, params1]" 
             col="3" 
             type="normal-4"
           >
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-shop demo5">
       <NutRow type="flex" gutter="2">
-        <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data2" :key="index">
           <NutShop
             :data="[item, params2]" 
             col="3" 
             type="normal-4" 
           >
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-shop">
       <NutRow type="flex" gutter="1">
-        <nutcat-col :span="6" v-for="(item, index) in data3" :key="index">
+        <NutCol :span="6" v-for="(item, index) in data3" :key="index">
           <NutShop
             :data="[item, params1]" 
             col="4" 
             type="normal-4" 
           >
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

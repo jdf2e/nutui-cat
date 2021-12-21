@@ -4,7 +4,7 @@
     <p class="type">适用场景：心跳曲线类型，支持一行一个、一行二个、一行三个等。</p>
     <div class="demo-product">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data1" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data1" :key="index">
           <NutProduct
             :data="[item, params]"
             pricePre="狂欢价"
@@ -20,12 +20,12 @@
               <NutTag class="sub-tag" type="red-pink">利益点利益点</NutTag>
             </template>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-product">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="12" v-for="(item, index) in data2" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data2" :key="index">
           <NutProduct
             :data="[item, params]"
             heartName="N天最低价"
@@ -40,12 +40,12 @@
               <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
             </template>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-product">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="8" v-for="(item, index) in data2" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data2" :key="index">
           <NutProduct
             :data="[item, params]"
             heartName="N天最低价"
@@ -60,7 +60,7 @@
               <NutTag class="sub-tag" type="red-pink">闪购进行时</NutTag>
             </template>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

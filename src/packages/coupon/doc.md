@@ -20,7 +20,7 @@ app.use(Coupon);
 
 ```html
 <NutRow type="flex">
-    <nutcat-col class="mf-col-1" :span="8" v-for="(item, index) in data" :key="index">
+    <NutCol class="mf-col-1" :span="8" v-for="(item, index) in data" :key="index">
         <NutCoupon 
         :item="[item, {
             cImage: false,
@@ -31,7 +31,7 @@ app.use(Coupon);
         @click-report="handelClick1(item)"
         >
         </NutCoupon>
-    </nutcat-col>
+    </NutCol>
 </NutRow>
 ```
 
@@ -39,7 +39,7 @@ app.use(Coupon);
 
 ```html
 <NutRow>
-    <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
+    <NutCol :span="8" v-for="(item, index) in data" :key="index">
         <NutCoupon 
         :item="[item, {
             cImage: true,
@@ -49,7 +49,7 @@ app.use(Coupon);
         type='normal'
         >
         </NutCoupon>
-    </nutcat-col>
+    </NutCol>
 </NutRow> 
 ```
 

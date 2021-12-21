@@ -32,7 +32,7 @@
 <script>
 
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('gooditem');
+const { componentClass, create } = createComponent('gooditem');
 
 export default create({
   props: {
@@ -60,7 +60,7 @@ export default create({
   computed:{
     classes() {
       return {
-        [componentName+'-page']: true,
+        [componentClass+'-page']: true,
       };
     },
   },

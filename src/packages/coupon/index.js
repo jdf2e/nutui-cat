@@ -1,5 +1,5 @@
 import NutCoupon from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutCoupon.install = function(Vue) {
   Vue.component('NutCoupon', NutCoupon);

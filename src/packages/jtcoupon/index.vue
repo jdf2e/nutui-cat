@@ -18,7 +18,7 @@
 <script lang="ts">
 import { createComponent } from '@/utils/create';
 import { Toast } from '@nutui/nutui';
-const { componentName, create } = createComponent('jtCoupon');
+const { componentClass, create } = createComponent('jtCoupon');
 const _toast: any = Toast;
 export default create({
   props: {
@@ -50,20 +50,20 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${(this as any).type}`]: (this as any).type,
-        [(this as any).image ? `${componentName}-image` : '']: true,
-        [`${componentName}-${(['get','use','ban'] as any)[(this as any).state]}`]: (this as any).state
+        [componentClass]: true,
+        [`${componentClass}-${(this as any).type}`]: (this as any).type,
+        [(this as any).image ? `${componentClass}-image` : '']: true,
+        [`${componentClass}-${(['get','use','ban'] as any)[(this as any).state]}`]: (this as any).state
       };
     },
     classesCont() {
       return {
-        [`${componentName}-cont`]: true
+        [`${componentClass}-cont`]: true
       };
     },
     classesInfo() {
       return {
-        [`${componentName}-info`]: true
+        [`${componentClass}-info`]: true
       };
     },
     styles() {

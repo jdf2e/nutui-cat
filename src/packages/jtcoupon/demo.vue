@@ -3,7 +3,7 @@
     <h2>京贴 + PLUS</h2>
     <div class="demo-coupon">
       <NutRow :gutter="1">
-        <nutcat-col :span="16">
+        <NutCol :span="16">
           <NutText row="1" type="jtCoupon">
             头号京贴·跨店满减·可叠加
           </NutText>
@@ -16,8 +16,8 @@
             >
             </NutJtcoupon>
           </div>
-        </nutcat-col>
-        <nutcat-col :span="8">
+        </NutCol>
+        <NutCol :span="8">
           <NutText row="1" type="plusCoupon">
           <NutTag type="plus-couponHd"></NutTag>
             开通/续费PLUS得
@@ -31,7 +31,7 @@
             >
             </NutJtcoupon>
           </div>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

@@ -3,7 +3,7 @@
     <h2>分享领券</h2>
     <div class="demo-coupon demo1">
       <NutRow>
-        <nutcat-col :span="8" v-for="(item, index) in data.list" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data.list" :key="index">
           <NutSharecoupon
             :item="item"
             type='share'
@@ -11,7 +11,7 @@
             @click-report="handelClick"
           >
           </NutSharecoupon>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

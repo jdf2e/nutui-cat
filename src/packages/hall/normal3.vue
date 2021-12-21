@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('hall');
+const { componentClass, create } = createComponent('hall');
 
 export default create({
   props: {
@@ -85,10 +85,10 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${(this as any).type}`]: (this as any).type,
-        [`${componentName}-${(this as any).col}`]: (this as any).col,
-        [`${componentName}-scrollX`]: (this as any).scrollX
+        [componentClass]: true,
+        [`${componentClass}-${(this as any).type}`]: (this as any).type,
+        [`${componentClass}-${(this as any).col}`]: (this as any).col,
+        [`${componentClass}-scrollX`]: (this as any).scrollX
       };
     },
     styles() {

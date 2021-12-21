@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行二个榜单布局，上下结构，适用于 feed 流场景。</p>
     <div class="demo-rank demo2-1">
       <NutRow type="flex" gutter="3"> 
-        <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data" :key="index">
           <NutRank
             :data="[item, params]" 
             tag="arrow-go"
@@ -12,7 +12,7 @@
             type="feed-1" 
           >
           </NutRank>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div> 

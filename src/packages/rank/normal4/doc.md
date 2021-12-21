@@ -10,7 +10,7 @@
 
 ```html
 <NutRow type="flex" gutter="2">
-  <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
+  <NutCol :span="8" v-for="(item, index) in data" :key="index">
     <NutRank
       :data="[item, {cImage: ['pictureUrl']}]" 
       bgUrl="//img11.360buyimg.com/imagetools/jfs/t1/187035/30/7524/12500/60c1cfd7E8d2e1f3b/e43f0191aea8a5bd.png"
@@ -19,7 +19,7 @@
     >
       <NutTag type="rank-hot"></NutTag>
     </NutRank>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 ```javascript

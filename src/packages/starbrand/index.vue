@@ -16,7 +16,7 @@
 <script lang="ts">
 import { createComponent } from '@/utils/create';
 import Swiper from '../utils/swiper';
-const { componentName, create } = createComponent('starbrand');
+const { componentClass, create } = createComponent('starbrand');
 
 export default create({
   props: {
@@ -43,7 +43,7 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName+'-page']: true,
+        [componentClass+'-page']: true,
       };
     }
   },

@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行一个会场左右布局。通过具名 `slot` 的 `left`、`right` 自定义内容。</p>
     <div class="demo-hall demo-free1">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data1" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data1" :key="index">
           <NutGooditem :data="[item, params]" bgColor="#820C00" col="1" type="free">
             <template slot="left">
               <NutText class="sub-name" row="1">京东美妆</NutText>
@@ -23,13 +23,13 @@
               </NutImage>
             </template>
           </NutGooditem>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <p class="type">一行二个会场左右布局。通过具名 `slot` 的 `left`、`right` 自定义内容。</p>
     <div class="demo-hall demo-free2">
       <NutRow type="flex" gutter="1">
-        <nutcat-col :span="12" v-for="(item, index) in data2" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data2" :key="index">
           <NutGooditem
             :data="[item, params]"
             col="2"
@@ -57,13 +57,13 @@
               <NutText class="sub-desc" row="1">超值单品9.9</NutText>
             </template>
           </NutGooditem>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <p class="type">一行多个会场上下布局。通过具名 `slot` 的 `top`、`bottom` 自定义内容。</p>
     <div class="demo-hall demo-free3">
       <NutRow type="flex" gutter="2">
-        <nutcat-col :span="8" v-for="(item, index) in data3" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data3" :key="index">
           <NutGooditem
             :data="[item, params]"
             bgColor="#820C00"
@@ -94,7 +94,7 @@
               </div>
             </template>
           </NutGooditem>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

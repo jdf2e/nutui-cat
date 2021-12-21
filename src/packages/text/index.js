@@ -1,7 +1,5 @@
 import NutText from './index.vue';
-import './index.scss';
-
-console.log('NutText11111',NutText)
+// import './index.scss';
 
 NutText.install = function(Vue) {
   Vue.component('NutText', NutText);

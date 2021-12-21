@@ -33,7 +33,7 @@
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('image');
+const { componentClass, create } = createComponent('image');
 interface imgParams {
   width?: number;
   height?: number;
@@ -76,12 +76,12 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true
+        [componentClass]: true
       };
     },
     classesImg() {
       return {
-        [componentName + '-img']: true
+        [componentClass + '-img']: true
       };
     },
     styles() {

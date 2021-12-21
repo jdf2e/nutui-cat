@@ -1,5 +1,5 @@
 import NutCol from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutCol.install = function(Vue) {
   Vue.component('NutCol', NutCol);

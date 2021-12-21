@@ -6,7 +6,7 @@
 <script lang="ts">
 
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('col');
+const { componentClass, create } = createComponent('col');
 export default create({
   props: {
     span: {
@@ -30,10 +30,10 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${(this as any).gutter}`]: (this as any).gutter,
-        [`${componentName}-${(this as any).span}`]: true,
-        [`${componentName}-offset-${(this as any).offset}`]: true,
+        [componentClass]: true,
+        [`${componentClass}-${(this as any).gutter}`]: (this as any).gutter,
+        [`${componentClass}-${(this as any).span}`]: true,
+        [`${componentClass}-offset-${(this as any).offset}`]: true,
       };
     },
     style() {

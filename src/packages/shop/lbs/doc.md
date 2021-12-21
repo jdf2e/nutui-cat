@@ -11,7 +11,7 @@
 
 ```html
 <NutRow scrollX type="flex" gutter="3">
-  <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
+  <NutCol :span="24" v-for="(item, index) in data" :key="index">
     <NutShop
       :data="[item, params]" 
       col="3" 
@@ -20,7 +20,7 @@
       <NutTag slot="tag" class="sub-tag" type="red-light"
       >满199减100</NutTag>
     </NutShop>
-  </nutcat-col>
+  </NutCol>
 </NutRow>
 ```
 

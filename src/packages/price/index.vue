@@ -14,7 +14,7 @@
 
 <script >
 import { createComponent } from "@/utils/create";
-const { componentName, create } = createComponent("price");
+const { componentClass, create } = createComponent("price");
 
 export default create({
   props: {

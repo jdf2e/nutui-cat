@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行二个会场布局，图片和内容区域左右布局。标题和利益点均为一行。</p>
     <div class="demo-hall">
       <NutRow type="flex" gutter="2">
-        <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data" :key="index">
           <NutHall
             :data="[item, params]"
             imgWidth="44"
@@ -13,7 +13,7 @@
             type="normal-3"
           >
           </NutHall>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div>
   <!-- <NutRow :gutter="gutter" :scrollX="scrollX" :type="rowType" v-if="data[0] && data[0].length > 0">
-    <nutcat-col :span="24 / ~~col" v-for="(item, index) in dealData(data[0], data[1])" :key="index"> -->
+    <NutCol :span="24 / ~~col" v-for="(item, index) in dealData(data[0], data[1])" :key="index"> -->
       <template v-if="type == 'normal-1'">
         <normal1
           :data="dealData(data[0], data[1])"
@@ -151,7 +151,7 @@
       </template>
       <template v-else-if="type == 'left-1'">
         <NutRow type="flex">
-          <nutcat-col :span="leftSpan">
+          <NutCol :span="leftSpan">
             <div class="hall-left">
               <template v-if="src">
                 <NutImage class="img-box" :src="src"></NutImage>
@@ -169,7 +169,7 @@
               <slot name="left"></slot>
               <!-- </div> -->
             </div>
-          </nutcat-col>
+          </NutCol>
           <NutRow type="flex" class="hall-right">
             <slot name="right"></slot>
           </NutRow>
@@ -205,7 +205,7 @@
           <slot></slot>
         </free>
       </template>
-    <!-- </nutcat-col>
+    <!-- </NutCol>
   </NutRow> -->
 </div>
 </template>

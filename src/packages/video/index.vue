@@ -1,7 +1,7 @@
 
 <template>
   <NutRow :gutter="gutter" :scrollX="scrollX" :type="rowType">
-    <nutcat-col :span="24 / ~~col" v-for="(item, index) in data" :key="index">
+    <NutCol :span="24 / ~~col" v-for="(item, index) in data" :key="index">
       <template v-if="type == 'feed-1'">
         <video-feed1
           :data="item"
@@ -15,13 +15,13 @@
           <slot></slot>
         </video-feed1>
       </template>
-    </nutcat-col>
+    </NutCol>
   </NutRow>
 </template>
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('video');
+const { componentClass, create } = createComponent('video');
 import videoFeed1 from './videoFeed1.vue';
 
 export default create({

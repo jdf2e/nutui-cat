@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行多个店铺布局，上下结构，顶部底部是文字，中间图片区域。支持一行二个、一行三个、一行三个半、一行四个等。</p>
     <div class="demo-shop demo-s3">
       <NutRow scrollX type="flex" gutter="1">
-        <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data" :key="index">
           <NutShop
             :data="[item, {
                 cLogo: false,
@@ -14,7 +14,7 @@
             type="normal-6" 
           >
           </NutShop>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     

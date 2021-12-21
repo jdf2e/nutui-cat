@@ -4,7 +4,7 @@
     <p class="type">适用场景：带购物车的常规类型，支持一行二个、一行三个、一行三个半等。</p>
     <div class="demo-product">
       <NutRow  type="flex" gutter="2">
-        <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data" :key="index">
           <NutProduct
             :data="[item, params]"
             iconType="cart"
@@ -16,13 +16,13 @@
               <NutTag type="618">618</NutTag>
             </template>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <p class="type">一行二个商品，多用于底部 Feed 流。</p>
     <div class="demo-product">
       <NutRow  type="flex" gutter="3">
-        <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data" :key="index">
           <NutProduct
             :data="[item, params]"
             iconType="cart"
@@ -44,12 +44,12 @@
               <NutTag class="sub-tag" type="red-light">利益点利益点</NutTag>
             </template>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
     <div class="demo-product">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data" :key="index">
           <NutProduct
             :data="[item, params]"
             iconType="cart"
@@ -74,7 +74,7 @@
               <NutText class="sub-desc">4.3万人购买</NutText>
             </template>
           </NutProduct>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>

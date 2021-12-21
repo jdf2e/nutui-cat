@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import { createComponent } from '@/utils/create';
-const { componentName } = createComponent('shop');
+const { componentClass } = createComponent('shop');
 
 export default {
   props: {
@@ -76,10 +76,10 @@ export default {
   computed: {
     classes() {
       return {
-        [componentName]: true,
-        [`${componentName}-${(this as any).col}`]: (this as any).col,
-        [`${componentName}-${(this as any).type}`]: (this as any).type,
-        [`${componentName}-scrollX`]: (this as any).scrollX
+        [componentClass]: true,
+        [`${componentClass}-${(this as any).col}`]: (this as any).col,
+        [`${componentClass}-${(this as any).type}`]: (this as any).type,
+        [`${componentClass}-scrollX`]: (this as any).scrollX
       };
     },
     styles() {

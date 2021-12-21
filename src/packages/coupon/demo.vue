@@ -4,7 +4,7 @@
     <p class="type">普通优惠券-无图</p>
     <div class="demo-coupon demo1">
       <NutRow type="flex">
-        <nutcat-col class="mf-col-1" :span="8" v-for="(item, index) in data" :key="index">
+        <NutCol class="mf-col-1" :span="8" v-for="(item, index) in data" :key="index">
           <NutCoupon 
             :data="[item, {
               cImage: false,
@@ -15,23 +15,23 @@
             @click-report="handelClick1(item)"
           >
           </NutCoupon>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
       <!-- <NutRow>
-        <nutcat-col :span="8" v-for="(item, index) in data.list" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data.list" :key="index">
           <NutCoupon 
             :item="[item, params]"
             type='normal'
             @click-report="handelClick"
           >
           </NutCoupon>
-        </nutcat-col>
+        </NutCol>
       </NutRow> -->
     </div>
     <p class="type">普通优惠券-有图</p>
     <div class="demo-coupon demo3">
       <NutRow>
-        <nutcat-col :span="8" v-for="(item, index) in data" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data" :key="index">
           <NutCoupon 
             :data="[item, {
               cImage: true,
@@ -41,14 +41,14 @@
             type='normal'
           >
           </NutCoupon>
-        </nutcat-col>
+        </NutCol>
       </NutRow> 
     </div>
     <!-- <h2>类型：finance</h2>
     <p class="type">金融优惠券-无图</p>
     <div class="demo-coupon demo2">
       <NutRow>
-        <nutcat-col :span="8" v-for="(item, index) in data.list" :key="index">
+        <NutCol :span="8" v-for="(item, index) in data.list" :key="index">
           <NutCoupon 
             :item="item"
             :src="false"
@@ -56,7 +56,7 @@
             @click-report="handelClick(state)"
           >
           </NutCoupon>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div> -->
   </div>

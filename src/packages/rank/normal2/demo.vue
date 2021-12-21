@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行二个榜单布局，左右结构，左边文字，右边图片区域。</p>
     <div class="demo-rank demo2-1">
       <NutRow type="flex" gutter="3">
-        <nutcat-col :span="12" v-for="(item, index) in data" :key="index">
+        <NutCol :span="12" v-for="(item, index) in data" :key="index">
           <NutRank
             :data="[item, params1]" 
             :productData="[item.productData, params2]" 
@@ -26,7 +26,7 @@
               </div>
             </ul>
           </NutRank>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div> 

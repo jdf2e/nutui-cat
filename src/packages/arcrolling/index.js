@@ -1,5 +1,5 @@
 import NutArcrolling from './index.vue';
-import './index.scss';
+// import './index.scss';
 
 NutArcrolling.install = function(Vue) {
   Vue.component('NutArcrolling', NutArcrolling);

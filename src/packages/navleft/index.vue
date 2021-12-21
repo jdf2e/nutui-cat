@@ -67,7 +67,7 @@
 
 <script>
 import { createComponent } from '@/utils/create';
-const { componentName, create } = createComponent('navleft');
+const { componentClass, create } = createComponent('navleft');
 
 import assign from 'lodash/assign';
 import throttle from 'lodash/throttle';
@@ -193,9 +193,9 @@ export default create({
   computed: {
     classes() {
       return {
-        [componentName + '-content']: true,
-        [componentName + '-' + this.type]: this.type,
-        // [`${componentName}-${(this as any).col}`]: (this as any).col,
+        [componentClass + '-content']: true,
+        [componentClass + '-' + this.type]: this.type,
+        // [`${componentClass}-${(this as any).col}`]: (this as any).col,
         'hide-stickynav': this.stickyOptions.scrollShow && !this.visable,
         'hide-up': this.scrollHide
       };

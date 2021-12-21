@@ -61,15 +61,4 @@ export default createDemo({
     padding-right: 9px;
   }
 }
-.demo-video {
-}
-.demo1 {
-  .nutcat-col {
-    // width: 354px;
-    // margin-left: 3px;
-    // &:first-child {
-    //   margin-left: 0;
-    // }
-  }
-}
 </style>

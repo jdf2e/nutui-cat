@@ -4,7 +4,7 @@
     <p class="type">适用场景：一行一个会场布局，由文字+进入标签+图片组成。文字超一行出现省略号。</p>
     <div class="demo-hall">
       <NutRow>
-        <nutcat-col :span="24" v-for="(item, index) in data" :key="index">
+        <NutCol :span="24" v-for="(item, index) in data" :key="index">
           <NutHall
             :data="[item, params]"
             tag="arrow-go"
@@ -15,7 +15,7 @@
             type="normal-1"
           >
           </NutHall>
-        </nutcat-col>
+        </NutCol>
       </NutRow>
     </div>
   </div>
