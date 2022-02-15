@@ -16,7 +16,6 @@ function getEntries(path) {
             const [name] = item.split('.')
             ret[name] = resolve(`${itemPath}`)
         }
-        console.log('ret', ret)
         return ret
     }, {})
   return entries
@@ -155,7 +154,17 @@ const buildConfig = {
     },
     output: {
       filename: '[name]/index.js',
-      // libraryTarget: 'commonjs2',
+      library: 'nutcat',
+      libraryTarget: 'umd',
+      umdNamedDefine: true    // 是否将模块名称作为 AMD 输出的命名空间
+    },
+    externals: {
+      vue: {
+          root: 'Vue',
+          commonjs: 'vue',
+          commonjs2: 'vue',
+          amd: 'vue'
+      }
     },
     optimization: {
       minimize: true,

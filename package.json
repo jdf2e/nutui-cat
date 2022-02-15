@@ -1,9 +1,9 @@
 {
-  "name": "nutlu",
-  "version": "0.0.52",
+  "name": "@nutui/nutui-cat",
+  "version": "0.2.0",
   "private": false,
   "description": "基于 NutUI 2.0 的大促业务组件库",
-  "main": "dist/nutui-cat.common.js",
+  "main": "dist/nutui-cat.umd.js",
   "style": "dist/nutui-cat.css",
   "keywords": [
     "nutui",
@@ -33,7 +33,7 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
-    "build:site": "vue-cli-service build --target lib --name nutui-cat --dest dist vue.config-site.js",
+    "build:site": "vue-cli-service build",
     "build": "vue-cli-service build --target lib --name nutui-cat --dest dist src/packages/nutui-cat.js",
     "build:package": "vue-cli-service build",
     "build:deco": "vue-cli-service build --target lib --name nutui-cat --dest dist vue.config-deco.js",

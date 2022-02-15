@@ -72,14 +72,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 //   NutNav, NutNavleft, NutNoticebar, NutPrice, NutProduct, NutProductadvance, NutProductlimit, NutProgress, NutRank, NutRow, NutSharecoupon, NutShop, NutShowmore, 
 //   NutStarbrand, NutTab, NutTag, NutTasklist, NutText, NutVideo};
 
-export {
-  install, // 导出的对象必须具备一个 install 方法
-  NutButton, NutArcrolling, NutBacktop, NutBarrage, NutBottom, NutCart, NutCol, NutCountdown, NutCoupon, 
-  NutFollowswipe, NutGooditem, NutHall, Hallcapsule, NutIcon, NutImage, NutIdlegoods, NutJtcoupon, NutLive, NutLovebeans, 
-  NutNav, NutNavleft, NutNoticebar, NutPrice, NutProduct, NutProductadvance, NutProductlimit, NutProgress, NutRank, NutRow, NutSharecoupon, NutShop, NutShowmore, 
-  NutStarbrand, NutTab, NutTag, NutTasklist, NutText, NutVideo
-};
-
 export default {
   install,
   NutButton, NutArcrolling, NutBacktop, NutBarrage, NutBottom, NutCart, NutCol, NutCountdown, NutCoupon,

@@ -65,7 +65,7 @@ $prefix: nutcat-product;
     .nutcat-price--big {
       font-size: 16px;
     }
-    .nutcat-price--small {
+    .nutcat-price--small, .nutcat-price--point {
       font-size: 10px;
     }
   }
@@ -91,6 +91,7 @@ $prefix: nutcat-product;
     text-decoration: line-through;
     .nutcat-price--symbol,
     .nutcat-price--big,
+    .nutcat-price--point,
     .nutcat-price--small {
       font-size: 10px;
     }

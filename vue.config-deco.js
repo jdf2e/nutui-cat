@@ -16,7 +16,6 @@ function getEntries(path) {
             const [name] = item.split('.')
             ret[name] = resolve(`${itemPath}`)
         }
-        console.log('ret', ret)
         return ret
     }, {})
   return entries
