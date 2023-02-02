@@ -34,7 +34,7 @@
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:site": "vue-cli-service build --target lib --name nutui-cat --dest dist src/packages/nutui-cat.js",
+    "build:site": "vue-cli-service build --name nutui-cat --dest dist vue.config-site.js",
     "build:deco": "vue-cli-service build --target lib --name nutui-cat --dest dist vue.config-deco.js",
     "lint": "vue-cli-service lint",
     "upload": "vue-cli-service build && node ./jd/upload.js",

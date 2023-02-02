@@ -4,21 +4,21 @@
 
     <h3 class="sub-title">一行三</h3>
 
-    <NutRow :gutter="8">
-      <NutCol :span="8" v-for="(item, index) in [1,2,3]" :key="index" >
+    <nut-row :gutter="8">
+      <nut-col :span="8" v-for="(item, index) in [1,2,3]" :key="index" >
         <div class="heartcurve-demo-box">
-          <nutcat-heartcurve :top='topInfo' :centerPrice='centerPrice' :bottom='bottomInfo' size='small'></nutcat-heartcurve> 
+          <NutHeartcurve :top='topInfo' :centerPrice='centerPrice' :bottom='bottomInfo' size='small'></NutHeartcurve> 
         </div>
-      </NutCol>
-    </NutRow>
+      </nut-col>
+    </nut-row>
 
     <h3 class="sub-title">一行二</h3>
 
-    <NutRow :gutter="10">
-      <NutCol :span="12" v-for="(item, index) in [1,2]" :key="index">
-        <nutcat-heartcurve :top='topInfo1' :centerPrice='centerPrice1' :bottom='bottomInfo1' ></nutcat-heartcurve>  
-      </NutCol>
-    </NutRow>
+    <nut-row :gutter="10">
+      <nut-col :span="12" v-for="(item, index) in [1,2]" :key="index">
+        <NutHeartcurve :top='topInfo1' :centerPrice='centerPrice1' :bottom='bottomInfo1' ></NutHeartcurve>  
+      </nut-col>
+    </nut-row>
 
     <h3 class="sub-title">一行一</h3>
 
@@ -27,33 +27,33 @@
    
       <div class="goods-info">
         <div class="title">商品名称商品名称商品名称商品名称商品名称商品名称</div>
-        <nutcat-heartcurve :top='topInfo2' :centerPrice='centerPrice2' :bottom='bottomInfo2' size='big'></nutcat-heartcurve>  
+        <NutHeartcurve :top='topInfo2' :centerPrice='centerPrice2' :bottom='bottomInfo2' size='big'></NutHeartcurve>  
       </div>
     </div>
 
     <h2>心跳折线</h2>
     <h3 class="sub-title">一行三</h3>
-    <NutRow :gutter="8">
-      <NutCol :span="8" v-for="(item, index) in [1,2,3]" :key="index">
+    <nut-row :gutter="8">
+      <nut-col :span="8" v-for="(item, index) in [1,2,3]" :key="index">
         <div style="padding:10px 0px;background:#fff">
-          <nutcat-heartcurve :top='topInfo3'  :bottom='bottomInfo3' size='small' type='broken' ></nutcat-heartcurve>  
+          <NutHeartcurve :top='topInfo3'  :bottom='bottomInfo3' size='small' type='broken' ></NutHeartcurve>  
         </div>
-      </NutCol>
-    </NutRow>
+      </nut-col>
+    </nut-row>
 
     <h3 class="sub-title">一行二</h3>
-    <NutRow :gutter="10">
-      <NutCol :span="12" v-for="(item, index) in [1,2]" :key="index">
-        <nutcat-heartcurve :top='topInfo4'  type='broken'></nutcat-heartcurve>  
-      </NutCol>
-    </NutRow>
+    <nut-row :gutter="10">
+      <nut-col :span="12" v-for="(item, index) in [1,2]" :key="index">
+        <NutHeartcurve :top='topInfo4'  type='broken'></NutHeartcurve>  
+      </nut-col>
+    </nut-row>
 
     <h3 class="sub-title">一行一</h3>
     <div class="goods">
       <img class="goods-img" src="//img14.360buyimg.com/imagetools/jfs/t1/136318/2/17914/253972/5fbcb355E73dd171e/7afebc86dec494e4.png" alt="">
       <div class="goods-info">
         <div class="title">商品名称商品名称商品名称商品名称商品名称商品名称</div>
-        <nutcat-heartcurve :top='topInfo5'  size='big' type='broken'></nutcat-heartcurve>  
+        <NutHeartcurve :top='topInfo5'  size='big' type='broken'></NutHeartcurve>  
       </div>
     </div>
 

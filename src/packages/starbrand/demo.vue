@@ -1,7 +1,7 @@
 <template>
   <div class="demo">
     <h2>基础用法</h2>
-    <NutShowmore :brand-list="list" @callback="handleClick"></NutShowmore>
+    <NutStarbrand :brand-list="list" @callback="handleClick"></NutStarbrand>
   </div>
 </template>
 
