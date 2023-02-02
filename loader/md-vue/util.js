@@ -14,7 +14,7 @@ function stripStyle(content) {
 }
 
 // 编写例子时不一定有 template。所以采取的方案是剔除其他的内容
-//获取template标签中的内容
+// 获取template标签中的内容
 function stripTemplate(content) {
   content = content.trim();
   if (!content) {

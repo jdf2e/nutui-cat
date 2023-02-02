@@ -28,7 +28,7 @@
         <div class="doc-footer-item"><a href="http://cyber.test.jd.com/#/devices" target="_blank">赛博云测平台</a></div>
       </div>
     </div>
-    <p class="doc-footer-desc">2021 京东零售 - 基础业务体验部. All Rights Reserved.</p>
+    <!-- <p class="doc-footer-desc">2022 京东零售 - 基础业务体验部. All Rights Reserved.</p> -->
   </div>
 </template>
 <script lang="ts">

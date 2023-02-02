@@ -89,7 +89,7 @@ export default {
   }
 
   .demo {
-    height: 100%;
+    min-height: 100vh;
     background: #f7f8fa;
     overflow-x: hidden;
     overflow-y: auto;

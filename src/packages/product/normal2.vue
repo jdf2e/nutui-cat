@@ -58,7 +58,7 @@ export default create({
     },
     type: {
       type: String,
-      default: '1'
+      default: '2'
     },
     tag: {
       type: String,
