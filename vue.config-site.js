@@ -3,7 +3,7 @@ const path = require("path");
 //target: 'http://localhost:7004',
 module.exports = {
   productionSourceMap: process.env.NODE_ENV != "production",
-  publicPath: "./cat/",
+  publicPath: "/cat/",
   devServer: {
     host: "0.0.0.0",
     disableHostCheck: true,
