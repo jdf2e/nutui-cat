@@ -76,7 +76,7 @@ export default create({
           freeModeMomentum: false, // 取消惯性
           on: {
             click(swiper:any) {
-              that.$emit("callback", swiper);
+              that.$emit("callback", item[index]);
             }
           }
         });

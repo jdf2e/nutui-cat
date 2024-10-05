@@ -23,39 +23,43 @@ npm i @nutui/nutui-cat -S
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 引入样式 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nutui/nutui-cat/dist/nutui-cat.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@nutui/nutui-cat/dist/nutui-cat.css"
+    />
     <!-- 引入Vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <!-- 引入NutUI组件库 -->
     <script src="https://cdn.jsdelivr.net/npm/@nutui/nutui-cat/dist/nutui-cat.umd.js"></script>
   </head>
   <body>
-    <div id="app">
-        
-    </div>
+    <div id="app"></div>
     <script>
+      Vue.use(nutcat)
       // 在 #app 标签下渲染一个文本组件
-      const app = Vue.createApp({
+      const app = new Vue({
         template: `
         <NutText>我是标题</NutText>
         `,
-      });
-      app.use(nutui);
-      app.mount("#app");
+      })
+      app.$mount('#app')
     </script>
   </body>
 </html>
+
 ```
 
 > 在页面中直接引入，将无法使用 **主题定制** 等功能。我们推荐使用 *NPM* 或 *YARN* 方式安装，不推荐在页面中直接引入的用法
 #### NPM 使用示例
 
 ```javascript
-import { createApp } from "vue";
 import App from "./App.vue";
 import NutCat from "@nutui/nutui-cat";
 import "@nutui/nutui-cat/dist/nutui-cat.css";
-createApp(App).use(NutCat).mount("#app");
+Vue.use(NutCat)
+new Vue({
+  render: (h) => h(App),
+}).$mount('#app')
 ```
 
 > 注意：这种方式将会导入所有组件

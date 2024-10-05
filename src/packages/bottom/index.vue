@@ -14,7 +14,7 @@
             <img
               :src="
                 item.name == activeName
-                  ? $get('comments.0', item)
+                  ? item.comments[0]
                   : item.pictureUrl
               "
             />
